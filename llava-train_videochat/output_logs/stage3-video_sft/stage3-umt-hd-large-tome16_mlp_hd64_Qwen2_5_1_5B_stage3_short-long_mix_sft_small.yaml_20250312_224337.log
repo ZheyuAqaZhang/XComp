@@ -1,0 +1,1062 @@
+[2025-03-12 22:43:42,794] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-12 22:43:42,811] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-12 22:43:42,817] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-12 22:43:42,818] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.6
+[93m [WARNING] [0m using untested triton version (3.2.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.6
+[93m [WARNING] [0m using untested triton version (3.2.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.6
+[93m [WARNING] [0m using untested triton version (3.2.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.6
+[93m [WARNING] [0m using untested triton version (3.2.0), only 1.0.0 is known to be compatible
+[22:43:44.623422] Rank 0 | Local Rank 0 | World Size 4 | Local World Size 4 |
+[2025-03-12 22:43:44,631] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-03-12 22:43:44,631] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[22:43:44.640955] Rank 2 | Local Rank 2 | World Size 4 | Local World Size 4 |
+[2025-03-12 22:43:44,648] [INFO] [comm.py:637:init_distributed] cdb=None
+[22:43:44.682702] Rank 3 | Local Rank 3 | World Size 4 | Local World Size 4 |
+[2025-03-12 22:43:44,691] [INFO] [comm.py:637:init_distributed] cdb=None
+[22:43:44.810135] Rank 1 | Local Rank 1 | World Size 4 | Local World Size 4 |
+[2025-03-12 22:43:44,819] [INFO] [comm.py:637:init_distributed] cdb=None
+[22:43:44.819980] Rank 0:  Inspecting experiment hyperparameters:
+
+[22:43:44.820080] Rank 0:  model_args = {'model_name_or_path': '/home/ec2-user/workspace/VideoChat-Flash-forked/llava-train_videochat/checkpoints/stage2-visual_pretraining/stage2-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage2_short_pretrain_iv6m_small.yaml_20250309_173347', 'model_class_name': None, 'mm_tunable_parts': 'mm_vision_tower,mm_mlp_adapter,mm_language_model', 'version': 'qwen_2', 'freeze_backbone': False, 'tune_mm_mlp_adapter': False, 'tune_mm_vision_resampler': False, 'vision_tower': 'umt-hd-large', 'vision_tower_pretrained': None, 'vision_encode_type': 'video_image', 'unfreeze_mm_vision_tower': False, 'unfreeze_language_model': False, 'mm_vision_select_layer': -2, 'pretrain_mm_mlp_adapter': None, 'mm_projector_type': 'tome16_mlp_hd64', 'mm_use_im_start_end': False, 'mm_use_im_patch_token': False, 'mm_patch_merge_type': 'flat', 'mm_vision_select_feature': 'patch', 'mm_resampler_type': None, 'mm_mask_drop_mode': 'fixed', 'mm_mask_drop_skip_percentage': 0.0, 'mm_mask_drop_ratio': 0.25, 'mm_mask_drop_ratio_upper': None, 'mm_mask_drop_ratio_lower': None, 'mm_spatial_pool_stride': None, 'mm_spatial_pool_mode': 'bilinear', 'mm_spatial_pool_out_channels': None, 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 8, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_perceiver_depth': 3, 'mm_perceiver_latents': 32, 'mm_perceiver_ff_mult': 4, 'mm_perceiver_pretrained': None, 'mm_qformer_depth': 3, 'mm_qformer_latents': 32, 'mm_qformer_pretrained': None, 'rope_scaling_factor': None, 'rope_scaling_type': None, 's2': False, 's2_scales': '336,672,1008', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_newline_position': 'one_token', 'mm_local_num_frames': 8, 'mm_llm_compress': False, 'llm_compress_type': 'attention', 'llm_compress_layer_list': '8,16,24', 'llm_image_token_ratio_list': '1.0,0.5,0.25,0.125'}
+
+
+[22:43:44.820121] Rank 0:  data_args = {'data_path': 'data/stage3_short-long_mix_sft_small.yaml', 'lazy_preprocess': True, 'is_multimodal': False, 'early_mix_text': False, 'image_aspect_ratio': 'square', 'image_grid_pinpoints': None, 'image_crop_resolution': None, 'image_split_resolution': None, 'frame_aspect_ratio': 'square', 'frame_grid_pinpoints': None, 'max_num_pixels': 14745600000, 'frames_upbound': 192, 'frames_lowbound': 64, 'time_msg': 'short', 'local_num_frames': 8, 'sample_type': 'dynamic_fps1'}
+
+
+[22:43:44.820268] Rank 0:  training_args = {'output_dir': './checkpoints/stage3-video_sft/stage3-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_small.yaml_20250312_224337', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': False, 'do_predict': False, 'evaluation_strategy': <IntervalStrategy.NO: 'no'>, 'prediction_loss_only': False, 'per_device_train_batch_size': 1, 'per_device_eval_batch_size': 4, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 8, 'eval_accumulation_steps': None, 'eval_delay': 0, 'learning_rate': 1e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 1.0, 'max_steps': -1, 'lr_scheduler_type': <SchedulerType.COSINE: 'cosine'>, 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.03, 'warmup_steps': 0, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': './checkpoints/stage3-video_sft/stage3-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_small.yaml_20250312_224337/runs/Mar12_22-43-44_ip-172-31-20-200.us-east-2.compute.internal', 'logging_strategy': <IntervalStrategy.STEPS: 'steps'>, 'logging_first_step': False, 'logging_steps': 1.0, 'logging_nan_inf_filter': True, 'save_strategy': <IntervalStrategy.STEPS: 'steps'>, 'save_steps': 500, 'save_total_limit': 1, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'use_ipex': False, 'bf16': True, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': True, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': True, 'eval_steps': None, 'dataloader_num_workers': 6, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': 'stage3-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_small.yaml_20250312_224337', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': None, 'load_best_model_at_end': False, 'metric_for_best_model': None, 'greater_is_better': None, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': AcceleratorConfig(split_batches=False, dispatch_batches=None, even_batches=True, use_seedable_sampler=True), 'deepspeed': 'scripts/zero2_offload.json', 'label_smoothing_factor': 0.0, 'optim': <OptimizerNames.ADAMW_TORCH: 'adamw_torch'>, 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard'], 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': <HubStrategy.EVERY_SAVE: 'every_save'>, 'hub_token': None, 'hub_private_repo': False, 'hub_always_push': False, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': None, 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': True, 'torch_compile_backend': 'inductor', 'torch_compile_mode': None, 'dispatch_batches': None, 'split_batches': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': False, 'neftune_noise_alpha': None, 'optim_target_modules': None, 'cache_dir': None, 'freeze_mm_mlp_adapter': False, 'freeze_mm_vision_resampler': False, 'mpt_attn_impl': 'triton', 'model_max_length': 32768, 'double_quant': True, 'quant_type': 'nf4', 'bits': 16, 'lora_enable': False, 'lora_r': 64, 'lora_alpha': 16, 'lora_dropout': 0.05, 'lora_weight_path': '', 'lora_bias': 'none', 'mm_projector_lr': None, 'mm_vision_tower_lr': 2e-06, 'group_by_varlen': False, 'group_by_modality_length': True, 'group_by_modality_length_auto': False, 'verbose_logging': True, 'attn_implementation': 'flash_attention_2', 'distributed_state': Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 4
+Process index: 0
+Local process index: 0
+Device: cuda:0
+, '_n_gpu': 1, '__cached__setup_devices': device(type='cuda', index=0), 'deepspeed_plugin': DeepSpeedPlugin(hf_ds_config=<transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7f35e85941f0>, gradient_accumulation_steps=8, gradient_clipping='auto', zero_stage=2, is_train_batch_min=True, offload_optimizer_device='cpu', offload_param_device='cpu', offload_optimizer_nvme_path='none', offload_param_nvme_path='none', zero3_init_flag=False, zero3_save_16bit_model=False, transformer_moe_cls_names=None), 'hf_deepspeed_config': <transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7f35e85941f0>}
+
+
+[22:43:44.821552] Rank 0:  Overwriting config with {'vision_encode_type': 'video_image', 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 8, 'mm_local_num_frames': 8, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_layer_list': [8, 16, 24], 'llm_image_token_ratio_list': [1.0, 0.5, 0.25, 0.125], 'llm_compress_type': 'attention', 'mm_projector_type': 'tome16_mlp_hd64', 'mm_patch_merge_type': 'flat', 'mm_newline_position': 'one_token', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_spatial_pool_mode': 'bilinear'}
+[22:43:47.225095] Rank 0:  Loading vision tower: umt-hd-large
+[22:43:47.226271] umt: Num of patches: 6272
+[22:43:47.226316] umt: Use checkpoint: True
+[22:43:47.226334] umt: Checkpoint number: 24
+[22:43:47.226349] umt: Real runing depth: 23
+[22:43:48.203948] n_position: 6272
+[22:43:48.204012] pre_n_position: 784
+[22:43:48.204029] Pretraining uses 14x14, but current version is 28x28
+[22:43:48.204040] Interpolate the position embedding
+[22:43:48.279965] Pretraining uses 4 frames, but current frame is 8
+[22:43:48.280001] Interpolate the position embedding
+[22:43:48.557647] n_position: 784
+[22:43:48.557703] pre_n_position: 196
+[22:43:48.557718] Pretraining uses 14x14, but current version is 28x28
+[22:43:48.557730] Interpolate the position embedding
+[22:43:48.577942] umt: attn_type: flash_v2
+[22:43:48.578376] umt: attn_type: flash_v2
+[22:43:48.578715] umt: attn_type: flash_v2
+[22:43:48.579090] umt: attn_type: flash_v2
+[22:43:48.579475] umt: attn_type: flash_v2
+[22:43:48.579832] umt: attn_type: flash_v2
+[22:43:48.580208] umt: attn_type: flash_v2
+[22:43:48.580545] umt: attn_type: flash_v2
+[22:43:48.580884] umt: attn_type: flash_v2
+[22:43:48.581262] umt: attn_type: flash_v2
+[22:43:48.581643] umt: attn_type: flash_v2
+[22:43:48.582029] umt: attn_type: flash_v2
+[22:43:48.582971] umt: attn_type: flash_v2
+[22:43:48.583368] umt: attn_type: flash_v2
+[22:43:48.583747] umt: attn_type: flash_v2
+[22:43:48.584154] umt: attn_type: flash_v2
+[22:43:48.584535] umt: attn_type: flash_v2
+[22:43:48.584908] umt: attn_type: flash_v2
+[22:43:48.585317] umt: attn_type: flash_v2
+[22:43:48.585695] umt: attn_type: flash_v2
+[22:43:48.586062] umt: attn_type: flash_v2
+[22:43:48.586472] umt: attn_type: flash_v2
+[22:43:48.586867] umt: attn_type: flash_v2
+[22:43:48.587250] umt: With LN: True
+[22:43:48.587276] umt: Total 24 layer
+[22:43:48.587292] umt: Return 23-th layer
+[22:43:49.414242] umt: Loading pretrained weights from /home/ec2-user/workspace/nvme/coding/Video_Encoders_for_Training_VideoChat-Flash/UMT-L_f4_vision.pt _IncompatibleKeys(missing_keys=[], unexpected_keys=['encoder.blocks.23.norm1.weight', 'encoder.blocks.23.norm1.bias', 'encoder.blocks.23.attn.q_bias', 'encoder.blocks.23.attn.v_bias', 'encoder.blocks.23.attn.qkv.weight', 'encoder.blocks.23.attn.proj.weight', 'encoder.blocks.23.attn.proj.bias', 'encoder.blocks.23.norm2.weight', 'encoder.blocks.23.norm2.bias', 'encoder.blocks.23.mlp.fc1.weight', 'encoder.blocks.23.mlp.fc1.bias', 'encoder.blocks.23.mlp.fc2.weight', 'encoder.blocks.23.mlp.fc2.bias'])
+[22:43:51.110408] Rank 0:  Model config: Qwen2Config {
+  "_name_or_path": "/home/ec2-user/workspace/VideoChat-Flash-forked/llava-train_videochat/checkpoints/stage2-visual_pretraining/stage2-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage2_short_pretrain_iv6m_small.yaml_20250309_173347",
+  "architectures": [
+    "LlavaQwenForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "frame_aspect_ratio": "square",
+  "frame_grid_pinpoints": null,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "image_aspect_ratio": "square",
+  "image_crop_resolution": null,
+  "image_grid_pinpoints": null,
+  "image_split_resolution": null,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_num_pixels": 14745600000,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_hidden_size": 1024,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 8,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 8,
+  "mm_projector_lr": null,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "mm_tunable_parts": "mm_vision_tower,mm_mlp_adapter,mm_language_model",
+  "mm_use_im_patch_token": false,
+  "mm_use_im_start_end": false,
+  "mm_vision_select_feature": "patch",
+  "mm_vision_select_layer": -2,
+  "mm_vision_tower": "umt-hd-large",
+  "mm_vision_tower_lr": 2e-06,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "tokenizer_model_max_length": 32768,
+  "tokenizer_padding_side": "right",
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.0.dev0",
+  "use_cache": true,
+  "use_mm_proj": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vision_tower_pretrained": null,
+  "vocab_size": 151936
+}
+.
+[22:43:51.274176] Rank 0:  Prompt version: qwen_2
+[22:43:51.274296] Rank 0:  umt-hd-large is already loaded, `load_model` called again, skipping.
+[22:43:51.580596] Rank 0:  Using mm_tunable_parts: mm_vision_tower,mm_mlp_adapter,mm_language_model
+[22:43:51.586799] Rank 0:  Total parameters: ~1838.13 MB)
+[22:43:51.586843] Rank 0:  Trainable parameters: ~1838.13 MB)
+[22:43:51.613010] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/textcaps.json with first:3% sampling strategy
+[22:43:51.676118] Rank 0:  sampling_strategy=first, 0:659
+[22:43:51.676857] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/textcaps.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/textcapsextracted_images/
+[22:43:51.676888] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/textcapsextracted_images/b1c2708548fee0b6.jpg
+[22:43:51.676939] Rank 0:  Loaded 659 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/textcaps.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/textcapsextracted_images/
+[22:43:51.676965] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/textocr(gpt4v).json with first:3% sampling strategy
+[22:43:52.088601] Rank 0:  sampling_strategy=first, 0:754
+[22:43:52.089430] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/textocr(gpt4v).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/textocr(gpt4v)extracted_images/
+[22:43:52.089463] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/textocr(gpt4v)extracted_images/1b96a7e70cf75b79.jpg
+[22:43:52.089516] Rank 0:  Loaded 754 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/textocr(gpt4v).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/textocr(gpt4v)extracted_images/
+[22:43:52.089562] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/rendered_text(cauldron)_fix.json with first:3% sampling strategy
+[22:43:52.112644] Rank 0:  sampling_strategy=first, 0:300
+[22:43:52.112942] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/rendered_text(cauldron)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/rendered_text(cauldron)extracted_images/
+[22:43:52.112965] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/rendered_text(cauldron)extracted_images/cauldron/rendered_text/images/rendered_text_00005584.png
+[22:43:52.113007] Rank 0:  Loaded 300 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/rendered_text(cauldron)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/rendered_text(cauldron)extracted_images/
+[22:43:52.113037] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/iam(cauldron)_fix.json with first:3% sampling strategy
+[22:43:52.124058] Rank 0:  sampling_strategy=first, 0:170
+[22:43:52.124236] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/iam(cauldron)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/iam(cauldron)extracted_images/
+[22:43:52.124259] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/iam(cauldron)extracted_images/cauldron/iam/images/iam_00004808.png
+[22:43:52.124295] Rank 0:  Loaded 170 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/iam(cauldron)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/iam(cauldron)extracted_images/
+[22:43:52.124318] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/llavar_gpt4_20k.json with first:3% sampling strategy
+[22:43:52.269771] Rank 0:  sampling_strategy=first, 0:594
+[22:43:52.270456] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/llavar_gpt4_20k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/llavar_gpt4_20kextracted_images/
+[22:43:52.270483] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/llavar_gpt4_20kextracted_images/100000803014.jpg
+[22:43:52.270531] Rank 0:  Loaded 594 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/llavar_gpt4_20k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/llavar_gpt4_20kextracted_images/
+[22:43:52.270554] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/allava_instruct_vflan4v.json with first:3% sampling strategy
+[22:43:52.411639] Rank 0:  sampling_strategy=first, 0:600
+[22:43:52.412333] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/allava_instruct_vflan4v.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/allava_instruct_vflan4vextracted_images/
+[22:43:52.412363] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/allava_instruct_vflan4vextracted_images/allava_vflan_inst_100010.jpg
+[22:43:52.412412] Rank 0:  Loaded 600 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/allava_instruct_vflan4v.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/allava_instruct_vflan4vextracted_images/
+[22:43:52.412437] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/allava_instruct_laion4v.json with first:3% sampling strategy
+[22:43:52.950470] Rank 0:  sampling_strategy=first, 0:1500
+[22:43:52.951970] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/allava_instruct_laion4v.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/allava_instruct_laion4vextracted_images/
+[22:43:52.951998] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/allava_instruct_laion4vextracted_images/allava_laion_inst_100258476.jpg
+[22:43:52.952050] Rank 0:  Loaded 1500 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/allava_instruct_laion4v.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/allava_instruct_laion4vextracted_images/
+[22:43:52.952077] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4o.json with first:3% sampling strategy
+[22:43:54.804549] Rank 0:  sampling_strategy=first, 0:1719
+[22:43:54.806254] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4o.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4oextracted_images/
+[22:43:54.806285] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4oextracted_images/sharegpt4o_5.jpg
+[22:43:54.806334] Rank 0:  Loaded 1719 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4o.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4oextracted_images/
+[22:43:54.806385] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(coco).json with first:3% sampling strategy
+[22:43:55.184391] Rank 0:  sampling_strategy=first, 0:1501
+[22:43:55.185910] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(coco).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(coco)extracted_images/
+[22:43:55.185940] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(coco)extracted_images/000000000072.jpg
+[22:43:55.185991] Rank 0:  Loaded 1501 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(coco).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(coco)extracted_images/
+[22:43:55.186054] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(knowledge).json with first:3% sampling strategy
+[22:43:55.195521] Rank 0:  sampling_strategy=first, 0:60
+[22:43:55.195626] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(knowledge).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(knowledge)extracted_images/
+[22:43:55.195649] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(knowledge)extracted_images/alfred-sisley_route-to-versailles-1875.jpg
+[22:43:55.195689] Rank 0:  Loaded 60 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(knowledge).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(knowledge)extracted_images/
+[22:43:55.195710] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(llava).json with first:3% sampling strategy
+[22:43:55.432590] Rank 0:  sampling_strategy=first, 0:900
+[22:43:55.433504] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(llava).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(llava)extracted_images/
+[22:43:55.433536] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(llava)extracted_images/000114119.jpg
+[22:43:55.433580] Rank 0:  Loaded 900 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(llava).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(llava)extracted_images/
+[22:43:55.433607] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(sam).json with first:3% sampling strategy
+[22:43:55.500239] Rank 0:  sampling_strategy=first, 0:270
+[22:43:55.500554] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(sam).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(sam)extracted_images/
+[22:43:55.500578] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(sam)extracted_images/sa_10006.jpg
+[22:43:55.500629] Rank 0:  Loaded 270 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/sharegpt4v(sam).json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/sharegpt4v(sam)extracted_images/
+[22:43:55.500670] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/tallyqa(cauldron,llava_format)_fix.json with first:1% sampling strategy
+[22:43:56.179970] Rank 0:  sampling_strategy=first, 0:987
+[22:43:56.181003] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/tallyqa(cauldron,llava_format)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/tallyqa(cauldron,llava_format)extracted_images/
+[22:43:56.181030] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/tallyqa(cauldron,llava_format)extracted_images/cauldron/tallyqa/images/tallyqa_00004335.png
+[22:43:56.181079] Rank 0:  Loaded 987 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/tallyqa(cauldron,llava_format)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/tallyqa(cauldron,llava_format)extracted_images/
+[22:43:56.181104] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/st_vqa(cauldron,llava_format)_fix.json with first:3% sampling strategy
+[22:43:56.218455] Rank 0:  sampling_strategy=first, 0:518
+[22:43:56.219039] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/st_vqa(cauldron,llava_format)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/st_vqa(cauldron,llava_format)extracted_images/
+[22:43:56.219067] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-OneVision-Data/st_vqa(cauldron,llava_format)extracted_images/cauldron/st_vqa/images/st_vqa_00005271.png
+[22:43:56.219123] Rank 0:  Loaded 518 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/st_vqa(cauldron,llava_format)_fix.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-OneVision-Data/st_vqa(cauldron,llava_format)extracted_images/
+[22:43:56.219159] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/llava_next_raw_format_processed_738k.json with first:2% sampling strategy
+[22:44:06.357243] Rank 0:  sampling_strategy=first, 0:14772
+[22:44:06.372092] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/llava_next_raw_format_processed_738k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-NeXT-Data/llava_next_raw_format/
+[22:44:06.372129] Rank 0:  Checking: OpenGVLab/stage3/LLaVA-NeXT-Data/llava_next_raw_format/coco/train2017/000000033471.jpg
+[22:44:06.372181] Rank 0:  Loaded 14772 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/llava_next_raw_format_processed_738k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/LLaVA-NeXT-Data/llava_next_raw_format/
+[22:44:06.372291] Rank 0:  Loading OpenGVLab/stage3/M4-Instruct-Data/m4_instruct_annotations.json with first:3% sampling strategy
+[22:44:15.365653] Rank 0:  sampling_strategy=first, 0:18475
+[22:44:15.474819] Rank 0:  Check samples from OpenGVLab/stage3/M4-Instruct-Data/m4_instruct_annotations.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/M4-Instruct-Data/
+[22:44:15.474875] Rank 0:  Checking: OpenGVLab/stage3/M4-Instruct-Data/HQ-Edit/images/83425.jpg
+[22:44:15.474924] Rank 0:  Loaded 18475 samples from OpenGVLab/stage3/M4-Instruct-Data/m4_instruct_annotations.json, media_type=image, video_read_type=None, data_root=OpenGVLab/stage3/M4-Instruct-Data/
+[22:44:15.475175] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegemini_k400_223k.json with first:3% sampling strategy
+[22:44:16.784574] Rank 0:  sampling_strategy=first, 0:6659
+[22:44:16.791114] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegemini_k400_223k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/
+[22:44:16.791165] Rank 0:  Checking: OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/-9C2gOJcDl8.mp4
+[22:44:16.791222] Rank 0:  Loaded 6659 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegemini_k400_223k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/
+[22:44:16.791284] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_textvr-textvr-train_40k.json with first:3% sampling strategy
+[22:44:16.901709] Rank 0:  sampling_strategy=first, 0:1190
+[22:44:16.902934] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_textvr-textvr-train_40k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/textvr/
+[22:44:16.902966] Rank 0:  Checking: OpenGVLab/stage3/textvr/Sports/G7ll8RnSgvU_00300_00310.mp4
+[22:44:16.903018] Rank 0:  Loaded 1190 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_textvr-textvr-train_40k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/textvr/
+[22:44:16.903050] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/moviechat1k_caption-MovieChat-train_caption_1k.json with first:3% sampling strategy
+[22:44:16.905620] Rank 0:  sampling_strategy=first, 0:25
+[22:44:16.905687] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/moviechat1k_caption-MovieChat-train_caption_1k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/MovieChat-1K_train/raw_videos/
+[22:44:16.905709] Rank 0:  Checking: OpenGVLab/stage3/MovieChat-1K_train/raw_videos/S01E1-8.mp4
+[22:44:16.905757] Rank 0:  Loaded 25 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/moviechat1k_caption-MovieChat-train_caption_1k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/MovieChat-1K_train/raw_videos/
+[22:44:16.905780] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_favd-favd-train_10k.json with first:2% sampling strategy
+[22:44:16.935571] Rank 0:  sampling_strategy=first, 0:200
+[22:44:16.935817] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_favd-favd-train_10k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/favd/videos/train/
+[22:44:16.935840] Rank 0:  Checking: OpenGVLab/stage3/favd/videos/train/--FenyW2i_4_5000_10000.mp4
+[22:44:16.935886] Rank 0:  Loaded 200 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_favd-favd-train_10k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/favd/videos/train/
+[22:44:16.935909] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegptvideo_300k-sharegptvideo-train_300k_302k.json with first:2% sampling strategy
+[22:44:18.683799] Rank 0:  sampling_strategy=first, 0:6036
+[22:44:18.689981] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegptvideo_300k-sharegptvideo-train_300k_302k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/train_video_and_instruction/train_300k/
+[22:44:18.690032] Rank 0:  Checking: OpenGVLab/train_video_and_instruction/train_300k/v_--0edUL8zmA-Scene-001
+[22:44:18.690081] Rank 0:  Loaded 6036 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegptvideo_300k-sharegptvideo-train_300k_302k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/train_video_and_instruction/train_300k/
+[22:44:18.690142] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegpt4o-sharegpt4o_3k.json with first:3% sampling strategy
+[22:44:18.698147] Rank 0:  sampling_strategy=first, 0:64
+[22:44:18.698245] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegpt4o-sharegpt4o_3k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/ShareGPT-4o/pvideo/
+[22:44:18.698269] Rank 0:  Checking: OpenGVLab/stage3/ShareGPT-4o/pvideo/video_3827.mp4
+[22:44:18.698309] Rank 0:  Loaded 64 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegpt4o-sharegpt4o_3k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/ShareGPT-4o/pvideo/
+[22:44:18.698333] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tvqa-tvqa_123k.jsonl with first:3% sampling strategy
+[22:44:19.839077] Rank 0:  sampling_strategy=first, 0:3662
+[22:44:19.843795] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tvqa-tvqa_123k.jsonl, media_type=video, video_read_type=img, data_root=OpenGVLab/stage3/tvqa_data/frames_hq/merged/
+[22:44:19.843846] Rank 0:  Checking: OpenGVLab/stage3/tvqa_data/frames_hq/merged/grey_s03e20_seg02_clip_14
+[22:44:19.843897] Rank 0:  Loaded 3662 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tvqa-tvqa_123k.jsonl, media_type=video, video_read_type=img, data_root=OpenGVLab/stage3/tvqa_data/frames_hq/merged/
+[22:44:19.844027] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_transition_qa-tgif_transition_qa-train_53k.jsonl with first:2% sampling strategy
+[22:44:20.371652] Rank 0:  sampling_strategy=first, 0:1054
+[22:44:20.372786] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_transition_qa-tgif_transition_qa-train_53k.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:20.372817] Rank 0:  Checking: OpenGVLab/stage3/tgif/gifs/tumblr_nkgxdo19En1qf37ejo1_250.gif
+[22:44:20.372874] Rank 0:  Loaded 1054 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_transition_qa-tgif_transition_qa-train_53k.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:20.372902] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_clevrer_mc-clevrer_mc-train_43k_debug_43k.jsonl with first:3% sampling strategy
+[22:44:20.606435] Rank 0:  sampling_strategy=first, 0:1279
+[22:44:20.607796] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_clevrer_mc-clevrer_mc-train_43k_debug_43k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/clevrer/merged/
+[22:44:20.607826] Rank 0:  Checking: OpenGVLab/stage3/clevrer/merged/video_00000.mp4
+[22:44:20.607873] Rank 0:  Loaded 1279 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_clevrer_mc-clevrer_mc-train_43k_debug_43k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/clevrer/merged/
+[22:44:20.607902] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_clevrer_qa-clevrer_qa-train_mc_40k.jsonl with first:3% sampling strategy
+[22:44:21.090604] Rank 0:  sampling_strategy=first, 0:1200
+[22:44:21.091875] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_clevrer_qa-clevrer_qa-train_mc_40k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/clevrer/merged/
+[22:44:21.091905] Rank 0:  Checking: OpenGVLab/stage3/clevrer/merged/video_05028.mp4
+[22:44:21.091953] Rank 0:  Loaded 1200 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_clevrer_qa-clevrer_qa-train_mc_40k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/clevrer/merged/
+[22:44:21.091977] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/classification_ssv2-ssv2-train_40k.jsonl with first:2% sampling strategy
+[22:44:21.325413] Rank 0:  sampling_strategy=first, 0:800
+[22:44:21.326337] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/classification_ssv2-ssv2-train_40k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/ssv2/20bn-something-something-v2/
+[22:44:21.326367] Rank 0:  Checking: OpenGVLab/stage3/ssv2/20bn-something-something-v2/99418.webm
+[22:44:21.326415] Rank 0:  Loaded 800 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/classification_ssv2-ssv2-train_40k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/ssv2/20bn-something-something-v2/
+[22:44:21.326442] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_perception_train-mc_question_train_forchoice_8k.json with first:3% sampling strategy
+[22:44:21.347481] Rank 0:  sampling_strategy=first, 0:222
+[22:44:21.347729] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_perception_train-mc_question_train_forchoice_8k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/perception/videos/
+[22:44:21.347753] Rank 0:  Checking: OpenGVLab/stage3/perception/videos/video_9431.mp4
+[22:44:21.347794] Rank 0:  Loaded 222 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_perception_train-mc_question_train_forchoice_8k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/perception/videos/
+[22:44:21.347817] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_transition_qa_openend-openend_qa_annos-tgif_transition_qa_train_openend_53k.jsonl with first:2% sampling strategy
+[22:44:21.577605] Rank 0:  sampling_strategy=first, 0:1054
+[22:44:21.578735] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_transition_qa_openend-openend_qa_annos-tgif_transition_qa_train_openend_53k.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:21.578762] Rank 0:  Checking: OpenGVLab/stage3/tgif/gifs/tumblr_nkgxdo19En1qf37ejo1_250.gif
+[22:44:21.578830] Rank 0:  Loaded 1054 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_transition_qa_openend-openend_qa_annos-tgif_transition_qa_train_openend_53k.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:21.578859] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_frame_qa-tgif_frame_qa-train_40k.jsonl with first:2% sampling strategy
+[22:44:22.032869] Rank 0:  sampling_strategy=first, 0:783
+[22:44:22.033714] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_frame_qa-tgif_frame_qa-train_40k.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:22.033742] Rank 0:  Checking: OpenGVLab/stage3/tgif/gifs/tumblr_nb14prl56i1ti2ffgo1_500.gif
+[22:44:22.033794] Rank 0:  Loaded 783 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_frame_qa-tgif_frame_qa-train_40k.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:22.033819] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_count-openend_qa_train_openend_26839.jsonl with first:3% sampling strategy
+[22:44:22.134529] Rank 0:  sampling_strategy=first, 0:806
+[22:44:22.135392] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_count-openend_qa_train_openend_26839.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:22.135418] Rank 0:  Checking: OpenGVLab/stage3/tgif/gifs/tumblr_nqc2mbmU2J1uxhtnwo1_400.gif
+[22:44:22.135469] Rank 0:  Loaded 806 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_count-openend_qa_train_openend_26839.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:22.135495] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_action-openend_qa_train_openend_20471.jsonl with first:3% sampling strategy
+[22:44:22.212073] Rank 0:  sampling_strategy=first, 0:615
+[22:44:22.212738] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_action-openend_qa_train_openend_20471.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:22.212763] Rank 0:  Checking: OpenGVLab/stage3/tgif/gifs/tumblr_nqc2mbmU2J1uxhtnwo1_400.gif
+[22:44:22.212812] Rank 0:  Loaded 615 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_tgif_action-openend_qa_train_openend_20471.jsonl, media_type=video, video_read_type=gif, data_root=OpenGVLab/stage3/tgif/gifs/
+[22:44:22.212890] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_next_qa_oe-openend_qa_annos-next_qa_train_openend_35k.jsonl with first:3% sampling strategy
+[22:44:22.655343] Rank 0:  sampling_strategy=first, 0:1024
+[22:44:22.656399] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_next_qa_oe-openend_qa_annos-next_qa_train_openend_35k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/nextqa/NExTVideo/
+[22:44:22.656428] Rank 0:  Checking: OpenGVLab/stage3/nextqa/NExTVideo/1164/3238737531.mp4
+[22:44:22.656480] Rank 0:  Loaded 1024 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/reasoning_next_qa_oe-openend_qa_annos-next_qa_train_openend_35k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/nextqa/NExTVideo/
+[22:44:22.656508] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/moviechat1k_global-MovieChat-train_global_1k.jsonl with first:3% sampling strategy
+[22:44:22.665068] Rank 0:  sampling_strategy=first, 0:25
+[22:44:22.665141] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/moviechat1k_global-MovieChat-train_global_1k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/MovieChat-1K_train/raw_videos/
+[22:44:22.665171] Rank 0:  Checking: OpenGVLab/stage3/MovieChat-1K_train/raw_videos/OKJ-12.mp4
+[22:44:22.665211] Rank 0:  Loaded 25 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/moviechat1k_global-MovieChat-train_global_1k.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/MovieChat-1K_train/raw_videos/
+[22:44:22.665233] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_sharegptvideo_240k-sharegptvideo-train_240k_240k.json with first:2% sampling strategy
+[22:44:24.048144] Rank 0:  sampling_strategy=first, 0:4800
+[22:44:24.052653] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_sharegptvideo_240k-sharegptvideo-train_240k_240k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/train_video_and_instruction/train_300k/
+[22:44:24.052686] Rank 0:  Checking: OpenGVLab/train_video_and_instruction/train_300k/v_XNTy5ZTMqVU-Scene-011
+[22:44:24.052737] Rank 0:  Loaded 4800 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vqa_sharegptvideo_240k-sharegptvideo-train_240k_240k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/train_video_and_instruction/train_300k/
+[22:44:24.052770] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_oops-vidln-oops_train_11k.json with first:3% sampling strategy
+[22:44:24.088949] Rank 0:  sampling_strategy=first, 0:321
+[22:44:24.089519] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_oops-vidln-oops_train_11k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/oops/oops_dataset/oops_video/train/
+[22:44:24.089551] Rank 0:  Checking: OpenGVLab/stage3/oops/oops_dataset/oops_video/train/False Start! - Best Fails of the Week! (May 2018) _ FailArmy31.mp4
+[22:44:24.089604] Rank 0:  Loaded 321 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_oops-vidln-oops_train_11k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/oops/oops_dataset/oops_video/train/
+[22:44:24.089629] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_ovis-vidln-ovis_train_1k.json with first:3% sampling strategy
+[22:44:24.091016] Rank 0:  sampling_strategy=first, 0:19
+[22:44:24.091071] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_ovis-vidln-ovis_train_1k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/stage3/ovis/Images/train/train/c1a40349/
+[22:44:24.091091] Rank 0:  Checking: OpenGVLab/stage3/ovis/Images/train/train/c1a40349/c1a40349
+[22:44:24.091126] Rank 0:  Loaded 19 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_ovis-vidln-ovis_train_1k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/stage3/ovis/Images/train/train/c1a40349/
+[22:44:24.091146] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_uvo_sparse-vidln-uvo_sparse_train_6k.json with first:3% sampling strategy
+[22:44:24.106353] Rank 0:  sampling_strategy=first, 0:172
+[22:44:24.106540] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_uvo_sparse-vidln-uvo_sparse_train_6k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/uvo/uvo_videos_sparse/
+[22:44:24.106562] Rank 0:  Checking: OpenGVLab/stage3/uvo/uvo_videos_sparse/NF7UhM83Kls.mp4
+[22:44:24.106599] Rank 0:  Loaded 172 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_uvo_sparse-vidln-uvo_sparse_train_6k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/uvo/uvo_videos_sparse/
+[22:44:24.106621] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_uvo_dense-vidln-uvo_dense_train_1k.json with first:3% sampling strategy
+[22:44:24.107752] Rank 0:  sampling_strategy=first, 0:17
+[22:44:24.107800] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_uvo_dense-vidln-uvo_dense_train_1k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/uvo/uvo_videos_dense/
+[22:44:24.107828] Rank 0:  Checking: OpenGVLab/stage3/uvo/uvo_videos_dense/-GtH2Ue_7tw.mp4
+[22:44:24.107858] Rank 0:  Loaded 17 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_uvo_dense-vidln-uvo_dense_train_1k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/uvo/uvo_videos_dense/
+[22:44:24.107878] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vript_long_videos_en_20240911_fix.jsonl with first:2% sampling strategy
+[22:44:27.310748] Rank 0:  sampling_strategy=first, 0:8001
+[22:44:27.318590] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vript_long_videos_en_20240911_fix.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/
+[22:44:27.318620] Rank 0:  Checking: OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/3pmYCLKnDFQ-Scene-001.mp4
+[22:44:27.318674] Rank 0:  Loaded 8001 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vript_long_videos_en_20240911_fix.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/
+[22:44:27.318849] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vript_short_videos_en_20240911_fix.jsonl with first:3% sampling strategy
+[22:44:27.364816] Rank 0:  sampling_strategy=first, 0:264
+[22:44:27.365095] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vript_short_videos_en_20240911_fix.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/Vript/vript_short_videos_clips/videos/merged/
+[22:44:27.365121] Rank 0:  Checking: OpenGVLab/stage3/Vript/vript_short_videos_clips/videos/merged/6902084818440408321-Scene-001.mp4
+[22:44:27.365165] Rank 0:  Loaded 264 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/vript_short_videos_en_20240911_fix.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/Vript/vript_short_videos_clips/videos/merged/
+[22:44:27.365188] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/guiworld_en_20241029_fix.jsonl with first:3% sampling strategy
+[22:44:28.172780] Rank 0:  sampling_strategy=first, 0:2850
+[22:44:28.175729] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/guiworld_en_20241029_fix.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/GUI-World/
+[22:44:28.175766] Rank 0:  Checking: OpenGVLab/stage3/GUI-World/website/10.mp4
+[22:44:28.175816] Rank 0:  Loaded 2850 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/guiworld_en_20241029_fix.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/stage3/GUI-World/
+[22:44:28.175852] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_mc_v0_1_qa_processed_6901_with_duration.jsonl with first:3% sampling strategy
+[22:44:28.259011] Rank 0:  sampling_strategy=first, 0:207
+[22:44:28.259336] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_mc_v0_1_qa_processed_6901_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:28.259367] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_academic_v0_1/academic_source/activitynet/v_yEFS8M4pgMU.mp4
+[22:44:28.259418] Rank 0:  Loaded 207 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_mc_v0_1_qa_processed_6901_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:28.259443] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_oe_qa_processed_61_with_duration.jsonl with first:3% sampling strategy
+[22:44:28.259792] Rank 0:  sampling_strategy=first, 0:2
+[22:44:28.259826] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_oe_qa_processed_61_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:28.259846] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/1016/11049178966.mp4
+[22:44:28.259877] Rank 0:  Loaded 2 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_oe_qa_processed_61_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:28.259897] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_oe_v0_1_qa_processed_420200_with_duration.jsonl with first:3% sampling strategy
+[22:44:35.173679] Rank 0:  sampling_strategy=first, 0:12606
+[22:44:35.186965] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_oe_v0_1_qa_processed_420200_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:35.187001] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_8bqHXtRirm4.mp4
+[22:44:35.187056] Rank 0:  Loaded 12606 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_oe_v0_1_qa_processed_420200_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:35.187240] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_oe_v0_1_qa_processed_26302_with_duration.jsonl with first:3% sampling strategy
+[22:44:35.463295] Rank 0:  sampling_strategy=first, 0:790
+[22:44:35.464260] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_oe_v0_1_qa_processed_26302_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:35.464287] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_academic_v0_1/academic_source/activitynet/v_nw8MpBwL508.mp4
+[22:44:35.464338] Rank 0:  Loaded 790 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_oe_v0_1_qa_processed_26302_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:35.464454] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_mc_v0_1_qa_processed_39710_with_duration.jsonl with first:3% sampling strategy
+[22:44:35.980721] Rank 0:  sampling_strategy=first, 0:1191
+[22:44:35.982111] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_mc_v0_1_qa_processed_39710_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:35.982139] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb__nUy2Oaf27w.mp4
+[22:44:35.982190] Rank 0:  Loaded 1191 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_mc_v0_1_qa_processed_39710_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:35.982216] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_nextqa_oe_qa_processed_6843_with_duration.jsonl with first:3% sampling strategy
+[22:44:36.011174] Rank 0:  sampling_strategy=first, 0:206
+[22:44:36.011380] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_nextqa_oe_qa_processed_6843_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:36.011404] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1009/4177168857.mp4
+[22:44:36.011439] Rank 0:  Loaded 206 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_nextqa_oe_qa_processed_6843_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:36.011469] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_mc_v0_1_qa_processed_39967_with_duration.jsonl with first:3% sampling strategy
+[22:44:36.537191] Rank 0:  sampling_strategy=first, 0:1199
+[22:44:36.538545] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_mc_v0_1_qa_processed_39967_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:36.538574] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_MCYTTbFJhzY.mp4
+[22:44:36.538626] Rank 0:  Loaded 1199 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_mc_v0_1_qa_processed_39967_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:36.538653] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_v0_1_cap_processed_3124_with_duration.jsonl with first:3% sampling strategy
+[22:44:36.583295] Rank 0:  sampling_strategy=first, 0:94
+[22:44:36.583425] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_v0_1_cap_processed_3124_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:36.583449] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_academic_v0_1/academic_source/activitynet/v_YnvefOl6a7k.mp4
+[22:44:36.583488] Rank 0:  Loaded 94 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_v0_1_cap_processed_3124_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:36.583510] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_oe_v0_1_qa_processed_57924_with_duration.jsonl with first:3% sampling strategy
+[22:44:37.209366] Rank 0:  sampling_strategy=first, 0:1738
+[22:44:37.211397] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_oe_v0_1_qa_processed_57924_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:37.211426] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/Q04US.mp4
+[22:44:37.211479] Rank 0:  Loaded 1738 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_oe_v0_1_qa_processed_57924_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:37.211507] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_v0_1_cap_processed_24685_with_duration.jsonl with first:3% sampling strategy
+[22:44:37.663931] Rank 0:  sampling_strategy=first, 0:741
+[22:44:37.664813] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_v0_1_cap_processed_24685_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:37.664843] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_0oEz6UrT9Ro.mp4
+[22:44:37.664896] Rank 0:  Loaded 741 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_v0_1_cap_processed_24685_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:37.664921] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_mc_v0_1_qa_processed_39927_with_duration.jsonl with first:3% sampling strategy
+[22:44:38.519463] Rank 0:  sampling_strategy=first, 0:1198
+[22:44:38.520844] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_mc_v0_1_qa_processed_39927_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:38.520873] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_fYs8TtubjMU.mp4
+[22:44:38.520918] Rank 0:  Loaded 1198 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_mc_v0_1_qa_processed_39927_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:38.520943] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_activitynetqa_oe_qa_processed_2950_with_duration.jsonl with first:3% sampling strategy
+[22:44:38.532872] Rank 0:  sampling_strategy=first, 0:89
+[22:44:38.532989] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_activitynetqa_oe_qa_processed_2950_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:38.533011] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_yvTmIulkl7c.mp4
+[22:44:38.533047] Rank 0:  Loaded 89 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_activitynetqa_oe_qa_processed_2950_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:38.533068] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_nextqa_oe_qa_processed_4694_with_duration.jsonl with first:3% sampling strategy
+[22:44:38.552317] Rank 0:  sampling_strategy=first, 0:141
+[22:44:38.552494] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_nextqa_oe_qa_processed_4694_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:38.552516] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_nextqa/NextQA/NExTVideo/1164/3238737531.mp4
+[22:44:38.552554] Rank 0:  Loaded 141 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_nextqa_oe_qa_processed_4694_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:38.552575] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_oe_v0_1_qa_processed_110624_with_duration.jsonl with first:3% sampling strategy
+[22:44:40.231965] Rank 0:  sampling_strategy=first, 0:3319
+[22:44:40.235714] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_oe_v0_1_qa_processed_110624_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.235744] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_4V1vnSvwqvA.mp4
+[22:44:40.235795] Rank 0:  Loaded 3319 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_oe_v0_1_qa_processed_110624_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.235827] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_mc_v0_1_qa_processed_4241_with_duration.jsonl with first:3% sampling strategy
+[22:44:40.284491] Rank 0:  sampling_strategy=first, 0:128
+[22:44:40.284664] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_mc_v0_1_qa_processed_4241_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.284688] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_academic_v0_1/academic_source/activitynet/v_bpB0GiH6uDw.mp4
+[22:44:40.284728] Rank 0:  Loaded 128 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_mc_v0_1_qa_processed_4241_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.284761] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_mc_v0_1_qa_processed_39353_with_duration.jsonl with first:3% sampling strategy
+[22:44:40.810792] Rank 0:  sampling_strategy=first, 0:1181
+[22:44:40.812169] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_mc_v0_1_qa_processed_39353_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.812197] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_YVQwAEKZpaU.mp4
+[22:44:40.812249] Rank 0:  Loaded 1181 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_mc_v0_1_qa_processed_39353_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.812275] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_activitynetqa_oe_qa_processed_4530_with_duration.jsonl with first:3% sampling strategy
+[22:44:40.830704] Rank 0:  sampling_strategy=first, 0:136
+[22:44:40.830867] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_activitynetqa_oe_qa_processed_4530_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.830891] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_XQWebGbAjxU.mp4
+[22:44:40.830927] Rank 0:  Loaded 136 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_activitynetqa_oe_qa_processed_4530_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:40.830947] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_oe_v0_1_qa_processed_137645_with_duration.jsonl with first:3% sampling strategy
+[22:44:42.743518] Rank 0:  sampling_strategy=first, 0:4130
+[22:44:42.748144] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_oe_v0_1_qa_processed_137645_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:42.748175] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_0vLOylUefFk.mp4
+[22:44:42.748224] Rank 0:  Loaded 4130 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_oe_v0_1_qa_processed_137645_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:42.748423] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_mc_v0_1_qa_processed_20346_with_duration.jsonl with first:3% sampling strategy
+[22:44:43.011508] Rank 0:  sampling_strategy=first, 0:611
+[22:44:43.012312] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_mc_v0_1_qa_processed_20346_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.012340] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/W4C5O.mp4
+[22:44:43.012390] Rank 0:  Loaded 611 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_mc_v0_1_qa_processed_20346_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.012413] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_v0_1_cap_processed_19995_with_duration.jsonl with first:3% sampling strategy
+[22:44:43.616322] Rank 0:  sampling_strategy=first, 0:600
+[22:44:43.617047] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_v0_1_cap_processed_19995_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.617077] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_4V1vnSvwqvA.mp4
+[22:44:43.617127] Rank 0:  Loaded 600 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_youtube_v0_1_cap_processed_19995_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.617152] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_nextqa_mc_qa_processed_5496_with_duration.jsonl with first:3% sampling strategy
+[22:44:43.643556] Rank 0:  sampling_strategy=first, 0:165
+[22:44:43.643771] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_nextqa_mc_qa_processed_5496_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.643795] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_nextqa/NextQA/NExTVideo/1006/8968804598.mp4
+[22:44:43.643838] Rank 0:  Loaded 165 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_nextqa_mc_qa_processed_5496_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.643862] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_mc_v0_1_qa_processed_5753_with_duration.jsonl with first:3% sampling strategy
+[22:44:43.711835] Rank 0:  sampling_strategy=first, 0:173
+[22:44:43.712076] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_mc_v0_1_qa_processed_5753_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.712099] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/Charades/RW587.mp4
+[22:44:43.712144] Rank 0:  Loaded 173 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_mc_v0_1_qa_processed_5753_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:43.712165] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_oe_v0_1_qa_processed_141495_with_duration.jsonl with first:3% sampling strategy
+[22:44:45.754599] Rank 0:  sampling_strategy=first, 0:4244
+[22:44:45.759240] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_oe_v0_1_qa_processed_141495_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.759492] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_0oEz6UrT9Ro.mp4
+[22:44:45.759547] Rank 0:  Loaded 4244 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_oe_v0_1_qa_processed_141495_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.759583] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_nextqa_mc_qa_processed_4633_with_duration.jsonl with first:3% sampling strategy
+[22:44:45.780864] Rank 0:  sampling_strategy=first, 0:139
+[22:44:45.781018] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_nextqa_mc_qa_processed_4633_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.781042] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_nextqa/NextQA/NExTVideo/1122/7417682572.mp4
+[22:44:45.781077] Rank 0:  Loaded 139 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_nextqa_mc_qa_processed_4633_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.781103] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_activitynetqa_oe_qa_processed_7460_with_duration.jsonl with first:3% sampling strategy
+[22:44:45.811662] Rank 0:  sampling_strategy=first, 0:224
+[22:44:45.811887] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_activitynetqa_oe_qa_processed_7460_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.811910] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_activitynetqa/ActivityNet-QA/activitynet/train/v_Mzt-E6pxuUI.mp4
+[22:44:45.811945] Rank 0:  Loaded 224 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_activitynetqa_oe_qa_processed_7460_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.811966] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_mc_qa_processed_52_with_duration.jsonl with first:3% sampling strategy
+[22:44:45.812237] Rank 0:  sampling_strategy=first, 0:2
+[22:44:45.812272] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_mc_qa_processed_52_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.812293] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_nextqa/NextQA/NExTVideo/0075/12843838795.mp4
+[22:44:45.812323] Rank 0:  Loaded 2 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_mc_qa_processed_52_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.812342] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_activitynetqa_oe_qa_processed_8590_with_duration.jsonl with first:3% sampling strategy
+[22:44:45.848283] Rank 0:  sampling_strategy=first, 0:258
+[22:44:45.848545] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_activitynetqa_oe_qa_processed_8590_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.848568] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_okC18bPTils.mkv
+[22:44:45.848605] Rank 0:  Loaded 258 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_activitynetqa_oe_qa_processed_8590_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.848627] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_v0_1_cap_processed_4627_with_duration.jsonl with first:3% sampling strategy
+[22:44:45.897532] Rank 0:  sampling_strategy=first, 0:139
+[22:44:45.897700] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_v0_1_cap_processed_4627_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.897723] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_academic_v0_1/academic_source/activitynet/v_nw8MpBwL508.mp4
+[22:44:45.897760] Rank 0:  Loaded 139 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_academic_v0_1_cap_processed_4627_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.897782] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_v0_1_cap_processed_10514_with_duration.jsonl with first:3% sampling strategy
+[22:44:45.980664] Rank 0:  sampling_strategy=first, 0:316
+[22:44:45.981040] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_v0_1_cap_processed_10514_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.981072] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/Q04US.mp4
+[22:44:45.981114] Rank 0:  Loaded 316 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_academic_v0_1_cap_processed_10514_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:45.981137] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_v0_1_cap_processed_24234_with_duration.jsonl with first:3% sampling strategy
+[22:44:46.337512] Rank 0:  sampling_strategy=first, 0:727
+[22:44:46.338425] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_v0_1_cap_processed_24234_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:46.338456] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_0vLOylUefFk.mp4
+[22:44:46.338504] Rank 0:  Loaded 727 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_1_2_m_youtube_v0_1_cap_processed_24234_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:46.338529] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_nextqa_mc_qa_processed_6843_with_duration.jsonl with first:3% sampling strategy
+[22:44:46.371099] Rank 0:  sampling_strategy=first, 0:206
+[22:44:46.371332] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_nextqa_mc_qa_processed_6843_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:46.371356] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/0071/2617504308.mp4
+[22:44:46.371398] Rank 0:  Loaded 206 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_nextqa_mc_qa_processed_6843_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:46.371422] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_nextqa_oe_qa_processed_5492_with_duration.jsonl with first:3% sampling strategy
+[22:44:46.393974] Rank 0:  sampling_strategy=first, 0:165
+[22:44:46.394150] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_nextqa_oe_qa_processed_5492_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:46.394172] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_nextqa/NextQA/NExTVideo/1102/8903248754.mp4
+[22:44:46.394208] Rank 0:  Loaded 165 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_nextqa_oe_qa_processed_5492_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:46.394228] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_oe_v0_1_qa_processed_48468_with_duration.jsonl with first:3% sampling strategy
+[22:44:47.270578] Rank 0:  sampling_strategy=first, 0:1455
+[22:44:47.272258] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_oe_v0_1_qa_processed_48468_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:47.272286] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/Charades/028CE.mp4
+[22:44:47.272334] Rank 0:  Loaded 1455 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_oe_v0_1_qa_processed_48468_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:47.272365] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_v0_1_cap_processed_79346_with_duration.jsonl with first:3% sampling strategy
+[22:44:47.961430] Rank 0:  sampling_strategy=first, 0:2381
+[22:44:47.964037] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_v0_1_cap_processed_79346_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:47.964074] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_8bqHXtRirm4.mp4
+[22:44:47.964126] Rank 0:  Loaded 2381 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_youtube_v0_1_cap_processed_79346_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:47.964161] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_oe_v0_1_qa_processed_18134_with_duration.jsonl with first:3% sampling strategy
+[22:44:48.526664] Rank 0:  sampling_strategy=first, 0:544
+[22:44:48.527376] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_oe_v0_1_qa_processed_18134_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.527405] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/2_3_m_academic_v0_1/academic_source/activitynet/v_YnvefOl6a7k.mp4
+[22:44:48.527458] Rank 0:  Loaded 544 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_oe_v0_1_qa_processed_18134_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.527482] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_perceptiontest_mc_qa_processed_1785_with_duration.jsonl with first:3% sampling strategy
+[22:44:48.542222] Rank 0:  sampling_strategy=first, 0:54
+[22:44:48.542312] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_perceptiontest_mc_qa_processed_1785_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.542334] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_perceptiontest/perception_test/videos/video_2779.mp4
+[22:44:48.542367] Rank 0:  Loaded 54 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_perceptiontest_mc_qa_processed_1785_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.542388] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_perceptiontest_mc_qa_processed_618_with_duration.jsonl with first:3% sampling strategy
+[22:44:48.546664] Rank 0:  sampling_strategy=first, 0:19
+[22:44:48.546717] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_perceptiontest_mc_qa_processed_618_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.546738] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/30_60_s_perceptiontest/perception_test/videos/video_9431.mp4
+[22:44:48.546771] Rank 0:  Loaded 19 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_30_60_s_perceptiontest_mc_qa_processed_618_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.546791] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_v0_1_cap_processed_11985_with_duration.jsonl with first:3% sampling strategy
+[22:44:48.630068] Rank 0:  sampling_strategy=first, 0:360
+[22:44:48.630504] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_v0_1_cap_processed_11985_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.630536] Rank 0:  Checking: OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/Charades/028CE.mp4
+[22:44:48.630581] Rank 0:  Loaded 360 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_0_30_s_academic_v0_1_cap_processed_11985_with_duration.jsonl, media_type=video, video_read_type=None, data_root=OpenGVLab/LLaVA-Video-178K/
+[22:44:48.630604] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventunderstanding-longvideo_annos-htstep_eventunderstanding_1k_1k.json with first:3% sampling strategy
+[22:44:48.632120] Rank 0:  sampling_strategy=first, 0:30
+[22:44:48.632185] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventunderstanding-longvideo_annos-htstep_eventunderstanding_1k_1k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventunderstanding_1k/
+[22:44:48.632205] Rank 0:  Checking: OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventunderstanding_1k/ZOrO3F91Nrw
+[22:44:48.632238] Rank 0:  Loaded 30 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventunderstanding-longvideo_annos-htstep_eventunderstanding_1k_1k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventunderstanding_1k/
+[22:44:48.632259] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventcount-longvideo_annos-htstep_eventcount_2k_2k.json with first:3% sampling strategy
+[22:44:48.634497] Rank 0:  sampling_strategy=first, 0:58
+[22:44:48.634577] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventcount-longvideo_annos-htstep_eventcount_2k_2k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventcount_2k/
+[22:44:48.634597] Rank 0:  Checking: OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventcount_2k/XEPPqSvbkWY
+[22:44:48.634627] Rank 0:  Loaded 58 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventcount-longvideo_annos-htstep_eventcount_2k_2k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventcount_2k/
+[22:44:48.634648] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventrelationship-longvideo_annos-htstep_eventrelationship_1k_1k.json with first:3% sampling strategy
+[22:44:48.635943] Rank 0:  sampling_strategy=first, 0:29
+[22:44:48.636002] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventrelationship-longvideo_annos-htstep_eventrelationship_1k_1k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventrelationship_1k/
+[22:44:48.636023] Rank 0:  Checking: OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventrelationship_1k/zH5OXlyLm0Y
+[22:44:48.636054] Rank 0:  Loaded 29 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/htstep_eventrelationship-longvideo_annos-htstep_eventrelationship_1k_1k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/htstep_eventrelationship_1k/
+[22:44:48.636075] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/ego4dhcap_eventunderstanding-longvideo_annos-ego4dhcap_eventunderstanding_2k_2k.json with all[] sampling strategy
+[22:44:48.640746] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/ego4dhcap_eventunderstanding-longvideo_annos-ego4dhcap_eventunderstanding_2k_2k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/ego4dhcap_eventunderstanding_2k/
+[22:44:48.640783] Rank 0:  Checking: OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/ego4dhcap_eventunderstanding_2k/full_scale/5cc22d56-fea7-434d-b6e6-ed9384d0e29c
+[22:44:48.640821] Rank 0:  Loaded 2000 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/ego4dhcap_eventunderstanding-longvideo_annos-ego4dhcap_eventunderstanding_2k_2k.json, media_type=video, video_read_type=img, data_root=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/ego4dhcap_eventunderstanding_2k/
+[22:44:48.640858] Rank 0:  Loaded 130916 samples from OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/ego4dhcap_eventunderstanding_2k/full_scale/5cc22d56-fea7-434d-b6e6-ed9384d0e29c
+[22:44:48.640878] Rank 0:  Formatting inputs...Skip in lazy mode
+[22:44:48.642866] Rank 0:  Setting NCCL timeout to INF to avoid running errors.
+[22:44:48.680091] Rank 0:  model_config after before train: Qwen2Config {
+  "_name_or_path": "/home/ec2-user/workspace/VideoChat-Flash-forked/llava-train_videochat/checkpoints/stage2-visual_pretraining/stage2-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage2_short_pretrain_iv6m_small.yaml_20250309_173347",
+  "architectures": [
+    "LlavaQwenForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "frame_aspect_ratio": "square",
+  "frame_grid_pinpoints": null,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "image_aspect_ratio": "square",
+  "image_crop_resolution": null,
+  "image_grid_pinpoints": null,
+  "image_split_resolution": null,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_num_pixels": 14745600000,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_hidden_size": 1024,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 8,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 8,
+  "mm_projector_lr": null,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "mm_tunable_parts": "mm_vision_tower,mm_mlp_adapter,mm_language_model",
+  "mm_use_im_patch_token": false,
+  "mm_use_im_start_end": false,
+  "mm_vision_select_feature": "patch",
+  "mm_vision_select_layer": -2,
+  "mm_vision_tower": "umt-hd-large",
+  "mm_vision_tower_lr": 2e-06,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "tokenizer_model_max_length": 32768,
+  "tokenizer_padding_side": "right",
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.0.dev0",
+  "use_cache": false,
+  "use_mm_proj": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vision_tower_pretrained": null,
+  "vocab_size": 151936
+}
+
+[22:45:06.253597] video_file=OpenGVLab/stage3/tvqa_data/frames_hq/merged/grey_s03e13_seg02_clip_12, image.shape=torch.Size([16, 3, 448, 448])
+[22:45:07.169625] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/2SYBS.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:07.242709] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_I_do4E44mAs.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:07.525905] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_CcX-ehh1DcQ.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:07.853875] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_6ez_q18ASJo.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:08.712494] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_zm8QlUhDfGI.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:09.333558] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/hdvila/-qHwRwX6UzE.mp4, image.shape=torch.Size([104, 3, 448, 448])
+[22:45:09.797400] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_0KwpUWKAf6Q.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:11.283835] video_file=OpenGVLab/stage3/tvqa_data/frames_hq/merged/friends_s06e19_seg02_clip_05, image.shape=torch.Size([8, 3, 448, 448])
+[22:45:11.611279] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/073BMGVWan0-Scene-140.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:12.719311] Input shape: torch.Size([1, 3398, 1536])
+[22:45:13.381113] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_-h1gXDQThKI.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:13.652208] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_93JH9QakflQ.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:14.875211] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_academic_v0_1/academic_source/activitynet/v_b3mJ5rPzDv8.mp4, image.shape=torch.Size([144, 3, 448, 448])
+[22:45:15.960357] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_BrAJLMyn01E.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:16.084180] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_rWoWwKM3iSc.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:16.608488] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_NzpqNR2xMHU.mp4, image.shape=torch.Size([112, 3, 448, 448])
+[22:45:16.972726] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/1_D9aj4MXgo-Scene-035.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:18.138170] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_EqlsPou3NBU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:18.486020] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_lYQRew9ObvY.mp4, image.shape=torch.Size([128, 3, 448, 448])
+[22:45:18.631992] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/-JYL0hw19dA-Scene-001.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:18.871890] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Bo3Ap17-Rms.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:19.166550] video_file=OpenGVLab/stage3/tvqa_data/frames_hq/merged/friends_s07e18_seg02_clip_09, image.shape=torch.Size([8, 3, 448, 448])
+[22:45:20.115024] video_file=OpenGVLab/stage3/clevrer/merged/video_02259.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:20.227783] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_rvH7uhJhhdY.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:20.625054] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_ogGFO5Iqmko.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:20.738063] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_hPOtGLv1GzM-Scene-007, image.shape=torch.Size([8, 3, 448, 448])
+[22:45:21.936744] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_F8oq4ABUkLc.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:22.330367] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0w8U1C-6qFw.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:22.653746] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_8gSLSQ5FoDI.mp4, image.shape=torch.Size([168, 3, 448, 448])
+[22:45:23.145869] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Kd1MHZZgn1g.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:24.012708] video_file=OpenGVLab/stage3/GUI-World/android/1063.mp4, image.shape=torch.Size([8, 3, 448, 448])
+[22:45:24.307285] Input shape: torch.Size([1, 1419, 1536])
+[22:45:24.354524] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/2yUDpL6kpbk-Scene-112.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:25.008383] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/youcook2/303/GnbcTbVhG10/split_4.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:25.794420] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_AGWMXjLGCLg.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:25.902555] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_KvBSF2zhIyU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:26.585452] video_file=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/ego4dhcap_eventunderstanding_2k/full_scale/ed9cf015-7ddc-475d-88a5-8c901750f240, image.shape=torch.Size([192, 3, 448, 448])
+[22:45:27.128576] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_0Qed9-9yp9Q-Scene-006, image.shape=torch.Size([24, 3, 448, 448])
+[22:45:27.930357] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/youcook2/306/H4-p87JS-yA/split_4.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:28.138099] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_oSW8s1C1Mhc.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:28.484039] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Tf-ktfAjWqg.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:29.806657] Input shape: torch.Size([1, 1294, 1536])
+[22:45:30.696202] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_nmJI0mI-NZQ.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:31.012257] video_file=OpenGVLab/stage3/nextqa/NExTVideo/1130/9076493788.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:32.153531] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/MI0ZQ.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:33.423213] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_P1FGa_7wq-g.mp4, image.shape=torch.Size([152, 3, 448, 448])
+[22:45:33.518211] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_wBOsvpbTmAc.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:33.829378] Input shape: torch.Size([1, 1269, 1536])
+[22:45:33.910463] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/1lQCOjna438-Scene-007.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:34.302589] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/ytb_M3Qct_F4uwQ, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:34.425237] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/-56mkeU3eBs.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:35.071049] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_vWMd5I3dAb4.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:35.549985] video_file=OpenGVLab/stage3/tvqa_data/frames_hq/merged/friends_s02e01_seg02_clip_07, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:35.920330] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_UFFyDZvejpY.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:36.264400] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_0p3JN4KJsUs-Scene-005, image.shape=torch.Size([32, 3, 448, 448])
+[22:45:36.738999] video_file=OpenGVLab/stage3/tgif/gifs/tumblr_na6wjf4Cyw1tjrq8uo1_250.gif, image.shape=torch.Size([40, 3, 448, 448])
+[22:45:38.033536] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_vIvFP8BtFoc.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:40.622980] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_mYYQJhkqxRU.mp4, image.shape=torch.Size([120, 3, 448, 448])
+[22:45:41.426659] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_SN7CLg2LixY.mp4, image.shape=torch.Size([104, 3, 448, 448])
+[22:45:41.520832] Input shape: torch.Size([1, 473, 1536])
+[22:45:48.052294] Input shape: torch.Size([1, 1221, 1536])
+[22:45:51.464671] Input shape: torch.Size([1, 871, 1536])
+[22:45:52.225319] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0XKR4zE_cdQ.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:45:59.150273] Input shape: torch.Size([1, 1130, 1536])
+{'loss': 1.1625, 'grad_norm': 9.767145156860352, 'learning_rate': 8.130081300813009e-08, 'epoch': 0.0}
+[22:46:07.016083] Input shape: torch.Size([1, 3874, 1536])
+[22:46:07.212922] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Kpu27QL3ruo.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:12.028049] Input shape: torch.Size([1, 483, 1536])
+[22:46:15.957671] Input shape: torch.Size([1, 1385, 1536])
+[22:46:16.615908] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_1KZsQm2BzvA.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:20.648997] Input shape: torch.Size([1, 2139, 1536])
+[22:46:20.727157] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_ZY0Opps42qE.mp4, image.shape=torch.Size([160, 3, 448, 448])
+[22:46:20.776923] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_4w9iFa0M-FU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:25.111997] Input shape: torch.Size([1, 359, 1536])
+[22:46:25.830884] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0EeS5Orv6Yo.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:29.516987] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/-pZSoDDD44s.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:29.937565] Input shape: torch.Size([1, 2550, 1536])
+[22:46:35.160159] Input shape: torch.Size([1, 1221, 1536])
+[22:46:35.481008] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0iirJIky7G8.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:38.252948] Input shape: torch.Size([1, 871, 1536])
+[22:46:42.431300] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_yZCVPEcYNAA.mp4, image.shape=torch.Size([88, 3, 448, 448])
+{'loss': 1.2297, 'grad_norm': 8.624028205871582, 'learning_rate': 1.6260162601626018e-07, 'epoch': 0.0}
+[22:46:44.561393] Input shape: torch.Size([1, 2830, 1536])
+[22:46:44.644271] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/L42OQ.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:48.799590] Input shape: torch.Size([1, 440, 1536])
+[22:46:52.737544] Input shape: torch.Size([1, 1302, 1536])
+[22:46:53.832785] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/-tZaqcLasFs-Scene-037.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:46:56.278630] Input shape: torch.Size([1, 1240, 1536])
+[22:47:01.912567] Input shape: torch.Size([1, 266, 1536])
+[22:47:05.915713] Input shape: torch.Size([1, 1166, 1536])
+[22:47:09.027409] Input shape: torch.Size([1, 871, 1536])
+[22:47:12.463060] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_aM_vlBycj9I.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:47:12.503539] Input shape: torch.Size([1, 3157, 1536])
+{'loss': 1.3986, 'grad_norm': 7.69823694229126, 'learning_rate': 2.439024390243903e-07, 'epoch': 0.0}
+[22:47:20.257708] Input shape: torch.Size([1, 664, 1536])
+[22:47:24.788348] Input shape: torch.Size([1, 1419, 1536])
+[22:47:27.891566] Input shape: torch.Size([1, 255, 1536])
+[22:47:29.131304] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/1TbFYpItCHU-Scene-015.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:47:32.048102] Input shape: torch.Size([1, 262, 1536])
+[22:47:33.033658] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/ytb__rNWegNqyhY, image.shape=torch.Size([64, 3, 448, 448])
+[22:47:37.821634] Input shape: torch.Size([1, 1232, 1536])
+[22:47:38.634671] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/youcook2/104/xHlBWc-7Kwo/split_3.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:47:44.460381] Input shape: torch.Size([1, 513, 1536])
+[22:47:47.879444] Input shape: torch.Size([1, 871, 1536])
+[22:47:48.063247] video_file=OpenGVLab/stage3/tgif/gifs/tumblr_n8xk3uXXdI1qh67ano1_400.gif, image.shape=torch.Size([24, 3, 448, 448])
+[22:47:54.422677] Input shape: torch.Size([1, 1130, 1536])
+{'loss': 1.3294, 'grad_norm': 11.358108520507812, 'learning_rate': 3.2520325203252037e-07, 'epoch': 0.0}
+[22:47:59.810036] Input shape: torch.Size([1, 1681, 1536])
+[22:48:00.718970] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_fYs8TtubjMU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:03.465434] Input shape: torch.Size([1, 1335, 1536])
+[22:48:04.111969] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_m_Cjf-EiVRI.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:06.866137] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_5-vAXCUN8X0-Scene-005, image.shape=torch.Size([16, 3, 448, 448])
+[22:48:07.196849] Input shape: torch.Size([1, 1285, 1536])
+[22:48:10.754924] Input shape: torch.Size([1, 1268, 1536])
+[22:48:11.102568] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_1IXO-eKQn6s.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:15.374943] Input shape: torch.Size([1, 1257, 1536])
+[22:48:18.692216] video_file=OpenGVLab/stage3/tgif/gifs/tumblr_nqcz13mEOi1tkh1s8o1_250.gif, image.shape=torch.Size([32, 3, 448, 448])
+[22:48:18.854995] Input shape: torch.Size([1, 1239, 1536])
+[22:48:22.086538] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_5P-Xs2v6lis-Scene-008, image.shape=torch.Size([16, 3, 448, 448])
+[22:48:22.431196] Input shape: torch.Size([1, 1218, 1536])
+[22:48:25.572902] Input shape: torch.Size([1, 871, 1536])
+[22:48:26.823005] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_m2pqT6yAG-c.mp4, image.shape=torch.Size([64, 3, 448, 448])
+{'loss': 1.189, 'grad_norm': 8.828584671020508, 'learning_rate': 4.0650406504065046e-07, 'epoch': 0.0}
+[22:48:30.960585] Input shape: torch.Size([1, 512, 1536])
+[22:48:31.870863] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Jq4J8RMq6Vo.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:34.594317] Input shape: torch.Size([1, 320, 1536])
+[22:48:35.986675] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/-aX9UeNPi6o-Scene-018.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:38.146411] Input shape: torch.Size([1, 305, 1536])
+[22:48:38.901073] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/Charades/T3L2A.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:43.662819] Input shape: torch.Size([1, 1227, 1536])
+[22:48:44.092251] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_03NOxP7_nrM.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:48.005403] Input shape: torch.Size([1, 1249, 1536])
+[22:48:48.215752] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0JVadT-welw.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:48:53.989670] Input shape: torch.Size([1, 1221, 1536])
+[22:48:58.426449] Input shape: torch.Size([1, 250, 1536])
+[22:48:59.246347] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_nextqa/NextQA/NExTVideo/1005/2624191950.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:49:03.669756] Input shape: torch.Size([1, 1118, 1536])
+[22:49:06.998066] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_4YWjw67OPZ4.mp4, image.shape=torch.Size([176, 3, 448, 448])
+{'loss': 1.1678, 'grad_norm': 10.770869255065918, 'learning_rate': 4.878048780487805e-07, 'epoch': 0.0}
+[22:49:09.039785] Input shape: torch.Size([1, 1474, 1536])
+[22:49:09.580661] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/C1QDS.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:49:14.098717] Input shape: torch.Size([1, 1374, 1536])
+[22:49:14.979109] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/01MEOTq51Rw-Scene-016.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:49:18.303804] Input shape: torch.Size([1, 399, 1536])
+[22:49:19.430768] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/20OslSEoWG4-Scene-041.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:49:24.332851] Input shape: torch.Size([1, 1247, 1536])
+[22:49:29.502775] Input shape: torch.Size([1, 1254, 1536])
+[22:49:29.916440] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/a4904a641b82a1495e1b661606c89018, image.shape=torch.Size([64, 3, 448, 448])
+[22:49:32.534507] Input shape: torch.Size([1, 206, 1536])
+[22:49:33.962276] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_UMvwpMY3eu0.mp4, image.shape=torch.Size([144, 3, 448, 448])
+[22:49:36.053499] Input shape: torch.Size([1, 195, 1536])
+[22:49:36.760989] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0tavQ-XC7s0.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:49:40.645554] Input shape: torch.Size([1, 2544, 1536])
+{'loss': 1.1697, 'grad_norm': 9.19133472442627, 'learning_rate': 5.691056910569106e-07, 'epoch': 0.0}
+[22:49:47.446807] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_3TNDCTlLlGk-Scene-007, image.shape=torch.Size([8, 3, 448, 448])
+[22:49:47.843880] Input shape: torch.Size([1, 1516, 1536])
+[22:49:50.904574] video_file=OpenGVLab/stage3/ssv2/20bn-something-something-v2/156228.webm, image.shape=torch.Size([32, 3, 448, 448])
+[22:49:51.104879] Input shape: torch.Size([1, 1397, 1536])
+[22:49:57.734144] Input shape: torch.Size([1, 1305, 1536])
+[22:50:00.896510] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_UTX9YsMywks.mp4, image.shape=torch.Size([80, 3, 448, 448])
+[22:50:00.928702] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_1tEJRzqqalM-Scene-004, image.shape=torch.Size([8, 3, 448, 448])
+[22:50:01.322259] Input shape: torch.Size([1, 1247, 1536])
+[22:50:06.216788] Input shape: torch.Size([1, 316, 1536])
+[22:50:07.389026] video_file=OpenGVLab/stage3/GUI-World/website/1101.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:50:10.103997] Input shape: torch.Size([1, 1148, 1536])
+[22:50:13.171067] Input shape: torch.Size([1, 871, 1536])
+[22:50:13.336347] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_gYvYh9aMohY-Scene-002, image.shape=torch.Size([24, 3, 448, 448])
+[22:50:16.634561] Input shape: torch.Size([1, 206, 1536])
+{'loss': 1.1512, 'grad_norm': 8.517523765563965, 'learning_rate': 6.504065040650407e-07, 'epoch': 0.0}
+[22:50:25.704233] Input shape: torch.Size([1, 620, 1536])
+[22:50:27.670781] Input shape: torch.Size([1, 1456, 1536])
+[22:50:28.168934] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_PtKVIsUO5q8.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:50:33.180194] Input shape: torch.Size([1, 330, 1536])
+[22:50:34.785382] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/-n0yFO4LFhY-Scene-034.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:50:37.211283] Input shape: torch.Size([1, 1267, 1536])
+[22:50:37.673959] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_b_CmJfEvPYA.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:50:40.518562] Input shape: torch.Size([1, 681, 1536])
+[22:50:41.976404] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_qaXl9vNhtPk.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:50:44.307074] Input shape: torch.Size([1, 1151, 1536])
+[22:50:47.648308] video_file=OpenGVLab/stage3/GUI-World/website/1645.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:50:50.937809] Input shape: torch.Size([1, 871, 1536])
+[22:50:51.527946] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0eXyQUqHepI.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:50:54.775159] Input shape: torch.Size([1, 755, 1536])
+{'loss': 0.9967, 'grad_norm': 8.133676528930664, 'learning_rate': 7.317073170731707e-07, 'epoch': 0.0}
+[22:51:01.005591] Input shape: torch.Size([1, 1847, 1536])
+[22:51:04.568347] Input shape: torch.Size([1, 2038, 1536])
+[22:51:10.095200] Input shape: torch.Size([1, 1276, 1536])
+[22:51:11.264606] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_4Pw0YM9JbVs.mp4, image.shape=torch.Size([160, 3, 448, 448])
+[22:51:11.398560] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/0su0KrBtP2E-Scene-034.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:51:14.045758] Input shape: torch.Size([1, 2163, 1536])
+[22:51:16.220511] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_l1aURCJ8KAA.mp4, image.shape=torch.Size([72, 3, 448, 448])
+[22:51:18.750983] Input shape: torch.Size([1, 1251, 1536])
+[22:51:18.972142] video_file=OpenGVLab/stage3/GUI-World/android/742.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:51:21.872245] Input shape: torch.Size([1, 243, 1536])
+[22:51:25.466761] Input shape: torch.Size([1, 871, 1536])
+[22:51:25.472118] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_ggDfJLB8jTk-Scene-005, image.shape=torch.Size([8, 3, 448, 448])
+[22:51:29.675084] Input shape: torch.Size([1, 1121, 1536])
+{'loss': 1.2086, 'grad_norm': 10.85810661315918, 'learning_rate': 8.130081300813009e-07, 'epoch': 0.0}
+[22:51:36.145813] Input shape: torch.Size([1, 696, 1536])
+[22:51:39.847488] Input shape: torch.Size([1, 1500, 1536])
+[22:51:40.318903] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_03NOxP7_nrM.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:51:43.776692] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/XFRYR.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:51:44.068855] Input shape: torch.Size([1, 2814, 1536])
+[22:51:49.516365] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_academic_v0_1/academic_source/youcook2/110/k7EVFW1nCNI/split_0.mp4, image.shape=torch.Size([168, 3, 448, 448])
+[22:51:49.566963] Input shape: torch.Size([1, 1267, 1536])
+[22:51:50.527983] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_y5w12phL1Fg.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:51:53.110678] Input shape: torch.Size([1, 1251, 1536])
+[22:51:53.410026] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/-ewq6kXif1k.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:51:56.608601] Input shape: torch.Size([1, 1157, 1536])
+[22:51:59.834705] video_file=OpenGVLab/stage3/tgif/gifs/tumblr_nh9ot5DzA01u644k9o1_500.gif, image.shape=torch.Size([16, 3, 448, 448])
+[22:52:00.140384] Input shape: torch.Size([1, 1146, 1536])
+[22:52:03.660764] Input shape: torch.Size([1, 1121, 1536])
+[22:52:04.955046] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_iPUQoFsU9aM.mp4, image.shape=torch.Size([64, 3, 448, 448])
+{'loss': 1.2271, 'grad_norm': 6.767294883728027, 'learning_rate': 8.94308943089431e-07, 'epoch': 0.0}
+[22:52:12.799869] Input shape: torch.Size([1, 2435, 1536])
+[22:52:13.099605] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_r_3Vs4wh9oI.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:52:16.571571] Input shape: torch.Size([1, 1383, 1536])
+[22:52:18.225762] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_academic_v0_1/academic_source/activitynet/v_iJWmjVjBNzE.mp4, image.shape=torch.Size([88, 3, 448, 448])
+[22:52:19.657716] Input shape: torch.Size([1, 409, 1536])
+[22:52:21.479940] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/-FOfmQ_HbHQ-Scene-008.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:52:23.595394] Input shape: torch.Size([1, 1236, 1536])
+[22:52:26.667329] Input shape: torch.Size([1, 266, 1536])
+[22:52:28.073450] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_bGxKnRjO6vY.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:52:30.151832] Input shape: torch.Size([1, 180, 1536])
+[22:52:33.605479] Input shape: torch.Size([1, 153, 1536])
+[22:52:34.299552] video_file=OpenGVLab/stage3/clevrer/merged/video_09811.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:52:37.103056] Input shape: torch.Size([1, 108, 1536])
+[22:52:37.937960] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_fWZtMQ4FIVE.mp4, image.shape=torch.Size([64, 3, 448, 448])
+{'loss': 1.381, 'grad_norm': 7.5387372970581055, 'learning_rate': 9.75609756097561e-07, 'epoch': 0.0}
+[22:52:45.025527] Input shape: torch.Size([1, 1809, 1536])
+[22:52:47.814423] Input shape: torch.Size([1, 486, 1536])
+[22:52:48.451716] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_IBAuT8qyFBI.mp4, image.shape=torch.Size([104, 3, 448, 448])
+[22:52:48.678463] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_OUbhgGyRu0E.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:52:54.427214] Input shape: torch.Size([1, 348, 1536])
+[22:52:56.890541] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/youcook2/127/DErbTrN8v1M/split_3.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:52:58.396763] Input shape: torch.Size([1, 1259, 1536])
+[22:53:01.682606] video_file=OpenGVLab/stage3/GUI-World/website/1519.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:03.896999] Input shape: torch.Size([1, 1271, 1536])
+[22:53:08.104568] Input shape: torch.Size([1, 1195, 1536])
+[22:53:08.342979] video_file=OpenGVLab/stage3/clevrer/merged/video_00208.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:12.354417] Input shape: torch.Size([1, 871, 1536])
+[22:53:12.727813] video_file=OpenGVLab/stage3/tgif/gifs/tumblr_now1mhlVG41tdddpgo1_250.gif, image.shape=torch.Size([40, 3, 448, 448])
+[22:53:15.958758] Input shape: torch.Size([1, 464, 1536])
+{'loss': 1.2231, 'grad_norm': 8.588691711425781, 'learning_rate': 1.0569105691056912e-06, 'epoch': 0.0}
+[22:53:24.893131] Input shape: torch.Size([1, 635, 1536])
+[22:53:26.830797] Input shape: torch.Size([1, 1446, 1536])
+[22:53:27.861621] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/37dYkPK9nic-Scene-101.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:32.153491] Input shape: torch.Size([1, 1305, 1536])
+[22:53:32.875474] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/1fa_R1KwSeY-Scene-008.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:38.262112] Input shape: torch.Size([1, 463, 1536])
+[22:53:38.936198] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/4b17c444f137f7ee00e429cc31a0440a, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:42.145122] Input shape: torch.Size([1, 1238, 1536])
+[22:53:42.637167] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/ytb_zDe005A6y3A, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:45.194112] Input shape: torch.Size([1, 161, 1536])
+[22:53:45.874726] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/-Scktc0iSdM.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:49.025326] Input shape: torch.Size([1, 628, 1536])
+[22:53:50.209939] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_academic_v0_1/academic_source/Charades/G4E4S.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:53:52.492791] Input shape: torch.Size([1, 344, 1536])
+{'loss': 1.2227, 'grad_norm': 10.284268379211426, 'learning_rate': 1.1382113821138213e-06, 'epoch': 0.0}
+[22:53:59.686660] Input shape: torch.Size([1, 1993, 1536])
+[22:54:02.986117] Input shape: torch.Size([1, 1404, 1536])
+[22:54:09.762219] Input shape: torch.Size([1, 1232, 1536])
+[22:54:10.645336] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/3sNWIILcGkY-Scene-061.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:54:13.305541] Input shape: torch.Size([1, 1252, 1536])
+[22:54:13.718434] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_JdtQnkbn-Qw.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:54:16.863348] Input shape: torch.Size([1, 1232, 1536])
+[22:54:20.359911] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_academic_v0_1/academic_source/activitynet/v_dBNZf90PLJ0.mp4, image.shape=torch.Size([160, 3, 448, 448])
+[22:54:20.642993] Input shape: torch.Size([1, 1150, 1536])
+[22:54:21.215013] video_file=OpenGVLab/stage3/oops/oops_dataset/oops_video/train/Ants Are Marching - Fails of the Month (October 2017) _ FailArmy35.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:54:26.834348] video_file=OpenGVLab/stage3/clevrer/merged/video_04244.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:54:27.538754] Input shape: torch.Size([1, 2944, 1536])
+[22:54:33.419382] Input shape: torch.Size([1, 1126, 1536])
+{'loss': 1.1762, 'grad_norm': 6.5597357749938965, 'learning_rate': 1.2195121951219514e-06, 'epoch': 0.0}
+[22:54:38.263294] Input shape: torch.Size([1, 652, 1536])
+[22:54:38.998110] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/VYW49.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:54:44.476202] Input shape: torch.Size([1, 1284, 1536])
+[22:54:45.728207] video_file=OpenGVLab/stage3/oops/oops_dataset/oops_video/train/Feline Fails - Cat Got Your Tongue (July 2018) _ FailArmy33.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:54:47.992692] Input shape: torch.Size([1, 1245, 1536])
+[22:54:49.560696] video_file=OpenGVLab/stage3/uvo/uvo_videos_sparse/1Ph7kqxTIYg.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:54:51.528665] Input shape: torch.Size([1, 1226, 1536])
+[22:54:55.702312] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_tBaRwtzFBbo.mp4, image.shape=torch.Size([96, 3, 448, 448])
+[22:54:57.077661] Input shape: torch.Size([1, 2540, 1536])
+[22:55:02.267441] Input shape: torch.Size([1, 1251, 1536])
+[22:55:02.545577] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/-p0i17FW9gY.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:55:05.389542] Input shape: torch.Size([1, 871, 1536])
+[22:55:09.265313] Input shape: torch.Size([1, 1130, 1536])
+{'loss': 1.0036, 'grad_norm': 4.793513298034668, 'learning_rate': 1.3008130081300815e-06, 'epoch': 0.0}
+[22:55:14.230589] Input shape: torch.Size([1, 547, 1536])
+[22:55:15.739678] Input shape: torch.Size([1, 368, 1536])
+[22:55:19.396057] Input shape: torch.Size([1, 726, 1536])
+[22:55:26.002735] Input shape: torch.Size([1, 1515, 1536])
+[22:55:26.312410] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_WRVX2Fz3qaM.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:55:28.658867] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_0fXFXpTyXGE.mp4, image.shape=torch.Size([160, 3, 448, 448])
+[22:55:29.394125] Input shape: torch.Size([1, 311, 1536])
+[22:55:30.458312] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_gHYdhoXg8QQ.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:55:32.926505] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_FbvTQ1-FCag-Scene-005, image.shape=torch.Size([8, 3, 448, 448])
+[22:55:33.319330] Input shape: torch.Size([1, 1152, 1536])
+[22:55:36.419636] Input shape: torch.Size([1, 871, 1536])
+[22:55:38.490994] Input shape: torch.Size([1, 482, 1536])
+{'loss': 1.0447, 'grad_norm': 6.180446624755859, 'learning_rate': 1.3821138211382116e-06, 'epoch': 0.0}
+[22:55:45.760817] Input shape: torch.Size([1, 668, 1536])
+[22:55:48.005864] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Sn6vHm12drw.mp4, image.shape=torch.Size([168, 3, 448, 448])
+[22:55:51.930631] Input shape: torch.Size([1, 460, 1536])
+[22:55:55.378696] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_academic_v0_1/academic_source/youcook2/114/UoP9ZJKqAh4/split_3.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:55:58.582608] Input shape: torch.Size([1, 1308, 1536])
+[22:55:59.108957] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_CLa2KEJWxy0.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:56:02.147419] Input shape: torch.Size([1, 1249, 1536])
+[22:56:06.770240] Input shape: torch.Size([1, 1257, 1536])
+[22:56:06.985754] video_file=OpenGVLab/stage3/clevrer/merged/video_00202.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:56:10.346706] Input shape: torch.Size([1, 1259, 1536])
+[22:56:11.169012] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_OQngFB1DQcc.mp4, image.shape=torch.Size([176, 3, 448, 448])
+[22:56:13.515023] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_Wq-eDa62BcI-Scene-001, image.shape=torch.Size([16, 3, 448, 448])
+[22:56:13.848336] Input shape: torch.Size([1, 1159, 1536])
+[22:56:17.407800] Input shape: torch.Size([1, 1138, 1536])
+[22:56:19.342914] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/hdvila/O3b73JfYal0.mp4, image.shape=torch.Size([112, 3, 448, 448])
+{'loss': 1.0547, 'grad_norm': 3.4109535217285156, 'learning_rate': 1.4634146341463414e-06, 'epoch': 0.0}
+[22:56:22.436834] Input shape: torch.Size([1, 644, 1536])
+[22:56:23.931633] Input shape: torch.Size([1, 379, 1536])
+[22:56:24.796817] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Q7sMPtFiLcU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:56:28.371609] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_oEjc3QHsUEE.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:56:28.722111] Input shape: torch.Size([1, 2850, 1536])
+[22:56:34.313315] Input shape: torch.Size([1, 1220, 1536])
+[22:56:34.554308] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0TJbp2NNNAU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:56:37.906985] Input shape: torch.Size([1, 1364, 1536])
+[22:56:41.570428] Input shape: torch.Size([1, 1167, 1536])
+[22:56:46.978314] Input shape: torch.Size([1, 871, 1536])
+[22:56:48.966524] Input shape: torch.Size([1, 224, 1536])
+[22:56:49.781876] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Kg9zh_eF3mg.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:56:50.064105] video_file=OpenGVLab/stage3/textvr/Sports/MowEVZScf6c_00420_00430.mp4, image.shape=torch.Size([64, 3, 448, 448])
+{'loss': 1.0612, 'grad_norm': 5.8584980964660645, 'learning_rate': 1.5447154471544717e-06, 'epoch': 0.0}
+[22:56:59.306850] Input shape: torch.Size([1, 3582, 1536])
+[22:56:59.356715] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/-JYL0hw19dA-Scene-013.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:57:04.428963] Input shape: torch.Size([1, 377, 1536])
+[22:57:05.252175] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_COKXRciGr9s.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:57:08.421478] Input shape: torch.Size([1, 1263, 1536])
+[22:57:11.909069] Input shape: torch.Size([1, 1242, 1536])
+[22:57:15.428181] Input shape: torch.Size([1, 1223, 1536])
+[22:57:19.783975] Input shape: torch.Size([1, 1149, 1536])
+[22:57:22.820095] Input shape: torch.Size([1, 217, 1536])
+[22:57:26.446146] Input shape: torch.Size([1, 333, 1536])
+[22:57:27.446915] video_file=OpenGVLab/VideoChat-Flash-Training-Data/longvid_subset/ego4dhcap_eventunderstanding_2k/full_scale/4d85ad4a-22aa-4f9a-875d-3c2408150f38, image.shape=torch.Size([192, 3, 448, 448])
+{'loss': 1.1089, 'grad_norm': 6.0780558586120605, 'learning_rate': 1.6260162601626018e-06, 'epoch': 0.0}
+[22:57:35.857114] Input shape: torch.Size([1, 1543, 1536])
+[22:57:36.730960] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/4ID2gHEQ6eY-Scene-028.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:57:39.114746] Input shape: torch.Size([1, 1320, 1536])
+[22:57:39.552679] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_h6_fUexgG3w.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:57:44.191882] Input shape: torch.Size([1, 1663, 1536])
+[22:57:48.189240] Input shape: torch.Size([1, 1227, 1536])
+[22:57:48.761156] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/Charades/RQRR6.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:57:51.681293] Input shape: torch.Size([1, 292, 1536])
+[22:57:55.614195] Input shape: torch.Size([1, 1237, 1536])
+[22:57:55.788260] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0rHqMvP_XeU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:57:58.681108] Input shape: torch.Size([1, 242, 1536])
+[22:57:58.730410] video_file=OpenGVLab/train_video_and_instruction/train_300k/v_AY2usHrPYL0-Scene-002, image.shape=torch.Size([8, 3, 448, 448])
+[22:58:02.592199] Input shape: torch.Size([1, 1130, 1536])
+{'loss': 1.1135, 'grad_norm': 5.367884635925293, 'learning_rate': 1.707317073170732e-06, 'epoch': 0.01}
+[22:58:07.961924] Input shape: torch.Size([1, 1632, 1536])
+[22:58:11.138158] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_HL9hfKH4Prw.mp4, image.shape=torch.Size([128, 3, 448, 448])
+[22:58:11.211569] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_Yc3u4RkWfNo.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:58:11.485188] Input shape: torch.Size([1, 1991, 1536])
+[22:58:12.097035] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_academic_v0_1/academic_source/NextQA/1010/2462607486.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:58:16.525163] Input shape: torch.Size([1, 1259, 1536])
+[22:58:22.719322] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_o-qqth4VjWU.mp4, image.shape=torch.Size([144, 3, 448, 448])
+[22:58:23.007702] Input shape: torch.Size([1, 1237, 1536])
+[22:58:25.852731] video_file=OpenGVLab/LLaVA-Video-178K/1_2_m_academic_v0_1/academic_source/activitynet/v_2QO41PbOUJ0.mkv, image.shape=torch.Size([88, 3, 448, 448])
+[22:58:26.772976] Input shape: torch.Size([1, 1152, 1536])
+[22:58:29.870736] Input shape: torch.Size([1, 871, 1536])
+[22:58:32.253948] Input shape: torch.Size([1, 1141, 1536])
+[22:58:32.582701] video_file=OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/0j9SgbSlq4E.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:58:38.352043] Input shape: torch.Size([1, 724, 1536])
+{'loss': 0.9917, 'grad_norm': 6.084827423095703, 'learning_rate': 1.788617886178862e-06, 'epoch': 0.01}
+[22:58:43.634767] Input shape: torch.Size([1, 704, 1536])
+[22:58:45.211608] video_file=OpenGVLab/LLaVA-Video-178K/2_3_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_YcL-mlYWDNA.mp4, image.shape=torch.Size([128, 3, 448, 448])
+[22:58:46.830937] Input shape: torch.Size([1, 469, 1536])
+[22:58:48.412606] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_wWascLMTFxU.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:58:52.166623] Input shape: torch.Size([1, 1254, 1536])
+[22:58:52.955398] video_file=OpenGVLab/stage3/Vript/vript_long_videos_clips/videos/merged/26coyWbnvFE-Scene-014.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:58:55.717631] Input shape: torch.Size([1, 1243, 1536])
+[22:58:56.125574] video_file=OpenGVLab/LLaVA-Video-178K/0_30_s_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_rVdw4XnNo6E.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:58:59.227570] Input shape: torch.Size([1, 1244, 1536])
+[22:58:59.408147] video_file=OpenGVLab/stage3/GUI-World/android/768.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:59:02.730803] Input shape: torch.Size([1, 1220, 1536])
+[22:59:06.276254] Input shape: torch.Size([1, 1136, 1536])
+[22:59:07.010306] video_file=OpenGVLab/LLaVA-Video-178K/30_60_s_nextqa/NextQA/NExTVideo/1025/11544761843.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:59:10.888525] Input shape: torch.Size([1, 1128, 1536])
+{'loss': 1.0519, 'grad_norm': 5.77799654006958, 'learning_rate': 1.8699186991869919e-06, 'epoch': 0.01}
+[22:59:19.510340] Input shape: torch.Size([1, 636, 1536])
+[22:59:22.695872] Input shape: torch.Size([1, 403, 1536])
+[22:59:23.897599] video_file=OpenGVLab/stage3/Vript/vript_short_videos_clips/videos/merged/6908143157616151813-Scene-001.mp4, image.shape=torch.Size([64, 3, 448, 448])
+[22:59:26.211704] Input shape: torch.Size([1, 356, 1536])

@@ -1,0 +1,7 @@
+datasets:
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/reversed_anno/video/smit_caption_481k.jsonl
+    sampling_strategy: all
+    data_root: OpenGVLab/smit/S-MiT/
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/reversed_anno/image/blip_laion_cc_sbu_558k.jsonl
+    sampling_strategy: all
+    data_root: OpenGVLab/LLaVA-Pretrain/

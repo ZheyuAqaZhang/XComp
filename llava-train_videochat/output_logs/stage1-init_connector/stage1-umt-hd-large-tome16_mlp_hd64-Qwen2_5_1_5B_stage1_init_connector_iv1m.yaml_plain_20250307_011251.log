@@ -1,0 +1,272 @@
+[2025-03-07 01:12:56,868] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-07 01:12:56,875] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[01:12:58.626162] Rank 0 | Local Rank 0 | World Size 2 | Local World Size 2 |
+[01:12:58.630112] Rank 1 | Local Rank 1 | World Size 2 | Local World Size 2 |
+[2025-03-07 01:12:58,634] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-03-07 01:12:58,634] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-03-07 01:12:58,637] [INFO] [comm.py:637:init_distributed] cdb=None
+[01:12:58.774261] Rank 0:  Inspecting experiment hyperparameters:
+
+[01:12:58.774356] Rank 0:  model_args = {'model_name_or_path': 'Qwen/Qwen2.5-1.5B-Instruct', 'model_class_name': None, 'mm_tunable_parts': 'mm_mlp_adapter', 'version': 'plain', 'freeze_backbone': False, 'tune_mm_mlp_adapter': False, 'tune_mm_vision_resampler': False, 'vision_tower': 'umt-hd-large', 'vision_tower_pretrained': None, 'vision_encode_type': 'video_image', 'unfreeze_mm_vision_tower': False, 'unfreeze_language_model': False, 'mm_vision_select_layer': -2, 'pretrain_mm_mlp_adapter': None, 'mm_projector_type': 'tome16_mlp_hd64', 'mm_use_im_start_end': False, 'mm_use_im_patch_token': False, 'mm_patch_merge_type': 'flat', 'mm_vision_select_feature': 'patch', 'mm_resampler_type': None, 'mm_mask_drop_mode': 'fixed', 'mm_mask_drop_skip_percentage': 0.0, 'mm_mask_drop_ratio': 0.25, 'mm_mask_drop_ratio_upper': None, 'mm_mask_drop_ratio_lower': None, 'mm_spatial_pool_stride': None, 'mm_spatial_pool_mode': 'bilinear', 'mm_spatial_pool_out_channels': None, 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 4, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_perceiver_depth': 3, 'mm_perceiver_latents': 32, 'mm_perceiver_ff_mult': 4, 'mm_perceiver_pretrained': None, 'mm_qformer_depth': 3, 'mm_qformer_latents': 32, 'mm_qformer_pretrained': None, 'rope_scaling_factor': None, 'rope_scaling_type': None, 's2': False, 's2_scales': '336,672,1008', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_newline_position': 'one_token', 'mm_local_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_type': 'attention', 'llm_compress_layer_list': '8,16,24', 'llm_image_token_ratio_list': '1.0,0.5,0.25,0.125'}
+
+
+[01:12:58.774391] Rank 0:  data_args = {'data_path': 'data/stage1_init_connector_iv1m.yaml', 'lazy_preprocess': True, 'is_multimodal': False, 'early_mix_text': False, 'image_aspect_ratio': 'square', 'image_grid_pinpoints': None, 'image_crop_resolution': None, 'image_split_resolution': None, 'frame_aspect_ratio': 'square', 'frame_grid_pinpoints': None, 'max_num_pixels': 14745600000, 'frames_upbound': 4, 'frames_lowbound': 1, 'time_msg': 'short', 'local_num_frames': 4, 'sample_type': 'middle'}
+
+
+[01:12:58.774530] Rank 0:  training_args = {'output_dir': './checkpoints/stage1-init_connector/stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250307_011251', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': False, 'do_predict': False, 'evaluation_strategy': <IntervalStrategy.NO: 'no'>, 'prediction_loss_only': False, 'per_device_train_batch_size': 16, 'per_device_eval_batch_size': 4, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 4, 'eval_accumulation_steps': None, 'eval_delay': 0, 'learning_rate': 0.001, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 1.0, 'max_steps': -1, 'lr_scheduler_type': <SchedulerType.COSINE: 'cosine'>, 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.03, 'warmup_steps': 0, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': './checkpoints/stage1-init_connector/stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250307_011251/runs/Mar07_01-12-58_ip-172-31-20-200.us-east-2.compute.internal', 'logging_strategy': <IntervalStrategy.STEPS: 'steps'>, 'logging_first_step': False, 'logging_steps': 1.0, 'logging_nan_inf_filter': True, 'save_strategy': <IntervalStrategy.NO: 'no'>, 'save_steps': 50000.0, 'save_total_limit': None, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'use_ipex': False, 'bf16': True, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': True, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': None, 'dataloader_num_workers': 16, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': 'stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250307_011251', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': None, 'load_best_model_at_end': False, 'metric_for_best_model': None, 'greater_is_better': None, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': AcceleratorConfig(split_batches=False, dispatch_batches=None, even_batches=True, use_seedable_sampler=True), 'deepspeed': 'scripts/zero2.json', 'label_smoothing_factor': 0.0, 'optim': <OptimizerNames.ADAMW_TORCH: 'adamw_torch'>, 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard'], 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': <HubStrategy.EVERY_SAVE: 'every_save'>, 'hub_token': None, 'hub_private_repo': False, 'hub_always_push': False, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': None, 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'dispatch_batches': None, 'split_batches': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': False, 'neftune_noise_alpha': None, 'optim_target_modules': None, 'cache_dir': None, 'freeze_mm_mlp_adapter': False, 'freeze_mm_vision_resampler': False, 'mpt_attn_impl': 'triton', 'model_max_length': 8192, 'double_quant': True, 'quant_type': 'nf4', 'bits': 16, 'lora_enable': False, 'lora_r': 64, 'lora_alpha': 16, 'lora_dropout': 0.05, 'lora_weight_path': '', 'lora_bias': 'none', 'mm_projector_lr': None, 'mm_vision_tower_lr': None, 'group_by_varlen': False, 'group_by_modality_length': False, 'group_by_modality_length_auto': False, 'verbose_logging': True, 'attn_implementation': 'sdpa', 'distributed_state': Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 2
+Process index: 0
+Local process index: 0
+Device: cuda:0
+, '_n_gpu': 1, '__cached__setup_devices': device(type='cuda', index=0), 'deepspeed_plugin': DeepSpeedPlugin(hf_ds_config=<transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7fdbc0f8cca0>, gradient_accumulation_steps=4, gradient_clipping=1.0, zero_stage=2, is_train_batch_min=True, offload_optimizer_device='none', offload_param_device='none', offload_optimizer_nvme_path='none', offload_param_nvme_path='none', zero3_init_flag=False, zero3_save_16bit_model=False, transformer_moe_cls_names=None), 'hf_deepspeed_config': <transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7fdbc0f8cca0>}
+
+
+[01:12:58.810929] Rank 0:  Overwriting config with {'vision_encode_type': 'video_image', 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 4, 'mm_local_num_frames': 4, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_layer_list': [8, 16, 24], 'llm_image_token_ratio_list': [1.0, 0.5, 0.25, 0.125], 'llm_compress_type': 'attention', 'mm_projector_type': 'tome16_mlp_hd64', 'mm_patch_merge_type': 'flat', 'mm_newline_position': 'one_token', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_spatial_pool_mode': 'bilinear'}
+[01:13:02.546035] Rank 0:  Model config: Qwen2Config {
+  "_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 4,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 4,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.0.dev0",
+  "use_cache": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vocab_size": 151936
+}
+.
+[01:13:02.820160] Rank 0:  Prompt version: plain
+[01:13:02.820374] Rank 0:  Loading vision tower: umt-hd-large
+[01:13:02.824428] umt: Num of patches: 3136
+[01:13:02.824469] umt: Use checkpoint: True
+[01:13:02.824487] umt: Checkpoint number: 24
+[01:13:02.824503] umt: Real runing depth: 23
+[01:13:03.802256] n_position: 3136
+[01:13:03.802321] pre_n_position: 784
+[01:13:03.802338] Pretraining uses 14x14, but current version is 28x28
+[01:13:03.802350] Interpolate the position embedding
+[01:13:04.118321] n_position: 784
+[01:13:04.118361] pre_n_position: 196
+[01:13:04.118375] Pretraining uses 14x14, but current version is 28x28
+[01:13:04.118386] Interpolate the position embedding
+[01:13:04.150555] umt: attn_type: flash_v2
+[01:13:04.206760] umt: attn_type: flash_v2
+[01:13:04.259056] umt: attn_type: flash_v2
+[01:13:04.315314] umt: attn_type: flash_v2
+[01:13:04.376717] umt: attn_type: flash_v2
+[01:13:04.427559] umt: attn_type: flash_v2
+[01:13:04.478402] umt: attn_type: flash_v2
+[01:13:04.535623] umt: attn_type: flash_v2
+[01:13:04.588031] umt: attn_type: flash_v2
+[01:13:04.639154] umt: attn_type: flash_v2
+[01:13:04.689672] umt: attn_type: flash_v2
+[01:13:04.740734] umt: attn_type: flash_v2
+[01:13:04.792513] umt: attn_type: flash_v2
+[01:13:04.843086] umt: attn_type: flash_v2
+[01:13:04.901255] umt: attn_type: flash_v2
+[01:13:04.954794] umt: attn_type: flash_v2
+[01:13:05.006494] umt: attn_type: flash_v2
+[01:13:05.065378] umt: attn_type: flash_v2
+[01:13:05.116815] umt: attn_type: flash_v2
+[01:13:05.171995] umt: attn_type: flash_v2
+[01:13:05.235928] umt: attn_type: flash_v2
+[01:13:05.302589] umt: attn_type: flash_v2
+[01:13:05.369150] umt: attn_type: flash_v2
+[01:13:05.419619] umt: With LN: True
+[01:13:05.419657] umt: Total 24 layer
+[01:13:05.419674] umt: Return 23-th layer
+[01:13:06.985942] umt: Loading pretrained weights from /home/ec2-user/workspace/nvme/coding/Video_Encoders_for_Training_VideoChat-Flash/UMT-L_f4_vision.pt _IncompatibleKeys(missing_keys=[], unexpected_keys=['encoder.blocks.23.norm1.weight', 'encoder.blocks.23.norm1.bias', 'encoder.blocks.23.attn.q_bias', 'encoder.blocks.23.attn.v_bias', 'encoder.blocks.23.attn.qkv.weight', 'encoder.blocks.23.attn.proj.weight', 'encoder.blocks.23.attn.proj.bias', 'encoder.blocks.23.norm2.weight', 'encoder.blocks.23.norm2.bias', 'encoder.blocks.23.mlp.fc1.weight', 'encoder.blocks.23.mlp.fc1.bias', 'encoder.blocks.23.mlp.fc2.weight', 'encoder.blocks.23.mlp.fc2.bias'])
+[01:13:07.381145] Rank 0:  Using mm_tunable_parts: mm_mlp_adapter
+[01:13:07.385658] Rank 0:  Total parameters: ~1838.13 MB)
+[01:13:07.385688] Rank 0:  Trainable parameters: ~3.94 MB)
+[01:13:07.386988] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json with all sampling strategy
+[01:13:09.931096] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/smit/S-MiT/
+[01:13:09.931184] Rank 0:  Checking: OpenGVLab/smit/S-MiT/videos/bouncing/yt-4orgJDGR6mI_37.mp4
+[01:13:09.931241] Rank 0:  Loaded 481113 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/smit/S-MiT/
+[01:13:09.934943] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json with all sampling strategy
+[01:13:13.061404] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/LLaVA-Pretrain/
+[01:13:13.061487] Rank 0:  Checking: OpenGVLab/LLaVA-Pretrain/00453/004539375.jpg
+[01:13:13.061537] Rank 0:  Loaded 558128 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/LLaVA-Pretrain/
+[01:13:13.066047] Rank 0:  Loaded 1039241 samples from OpenGVLab/LLaVA-Pretrain/00453/004539375.jpg
+[01:13:13.066080] Rank 0:  Formatting inputs...Skip in lazy mode
+[01:13:13.070049] Rank 0:  Setting NCCL timeout to INF to avoid running errors.
+[01:13:13.104646] Rank 0:  model_config after before train: Qwen2Config {
+  "_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "frame_aspect_ratio": "square",
+  "frame_grid_pinpoints": null,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "image_aspect_ratio": "square",
+  "image_crop_resolution": null,
+  "image_grid_pinpoints": null,
+  "image_split_resolution": null,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_num_pixels": 14745600000,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_hidden_size": 1024,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 4,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 4,
+  "mm_projector_lr": null,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "mm_tunable_parts": "mm_mlp_adapter",
+  "mm_use_im_patch_token": false,
+  "mm_use_im_start_end": false,
+  "mm_vision_select_feature": "patch",
+  "mm_vision_select_layer": -2,
+  "mm_vision_tower": "umt-hd-large",
+  "mm_vision_tower_lr": null,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "tokenizer_model_max_length": 8192,
+  "tokenizer_padding_side": "right",
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.0.dev0",
+  "use_cache": false,
+  "use_mm_proj": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vision_tower_pretrained": null,
+  "vocab_size": 151936
+}
+
+[01:13:14.730388] [01:13:15.642721] [01:13:15.642858] [01:13:15.644031] [01:13:15.644067] ninja: no work to do.
+[01:13:15.869268] [01:13:15.870187] Time to load fused_adam op: 1.140044927597046 seconds
+{'loss': 5.8186, 'grad_norm': 39.96369171142578, 'learning_rate': 4.098360655737705e-06, 'epoch': 0.0}
+{'loss': 5.8915, 'grad_norm': 61.61843490600586, 'learning_rate': 8.19672131147541e-06, 'epoch': 0.0}
+{'loss': 5.6697, 'grad_norm': 52.38987731933594, 'learning_rate': 1.2295081967213114e-05, 'epoch': 0.0}
+{'loss': 5.685, 'grad_norm': 120.56475067138672, 'learning_rate': 1.639344262295082e-05, 'epoch': 0.0}
+{'loss': 5.6789, 'grad_norm': 24.976516723632812, 'learning_rate': 2.0491803278688525e-05, 'epoch': 0.0}
+{'loss': 5.6932, 'grad_norm': 33.885528564453125, 'learning_rate': 2.4590163934426228e-05, 'epoch': 0.0}
+{'loss': 5.5026, 'grad_norm': 133.42437744140625, 'learning_rate': 2.8688524590163935e-05, 'epoch': 0.0}
+{'loss': 5.2536, 'grad_norm': 56.7601318359375, 'learning_rate': 3.278688524590164e-05, 'epoch': 0.0}
+{'loss': 5.4764, 'grad_norm': 33.3153190612793, 'learning_rate': 3.6885245901639346e-05, 'epoch': 0.0}
+{'loss': 5.3821, 'grad_norm': 33.065677642822266, 'learning_rate': 4.098360655737705e-05, 'epoch': 0.0}
+{'loss': 5.469, 'grad_norm': 69.07099914550781, 'learning_rate': 4.508196721311476e-05, 'epoch': 0.0}
+{'loss': 5.3513, 'grad_norm': 63.91984939575195, 'learning_rate': 4.9180327868852456e-05, 'epoch': 0.0}
+{'loss': 5.4626, 'grad_norm': 64.61334991455078, 'learning_rate': 5.327868852459016e-05, 'epoch': 0.0}
+{'loss': 5.3569, 'grad_norm': 88.62467193603516, 'learning_rate': 5.737704918032787e-05, 'epoch': 0.0}
+{'loss': 5.2094, 'grad_norm': 183.38339233398438, 'learning_rate': 6.147540983606557e-05, 'epoch': 0.0}
+{'loss': 4.9694, 'grad_norm': 75.10816955566406, 'learning_rate': 6.557377049180328e-05, 'epoch': 0.0}
+{'loss': 4.9648, 'grad_norm': 137.49655151367188, 'learning_rate': 6.967213114754098e-05, 'epoch': 0.0}
+{'loss': 4.9974, 'grad_norm': 36.48615646362305, 'learning_rate': 7.377049180327869e-05, 'epoch': 0.0}
+{'loss': 5.0216, 'grad_norm': 50.7684326171875, 'learning_rate': 7.78688524590164e-05, 'epoch': 0.0}
+{'loss': 5.1527, 'grad_norm': 16.359323501586914, 'learning_rate': 8.19672131147541e-05, 'epoch': 0.0}
+{'loss': 4.9112, 'grad_norm': 25.8850040435791, 'learning_rate': 8.606557377049181e-05, 'epoch': 0.0}
+{'loss': 5.1313, 'grad_norm': 22.451465606689453, 'learning_rate': 9.016393442622952e-05, 'epoch': 0.0}
+{'loss': 4.9727, 'grad_norm': 19.65612030029297, 'learning_rate': 9.42622950819672e-05, 'epoch': 0.0}
+{'loss': 4.9881, 'grad_norm': 22.779298782348633, 'learning_rate': 9.836065573770491e-05, 'epoch': 0.0}
+{'loss': 4.6729, 'grad_norm': 12.800553321838379, 'learning_rate': 0.00010245901639344262, 'epoch': 0.0}
+{'loss': 4.8791, 'grad_norm': 13.737815856933594, 'learning_rate': 0.00010655737704918032, 'epoch': 0.0}
+{'loss': 4.813, 'grad_norm': 38.76466751098633, 'learning_rate': 0.00011065573770491803, 'epoch': 0.0}
+{'loss': 4.6665, 'grad_norm': 16.715576171875, 'learning_rate': 0.00011475409836065574, 'epoch': 0.0}
+{'loss': 4.6377, 'grad_norm': 11.052205085754395, 'learning_rate': 0.00011885245901639344, 'epoch': 0.0}
+{'loss': 4.5404, 'grad_norm': 17.080514907836914, 'learning_rate': 0.00012295081967213115, 'epoch': 0.0}
+{'loss': 4.6592, 'grad_norm': 14.73983097076416, 'learning_rate': 0.00012704918032786886, 'epoch': 0.0}
+{'loss': 4.4526, 'grad_norm': 11.994165420532227, 'learning_rate': 0.00013114754098360657, 'epoch': 0.0}
+{'loss': 4.5383, 'grad_norm': 57.34181213378906, 'learning_rate': 0.00013524590163934428, 'epoch': 0.0}
+{'loss': 4.4571, 'grad_norm': 10.006543159484863, 'learning_rate': 0.00013934426229508196, 'epoch': 0.0}
+{'loss': 4.619, 'grad_norm': 21.88928985595703, 'learning_rate': 0.00014344262295081967, 'epoch': 0.0}
+{'loss': 4.5394, 'grad_norm': 14.830945014953613, 'learning_rate': 0.00014754098360655738, 'epoch': 0.0}
+{'loss': 4.4792, 'grad_norm': 16.283517837524414, 'learning_rate': 0.0001516393442622951, 'epoch': 0.0}
+{'loss': 4.57, 'grad_norm': 17.270191192626953, 'learning_rate': 0.0001557377049180328, 'epoch': 0.0}
+{'loss': 4.3771, 'grad_norm': 9.879815101623535, 'learning_rate': 0.0001598360655737705, 'epoch': 0.0}
+{'loss': 4.4663, 'grad_norm': 23.40416717529297, 'learning_rate': 0.0001639344262295082, 'epoch': 0.0}
+{'loss': 4.4317, 'grad_norm': 10.206584930419922, 'learning_rate': 0.0001680327868852459, 'epoch': 0.01}
+{'loss': 4.599, 'grad_norm': 6.408260345458984, 'learning_rate': 0.00017213114754098362, 'epoch': 0.01}
+{'loss': 4.417, 'grad_norm': 10.703758239746094, 'learning_rate': 0.00017622950819672133, 'epoch': 0.01}
+{'loss': 4.4516, 'grad_norm': 4.78858757019043, 'learning_rate': 0.00018032786885245904, 'epoch': 0.01}
+{'loss': 4.2927, 'grad_norm': 13.031702995300293, 'learning_rate': 0.00018442622950819675, 'epoch': 0.01}
+{'loss': 4.4001, 'grad_norm': 5.044295787811279, 'learning_rate': 0.0001885245901639344, 'epoch': 0.01}
+{'loss': 4.3182, 'grad_norm': 3.1555306911468506, 'learning_rate': 0.00019262295081967211, 'epoch': 0.01}
+{'loss': 4.2978, 'grad_norm': 6.24296236038208, 'learning_rate': 0.00019672131147540983, 'epoch': 0.01}
+{'loss': 4.36, 'grad_norm': 6.281317234039307, 'learning_rate': 0.00020081967213114754, 'epoch': 0.01}

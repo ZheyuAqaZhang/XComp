@@ -1,0 +1,220 @@
+[2025-03-06 20:29:33,983] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[20:29:35.171687] Rank 0 | Local Rank 0 | World Size 1 | Local World Size 1 |
+[2025-03-06 20:29:35,178] [INFO] [comm.py:658:init_distributed] cdb=None
+[2025-03-06 20:29:35,178] [INFO] [comm.py:689:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[20:29:35.223047] Rank 0:  Inspecting experiment hyperparameters:
+
+[20:29:35.223125] Rank 0:  model_args = {'model_name_or_path': 'Qwen/Qwen2.5-1.5B-Instruct', 'model_class_name': None, 'mm_tunable_parts': 'mm_mlp_adapter', 'version': 'plain', 'freeze_backbone': False, 'tune_mm_mlp_adapter': False, 'tune_mm_vision_resampler': False, 'vision_tower': 'umt-hd-large', 'vision_tower_pretrained': None, 'vision_encode_type': 'video_image', 'unfreeze_mm_vision_tower': False, 'unfreeze_language_model': False, 'mm_vision_select_layer': -2, 'pretrain_mm_mlp_adapter': None, 'mm_projector_type': 'tome16_mlp_hd64', 'mm_use_im_start_end': False, 'mm_use_im_patch_token': False, 'mm_patch_merge_type': 'flat', 'mm_vision_select_feature': 'patch', 'mm_resampler_type': None, 'mm_mask_drop_mode': 'fixed', 'mm_mask_drop_skip_percentage': 0.0, 'mm_mask_drop_ratio': 0.25, 'mm_mask_drop_ratio_upper': None, 'mm_mask_drop_ratio_lower': None, 'mm_spatial_pool_stride': None, 'mm_spatial_pool_mode': 'bilinear', 'mm_spatial_pool_out_channels': None, 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 4, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_perceiver_depth': 3, 'mm_perceiver_latents': 32, 'mm_perceiver_ff_mult': 4, 'mm_perceiver_pretrained': None, 'mm_qformer_depth': 3, 'mm_qformer_latents': 32, 'mm_qformer_pretrained': None, 'rope_scaling_factor': None, 'rope_scaling_type': None, 's2': False, 's2_scales': '336,672,1008', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_newline_position': 'one_token', 'mm_local_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_type': 'attention', 'llm_compress_layer_list': '8,16,24', 'llm_image_token_ratio_list': '1.0,0.5,0.25,0.125'}
+
+
+[20:29:35.223151] Rank 0:  data_args = {'data_path': 'data/stage1_init_connector_iv1m.yaml', 'lazy_preprocess': True, 'is_multimodal': False, 'early_mix_text': False, 'image_aspect_ratio': 'square', 'image_grid_pinpoints': None, 'image_crop_resolution': None, 'image_split_resolution': None, 'frame_aspect_ratio': 'square', 'frame_grid_pinpoints': None, 'max_num_pixels': 14745600000, 'frames_upbound': 4, 'frames_lowbound': 1, 'time_msg': 'short', 'local_num_frames': 4, 'sample_type': 'middle'}
+
+
+[20:29:35.223259] Rank 0:  training_args = {'output_dir': './checkpoints/stage1-init_connector/stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250306_202928', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': False, 'do_predict': False, 'evaluation_strategy': <IntervalStrategy.NO: 'no'>, 'prediction_loss_only': False, 'per_device_train_batch_size': 16, 'per_device_eval_batch_size': 4, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 4, 'eval_accumulation_steps': None, 'eval_delay': 0, 'learning_rate': 0.001, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 1.0, 'max_steps': -1, 'lr_scheduler_type': <SchedulerType.COSINE: 'cosine'>, 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.03, 'warmup_steps': 0, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': './checkpoints/stage1-init_connector/stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250306_202928/runs/Mar06_20-29-35_ip-172-31-20-200.us-east-2.compute.internal', 'logging_strategy': <IntervalStrategy.STEPS: 'steps'>, 'logging_first_step': False, 'logging_steps': 1.0, 'logging_nan_inf_filter': True, 'save_strategy': <IntervalStrategy.NO: 'no'>, 'save_steps': 50000.0, 'save_total_limit': None, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'use_ipex': False, 'bf16': True, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': True, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': None, 'dataloader_num_workers': 16, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': 'stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250306_202928', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': None, 'load_best_model_at_end': False, 'metric_for_best_model': None, 'greater_is_better': None, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': AcceleratorConfig(split_batches=False, dispatch_batches=None, even_batches=True, use_seedable_sampler=True, gradient_accumulation_kwargs=None), 'deepspeed': 'scripts/zero1.json', 'label_smoothing_factor': 0.0, 'optim': <OptimizerNames.ADAMW_TORCH: 'adamw_torch'>, 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard'], 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': <HubStrategy.EVERY_SAVE: 'every_save'>, 'hub_token': None, 'hub_private_repo': False, 'hub_always_push': False, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': None, 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'dispatch_batches': None, 'split_batches': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': False, 'neftune_noise_alpha': None, 'optim_target_modules': None, 'cache_dir': None, 'freeze_mm_mlp_adapter': False, 'freeze_mm_vision_resampler': False, 'mpt_attn_impl': 'triton', 'model_max_length': 8192, 'double_quant': True, 'quant_type': 'nf4', 'bits': 16, 'lora_enable': False, 'lora_r': 64, 'lora_alpha': 16, 'lora_dropout': 0.05, 'lora_weight_path': '', 'lora_bias': 'none', 'mm_projector_lr': None, 'mm_vision_tower_lr': None, 'group_by_varlen': False, 'group_by_modality_length': False, 'group_by_modality_length_auto': False, 'verbose_logging': True, 'attn_implementation': 'sdpa', 'distributed_state': Distributed environment: DistributedType.DEEPSPEED  Backend: nccl
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda:0
+, '_n_gpu': 1, '__cached__setup_devices': device(type='cuda', index=0), 'deepspeed_plugin': DeepSpeedPlugin(hf_ds_config=<transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7f80edeb29c0>, gradient_accumulation_steps=4, gradient_clipping=1.0, zero_stage=1, is_train_batch_min=True, offload_optimizer_device='none', offload_param_device='none', offload_optimizer_nvme_path='none', offload_param_nvme_path='none', zero3_init_flag=False, zero3_save_16bit_model=False), 'hf_deepspeed_config': <transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7f80edeb29c0>}
+
+
+[20:29:35.272735] Rank 0:  Overwriting config with {'vision_encode_type': 'video_image', 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 4, 'mm_local_num_frames': 4, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_layer_list': [8, 16, 24], 'llm_image_token_ratio_list': [1.0, 0.5, 0.25, 0.125], 'llm_compress_type': 'attention', 'mm_projector_type': 'tome16_mlp_hd64', 'mm_patch_merge_type': 'flat', 'mm_newline_position': 'one_token', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_spatial_pool_mode': 'bilinear'}
+[20:29:39.458687] Rank 0:  Model config: Qwen2Config {
+  "_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 4,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 4,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.1",
+  "use_cache": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vocab_size": 151936
+}
+.
+[20:29:39.619545] Rank 0:  Prompt version: plain
+[20:29:39.619701] Rank 0:  Loading vision tower: umt-hd-large
+[20:29:39.623450] umt: Num of patches: 3136
+[20:29:39.623482] umt: Use checkpoint: True
+[20:29:39.623494] umt: Checkpoint number: 24
+[20:29:39.623505] umt: Real runing depth: 23
+[20:29:40.684233] n_position: 3136
+[20:29:40.684286] pre_n_position: 784
+[20:29:40.684300] Pretraining uses 14x14, but current version is 28x28
+[20:29:40.684309] Interpolate the position embedding
+[20:29:41.008217] n_position: 784
+[20:29:41.008248] pre_n_position: 196
+[20:29:41.008260] Pretraining uses 14x14, but current version is 28x28
+[20:29:41.008268] Interpolate the position embedding
+[20:29:41.034489] umt: attn_type: flash_v2
+[20:29:41.084917] umt: attn_type: flash_v2
+[20:29:41.135261] umt: attn_type: flash_v2
+[20:29:41.185714] umt: attn_type: flash_v2
+[20:29:41.236091] umt: attn_type: flash_v2
+[20:29:41.286877] umt: attn_type: flash_v2
+[20:29:41.337687] umt: attn_type: flash_v2
+[20:29:41.388473] umt: attn_type: flash_v2
+[20:29:41.439288] umt: attn_type: flash_v2
+[20:29:41.495199] umt: attn_type: flash_v2
+[20:29:41.545999] umt: attn_type: flash_v2
+[20:29:41.596790] umt: attn_type: flash_v2
+[20:29:41.647603] umt: attn_type: flash_v2
+[20:29:41.698354] umt: attn_type: flash_v2
+[20:29:41.748852] umt: attn_type: flash_v2
+[20:29:41.799912] umt: attn_type: flash_v2
+[20:29:41.850145] umt: attn_type: flash_v2
+[20:29:41.901134] umt: attn_type: flash_v2
+[20:29:41.952186] umt: attn_type: flash_v2
+[20:29:42.002512] umt: attn_type: flash_v2
+[20:29:42.053578] umt: attn_type: flash_v2
+[20:29:42.104921] umt: attn_type: flash_v2
+[20:29:42.164269] umt: attn_type: flash_v2
+[20:29:42.203104] umt: With LN: True
+[20:29:42.203132] umt: Total 24 layer
+[20:29:42.203145] umt: Return 23-th layer
+[20:29:43.791988] umt: Loading pretrained weights from /home/ec2-user/workspace/nvme/coding/Video_Encoders_for_Training_VideoChat-Flash/UMT-L_f4_vision.pt _IncompatibleKeys(missing_keys=[], unexpected_keys=['encoder.blocks.23.norm1.weight', 'encoder.blocks.23.norm1.bias', 'encoder.blocks.23.attn.q_bias', 'encoder.blocks.23.attn.v_bias', 'encoder.blocks.23.attn.qkv.weight', 'encoder.blocks.23.attn.proj.weight', 'encoder.blocks.23.attn.proj.bias', 'encoder.blocks.23.norm2.weight', 'encoder.blocks.23.norm2.bias', 'encoder.blocks.23.mlp.fc1.weight', 'encoder.blocks.23.mlp.fc1.bias', 'encoder.blocks.23.mlp.fc2.weight', 'encoder.blocks.23.mlp.fc2.bias'])
+[20:29:44.198189] Rank 0:  Using mm_tunable_parts: mm_mlp_adapter
+[20:29:44.201688] Rank 0:  Total parameters: ~1838.13 MB)
+[20:29:44.201714] Rank 0:  Trainable parameters: ~3.94 MB)
+[20:29:44.202697] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json with all sampling strategy
+[20:29:45.545539] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/smit/S-MiT/
+[20:29:45.545608] Rank 0:  Checking: OpenGVLab/smit/S-MiT/videos/bouncing/yt-4orgJDGR6mI_37.mp4
+[20:29:45.545658] Rank 0:  Loaded 481113 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/smit/S-MiT/
+[20:29:45.548535] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json with all sampling strategy
+[20:29:46.941203] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/LLaVA-Pretrain/
+[20:29:46.941268] Rank 0:  Checking: OpenGVLab/LLaVA-Pretrain/00453/004539375.jpg
+[20:29:46.941315] Rank 0:  Loaded 558128 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/LLaVA-Pretrain/
+[20:29:46.945144] Rank 0:  Loaded 1039241 samples from OpenGVLab/LLaVA-Pretrain/00453/004539375.jpg
+[20:29:46.945166] Rank 0:  Formatting inputs...Skip in lazy mode
+[20:29:46.950738] Rank 0:  Setting NCCL timeout to INF to avoid running errors.
+[20:29:47.526135] Rank 0:  model_config after before train: Qwen2Config {
+  "_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "frame_aspect_ratio": "square",
+  "frame_grid_pinpoints": null,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "image_aspect_ratio": "square",
+  "image_crop_resolution": null,
+  "image_grid_pinpoints": null,
+  "image_split_resolution": null,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_num_pixels": 14745600000,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_hidden_size": 1024,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 4,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 4,
+  "mm_projector_lr": null,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "mm_tunable_parts": "mm_mlp_adapter",
+  "mm_use_im_patch_token": false,
+  "mm_use_im_start_end": false,
+  "mm_vision_select_feature": "patch",
+  "mm_vision_select_layer": -2,
+  "mm_vision_tower": "umt-hd-large",
+  "mm_vision_tower_lr": null,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "tokenizer_model_max_length": 8192,
+  "tokenizer_padding_side": "right",
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.1",
+  "use_cache": false,
+  "use_mm_proj": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vision_tower_pretrained": null,
+  "vocab_size": 151936
+}
+
+[20:29:49.025981] [20:29:49.026029] [20:29:49.081279] [20:29:49.081361] [20:29:49.083825] [20:29:49.083849] [1/3] c++ -MMD -MF fused_adam_frontend.o.d -DTORCH_EXTENSION_NAME=fused_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/deepspeed/ops/csrc/includes -I/home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/deepspeed/ops/csrc/adam -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include/TH -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /home/ec2-user/workspace/nvme/envs/vcf/include/python3.12 -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=c++17 -O3 -std=c++17 -g -Wno-reorder -DVERSION_GE_1_1 -DVERSION_GE_1_3 -DVERSION_GE_1_5 -DBF16_AVAILABLE -c /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/deepspeed/ops/csrc/adam/fused_adam_frontend.cpp -o fused_adam_frontend.o 
+[2/3] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output multi_tensor_adam.cuda.o.d -DTORCH_EXTENSION_NAME=fused_adam -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -I/home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/deepspeed/ops/csrc/includes -I/home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/deepspeed/ops/csrc/adam -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include/torch/csrc/api/include -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include/TH -isystem /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/include/THC -isystem /usr/local/cuda/include -isystem /home/ec2-user/workspace/nvme/envs/vcf/include/python3.12 -D_GLIBCXX_USE_CXX11_ABI=0 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr -gencode=arch=compute_89,code=compute_89 -gencode=arch=compute_89,code=sm_89 --compiler-options '-fPIC' -O3 -DVERSION_GE_1_1 -DVERSION_GE_1_3 -DVERSION_GE_1_5 -lineinfo --use_fast_math -gencode=arch=compute_89,code=sm_89 -gencode=arch=compute_89,code=compute_89 -DBF16_AVAILABLE -U__CUDA_NO_BFLOAT16_OPERATORS__ -U__CUDA_NO_BFLOAT162_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ -std=c++17 -c /home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/deepspeed/ops/csrc/adam/multi_tensor_adam.cu -o multi_tensor_adam.cuda.o 
+[3/3] c++ fused_adam_frontend.o multi_tensor_adam.cuda.o -shared -L/home/ec2-user/workspace/nvme/envs/vcf/lib/python3.12/site-packages/torch/lib -lc10 -lc10_cuda -ltorch_cpu -ltorch_cuda -ltorch -ltorch_python -L/usr/local/cuda/lib64 -lcudart -o fused_adam.so
+[20:30:28.872736] [20:30:28.873814] Time to load fused_adam op: 39.84802055358887 seconds
+{'loss': 6.5969, 'grad_norm': 117.90628814697266, 'learning_rate': 2.0491803278688526e-06, 'epoch': 0.0}
+{'loss': 6.3182, 'grad_norm': 42.12720489501953, 'learning_rate': 4.098360655737705e-06, 'epoch': 0.0}
+{'loss': 5.6404, 'grad_norm': 111.81583404541016, 'learning_rate': 6.147540983606557e-06, 'epoch': 0.0}
+{'loss': 6.379, 'grad_norm': 103.22102355957031, 'learning_rate': 8.19672131147541e-06, 'epoch': 0.0}
+{'loss': 6.5779, 'grad_norm': 100.50534057617188, 'learning_rate': 1.0245901639344262e-05, 'epoch': 0.0}
+{'loss': 6.1247, 'grad_norm': 156.84861755371094, 'learning_rate': 1.2295081967213114e-05, 'epoch': 0.0}
+{'loss': 6.2517, 'grad_norm': 211.32362365722656, 'learning_rate': 1.4344262295081968e-05, 'epoch': 0.0}
+{'loss': 5.8224, 'grad_norm': 33.57673263549805, 'learning_rate': 1.639344262295082e-05, 'epoch': 0.0}

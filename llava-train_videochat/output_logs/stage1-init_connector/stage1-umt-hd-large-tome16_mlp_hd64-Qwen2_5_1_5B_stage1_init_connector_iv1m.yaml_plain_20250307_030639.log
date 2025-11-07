@@ -1,0 +1,260 @@
+[2025-03-07 03:06:49,675] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-07 03:06:49,675] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-07 03:06:49,675] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-03-07 03:06:49,676] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[03:06:53.690317] [03:06:53.690319] [03:06:53.690319] [03:06:53.690320] Rank 2 | Local Rank 2 | World Size 4 | Local World Size 4 |Rank 3 | Local Rank 3 | World Size 4 | Local World Size 4 |Rank 0 | Local Rank 0 | World Size 4 | Local World Size 4 |
+Rank 1 | Local Rank 1 | World Size 4 | Local World Size 4 |
+
+
+[2025-03-07 03:06:53,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-03-07 03:06:53,698] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-03-07 03:06:53,698] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[2025-03-07 03:06:53,699] [INFO] [comm.py:637:init_distributed] cdb=None
+[2025-03-07 03:06:53,699] [INFO] [comm.py:637:init_distributed] cdb=None
+[03:06:53.919219] Rank 0:  Inspecting experiment hyperparameters:
+
+[03:06:53.919536] Rank 0:  model_args = {'model_name_or_path': 'Qwen/Qwen2.5-1.5B-Instruct', 'model_class_name': None, 'mm_tunable_parts': 'mm_mlp_adapter', 'version': 'plain', 'freeze_backbone': False, 'tune_mm_mlp_adapter': False, 'tune_mm_vision_resampler': False, 'vision_tower': 'umt-hd-large', 'vision_tower_pretrained': None, 'vision_encode_type': 'video_image', 'unfreeze_mm_vision_tower': False, 'unfreeze_language_model': False, 'mm_vision_select_layer': -2, 'pretrain_mm_mlp_adapter': None, 'mm_projector_type': 'tome16_mlp_hd64', 'mm_use_im_start_end': False, 'mm_use_im_patch_token': False, 'mm_patch_merge_type': 'flat', 'mm_vision_select_feature': 'patch', 'mm_resampler_type': None, 'mm_mask_drop_mode': 'fixed', 'mm_mask_drop_skip_percentage': 0.0, 'mm_mask_drop_ratio': 0.25, 'mm_mask_drop_ratio_upper': None, 'mm_mask_drop_ratio_lower': None, 'mm_spatial_pool_stride': None, 'mm_spatial_pool_mode': 'bilinear', 'mm_spatial_pool_out_channels': None, 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 4, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_perceiver_depth': 3, 'mm_perceiver_latents': 32, 'mm_perceiver_ff_mult': 4, 'mm_perceiver_pretrained': None, 'mm_qformer_depth': 3, 'mm_qformer_latents': 32, 'mm_qformer_pretrained': None, 'rope_scaling_factor': None, 'rope_scaling_type': None, 's2': False, 's2_scales': '336,672,1008', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_newline_position': 'one_token', 'mm_local_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_type': 'attention', 'llm_compress_layer_list': '8,16,24', 'llm_image_token_ratio_list': '1.0,0.5,0.25,0.125'}
+
+
+[03:06:53.919583] Rank 0:  data_args = {'data_path': 'data/stage1_init_connector_iv1m.yaml', 'lazy_preprocess': True, 'is_multimodal': False, 'early_mix_text': False, 'image_aspect_ratio': 'square', 'image_grid_pinpoints': None, 'image_crop_resolution': None, 'image_split_resolution': None, 'frame_aspect_ratio': 'square', 'frame_grid_pinpoints': None, 'max_num_pixels': 14745600000, 'frames_upbound': 4, 'frames_lowbound': 1, 'time_msg': 'short', 'local_num_frames': 4, 'sample_type': 'middle'}
+
+
+[03:06:53.919740] Rank 0:  training_args = {'output_dir': './checkpoints/stage1-init_connector/stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250307_030639', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': False, 'do_predict': False, 'evaluation_strategy': <IntervalStrategy.NO: 'no'>, 'prediction_loss_only': False, 'per_device_train_batch_size': 16, 'per_device_eval_batch_size': 4, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 4, 'eval_accumulation_steps': None, 'eval_delay': 0, 'learning_rate': 0.001, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 1.0, 'max_steps': -1, 'lr_scheduler_type': <SchedulerType.COSINE: 'cosine'>, 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.03, 'warmup_steps': 0, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': './checkpoints/stage1-init_connector/stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250307_030639/runs/Mar07_03-06-53_ip-172-31-20-200.us-east-2.compute.internal', 'logging_strategy': <IntervalStrategy.STEPS: 'steps'>, 'logging_first_step': False, 'logging_steps': 1.0, 'logging_nan_inf_filter': True, 'save_strategy': <IntervalStrategy.NO: 'no'>, 'save_steps': 50000.0, 'save_total_limit': None, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'use_ipex': False, 'bf16': True, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': True, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': None, 'dataloader_num_workers': 16, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': 'stage1-umt-hd-large-tome16_mlp_hd64-Qwen2_5_1_5B_stage1_init_connector_iv1m.yaml_plain_20250307_030639', 'disable_tqdm': False, 'remove_unused_columns': False, 'label_names': None, 'load_best_model_at_end': False, 'metric_for_best_model': None, 'greater_is_better': None, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': AcceleratorConfig(split_batches=False, dispatch_batches=None, even_batches=True, use_seedable_sampler=True), 'deepspeed': 'scripts/zero2.json', 'label_smoothing_factor': 0.0, 'optim': <OptimizerNames.ADAMW_TORCH: 'adamw_torch'>, 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard'], 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': <HubStrategy.EVERY_SAVE: 'every_save'>, 'hub_token': None, 'hub_private_repo': False, 'hub_always_push': False, 'gradient_checkpointing': True, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': None, 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'dispatch_batches': None, 'split_batches': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': False, 'neftune_noise_alpha': None, 'optim_target_modules': None, 'cache_dir': None, 'freeze_mm_mlp_adapter': False, 'freeze_mm_vision_resampler': False, 'mpt_attn_impl': 'triton', 'model_max_length': 8192, 'double_quant': True, 'quant_type': 'nf4', 'bits': 16, 'lora_enable': False, 'lora_r': 64, 'lora_alpha': 16, 'lora_dropout': 0.05, 'lora_weight_path': '', 'lora_bias': 'none', 'mm_projector_lr': None, 'mm_vision_tower_lr': None, 'group_by_varlen': False, 'group_by_modality_length': False, 'group_by_modality_length_auto': False, 'verbose_logging': True, 'attn_implementation': 'sdpa', 'distributed_state': Distributed environment: DEEPSPEED  Backend: nccl
+Num processes: 4
+Process index: 0
+Local process index: 0
+Device: cuda:0
+, '_n_gpu': 1, '__cached__setup_devices': device(type='cuda', index=0), 'deepspeed_plugin': DeepSpeedPlugin(hf_ds_config=<transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7fd35ed89ca0>, gradient_accumulation_steps=4, gradient_clipping=1.0, zero_stage=2, is_train_batch_min=True, offload_optimizer_device='none', offload_param_device='none', offload_optimizer_nvme_path='none', offload_param_nvme_path='none', zero3_init_flag=False, zero3_save_16bit_model=False, transformer_moe_cls_names=None), 'hf_deepspeed_config': <transformers.integrations.deepspeed.HfTrainerDeepSpeedConfig object at 0x7fd35ed89ca0>}
+
+
+[03:06:53.962865] Rank 0:  Overwriting config with {'vision_encode_type': 'video_image', 'mm_num_compress_latents': 128, 'mm_num_compress_query_type': 'learnable', 'mm_pos_num_frames': 4, 'mm_local_num_frames': 4, 'mm_close_init': False, 'min_slow_num_frames': 4, 'mm_llm_compress': False, 'llm_compress_layer_list': [8, 16, 24], 'llm_image_token_ratio_list': [1.0, 0.5, 0.25, 0.125], 'llm_compress_type': 'attention', 'mm_projector_type': 'tome16_mlp_hd64', 'mm_patch_merge_type': 'flat', 'mm_newline_position': 'one_token', 'use_pos_skipping': False, 'pos_skipping_range': 4096, 'mm_spatial_pool_mode': 'bilinear'}
+[03:07:19.074858] Rank 0:  Model config: Qwen2Config {
+  "_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 4,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 4,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.0.dev0",
+  "use_cache": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vocab_size": 151936
+}
+.
+[03:07:19.293579] Rank 0:  Prompt version: plain
+[03:07:19.293782] Rank 0:  Loading vision tower: umt-hd-large
+[03:07:19.297799] umt: Num of patches: 3136
+[03:07:19.297840] umt: Use checkpoint: True
+[03:07:19.297856] umt: Checkpoint number: 24
+[03:07:19.297871] umt: Real runing depth: 23
+[03:07:20.273209] n_position: 3136
+[03:07:20.273273] pre_n_position: 784
+[03:07:20.273290] Pretraining uses 14x14, but current version is 28x28
+[03:07:20.273300] Interpolate the position embedding
+[03:07:20.589893] n_position: 784
+[03:07:20.589948] pre_n_position: 196
+[03:07:20.589962] Pretraining uses 14x14, but current version is 28x28
+[03:07:20.589973] Interpolate the position embedding
+[03:07:20.623094] umt: attn_type: flash_v2
+[03:07:20.673823] umt: attn_type: flash_v2
+[03:07:20.724701] umt: attn_type: flash_v2
+[03:07:20.780954] umt: attn_type: flash_v2
+[03:07:20.841196] umt: attn_type: flash_v2
+[03:07:20.902589] umt: attn_type: flash_v2
+[03:07:20.953767] umt: attn_type: flash_v2
+[03:07:21.005117] umt: attn_type: flash_v2
+[03:07:21.056518] umt: attn_type: flash_v2
+[03:07:21.107901] umt: attn_type: flash_v2
+[03:07:21.159217] umt: attn_type: flash_v2
+[03:07:21.210565] umt: attn_type: flash_v2
+[03:07:21.262390] umt: attn_type: flash_v2
+[03:07:21.313763] umt: attn_type: flash_v2
+[03:07:21.365114] umt: attn_type: flash_v2
+[03:07:21.417259] umt: attn_type: flash_v2
+[03:07:21.474459] umt: attn_type: flash_v2
+[03:07:21.528165] umt: attn_type: flash_v2
+[03:07:21.588640] umt: attn_type: flash_v2
+[03:07:21.649748] umt: attn_type: flash_v2
+[03:07:21.700836] umt: attn_type: flash_v2
+[03:07:21.752111] umt: attn_type: flash_v2
+[03:07:21.805310] umt: attn_type: flash_v2
+[03:07:21.845054] umt: With LN: True
+[03:07:21.845086] umt: Total 24 layer
+[03:07:21.845102] umt: Return 23-th layer
+[03:07:27.596572] umt: Loading pretrained weights from /home/ec2-user/workspace/nvme/coding/Video_Encoders_for_Training_VideoChat-Flash/UMT-L_f4_vision.pt _IncompatibleKeys(missing_keys=[], unexpected_keys=['encoder.blocks.23.norm1.weight', 'encoder.blocks.23.norm1.bias', 'encoder.blocks.23.attn.q_bias', 'encoder.blocks.23.attn.v_bias', 'encoder.blocks.23.attn.qkv.weight', 'encoder.blocks.23.attn.proj.weight', 'encoder.blocks.23.attn.proj.bias', 'encoder.blocks.23.norm2.weight', 'encoder.blocks.23.norm2.bias', 'encoder.blocks.23.mlp.fc1.weight', 'encoder.blocks.23.mlp.fc1.bias', 'encoder.blocks.23.mlp.fc2.weight', 'encoder.blocks.23.mlp.fc2.bias'])
+[03:07:28.036502] Rank 0:  Using mm_tunable_parts: mm_mlp_adapter
+[03:07:28.040928] Rank 0:  Total parameters: ~1838.13 MB)
+[03:07:28.040962] Rank 0:  Trainable parameters: ~3.94 MB)
+[03:07:28.042221] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json with all sampling strategy
+[03:07:30.994750] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/smit/S-MiT/
+[03:07:30.994838] Rank 0:  Checking: OpenGVLab/smit/S-MiT/videos/bouncing/yt-4orgJDGR6mI_37.mp4
+[03:07:30.996869] Rank 0:  Loaded 481113 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json, media_type=video, video_read_type=None, data_root=OpenGVLab/smit/S-MiT/
+[03:07:31.000654] Rank 0:  Loading OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json with all sampling strategy
+[03:07:34.826341] Rank 0:  Check samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/LLaVA-Pretrain/
+[03:07:34.826422] Rank 0:  Checking: OpenGVLab/LLaVA-Pretrain/00453/004539375.jpg
+[03:07:34.827650] Rank 0:  Loaded 558128 samples from OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/blip_laion_cc_sbu_558k.json, media_type=image, video_read_type=None, data_root=OpenGVLab/LLaVA-Pretrain/
+[03:07:34.832263] Rank 0:  Loaded 1039241 samples from OpenGVLab/LLaVA-Pretrain/00453/004539375.jpg
+[03:07:34.832298] Rank 0:  Formatting inputs...Skip in lazy mode
+[03:07:34.837252] Rank 0:  Setting NCCL timeout to INF to avoid running errors.
+[03:07:34.931600] Rank 0:  model_config after before train: Qwen2Config {
+  "_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "frame_aspect_ratio": "square",
+  "frame_grid_pinpoints": null,
+  "hidden_act": "silu",
+  "hidden_size": 1536,
+  "image_aspect_ratio": "square",
+  "image_crop_resolution": null,
+  "image_grid_pinpoints": null,
+  "image_split_resolution": null,
+  "initializer_range": 0.02,
+  "intermediate_size": 8960,
+  "llm_compress_layer_list": [
+    8,
+    16,
+    24
+  ],
+  "llm_compress_type": "attention",
+  "llm_image_token_ratio_list": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "max_num_pixels": 14745600000,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 21,
+  "min_slow_num_frames": 4,
+  "mm_close_init": false,
+  "mm_hidden_size": 1024,
+  "mm_llm_compress": false,
+  "mm_local_num_frames": 4,
+  "mm_newline_position": "one_token",
+  "mm_num_compress_latents": 128,
+  "mm_num_compress_query_type": "learnable",
+  "mm_patch_merge_type": "flat",
+  "mm_pos_num_frames": 4,
+  "mm_projector_lr": null,
+  "mm_projector_type": "tome16_mlp_hd64",
+  "mm_spatial_pool_mode": "bilinear",
+  "mm_tunable_parts": "mm_mlp_adapter",
+  "mm_use_im_patch_token": false,
+  "mm_use_im_start_end": false,
+  "mm_vision_select_feature": "patch",
+  "mm_vision_select_layer": -2,
+  "mm_vision_tower": "umt-hd-large",
+  "mm_vision_tower_lr": null,
+  "model_type": "qwen2",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 2,
+  "pos_skipping_range": 4096,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "tokenizer_model_max_length": 8192,
+  "tokenizer_padding_side": "right",
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.40.0.dev0",
+  "use_cache": false,
+  "use_mm_proj": true,
+  "use_pos_skipping": false,
+  "use_sliding_window": false,
+  "vision_encode_type": "video_image",
+  "vision_tower_pretrained": null,
+  "vocab_size": 151936
+}
+
+[03:07:36.773728] ninja: no work to do.
+[03:07:37.776569] [03:07:37.777426] Time to load fused_adam op: 1.003937005996704 seconds
+{'loss': 6.1355, 'grad_norm': 75.5174331665039, 'learning_rate': 8.19672131147541e-06, 'epoch': 0.0}
+{'loss': 5.95, 'grad_norm': 175.68997192382812, 'learning_rate': 1.639344262295082e-05, 'epoch': 0.0}
+{'loss': 5.9386, 'grad_norm': 152.48699951171875, 'learning_rate': 2.4590163934426228e-05, 'epoch': 0.0}
+{'loss': 5.8565, 'grad_norm': 73.00010681152344, 'learning_rate': 3.278688524590164e-05, 'epoch': 0.0}
+{'loss': 5.9913, 'grad_norm': 37.706825256347656, 'learning_rate': 4.098360655737705e-05, 'epoch': 0.0}
+{'loss': 5.7242, 'grad_norm': 18.769994735717773, 'learning_rate': 4.9180327868852456e-05, 'epoch': 0.0}
+{'loss': 5.5551, 'grad_norm': 33.25141143798828, 'learning_rate': 5.737704918032787e-05, 'epoch': 0.0}
+{'loss': 5.2834, 'grad_norm': 38.58853530883789, 'learning_rate': 6.557377049180328e-05, 'epoch': 0.0}
+{'loss': 5.2585, 'grad_norm': 41.902915954589844, 'learning_rate': 7.377049180327869e-05, 'epoch': 0.0}
+{'loss': 5.3609, 'grad_norm': 80.87238311767578, 'learning_rate': 8.19672131147541e-05, 'epoch': 0.0}
+{'loss': 5.4032, 'grad_norm': 78.21900177001953, 'learning_rate': 9.016393442622952e-05, 'epoch': 0.0}
+{'loss': 5.4555, 'grad_norm': 65.10983276367188, 'learning_rate': 9.836065573770491e-05, 'epoch': 0.0}
+{'loss': 5.3256, 'grad_norm': 81.9341812133789, 'learning_rate': 0.00010655737704918032, 'epoch': 0.0}
+{'loss': 5.3887, 'grad_norm': 63.681610107421875, 'learning_rate': 0.00011475409836065574, 'epoch': 0.0}
+{'loss': 5.3508, 'grad_norm': 28.761398315429688, 'learning_rate': 0.00012295081967213115, 'epoch': 0.0}
+{'loss': 5.2935, 'grad_norm': 13.534809112548828, 'learning_rate': 0.00013114754098360657, 'epoch': 0.0}
+{'loss': 5.3666, 'grad_norm': 6.398165225982666, 'learning_rate': 0.00013934426229508196, 'epoch': 0.0}
+[03:09:10.635986] Error: Unable to create tensor, you should probably activate padding with 'padding=True' to have batched tensors with the same length.
+[03:09:10.636140] Failed to read video file: OpenGVLab/smit/S-MiT/videos/sketching/getty-creative-architect-women-at-work-video-id461916164_3.mp4
+[03:09:10.636169] [Try #0] Failed to fetch sample 455963. Exception: Unable to create tensor, you should probably activate padding with 'padding=True' to have batched tensors with the same length.
+[03:09:13.669192] [03:09:13.669330] [03:09:13.669364] [03:09:13.669392] [03:09:13.669422] [03:09:13.669454] [03:09:13.669475] [03:09:13.669498] [03:09:13.669537] [03:09:13.672503] [03:09:13.672570] [03:09:13.672606] [03:09:13.672633] [03:09:13.672661] [03:09:13.672653] [03:09:13.672695] [03:09:13.672743] [03:09:13.672744] [03:09:13.672775] [03:09:13.672815] [03:09:13.672818] [03:09:13.672847] [03:09:13.672869] [03:09:13.672889] [03:09:13.672909] [03:09:13.672937] [03:09:13.672962] 

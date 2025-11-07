@@ -1,0 +1,37 @@
+datasets:
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/LLaVA-ReCap-118K.json
+    sampling_strategy: first:5%
+    data_root: OpenGVLab/stage2/LLaVA-ReCap-118K/data/extracted_images/
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/LLaVA-ReCap-CC3M.json
+    sampling_strategy: first:5%
+    data_root: OpenGVLab/stage2/LLaVA-ReCap-CC3M/data/extracted_images/
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/LLaVA-ReCap-558K.json
+    sampling_strategy: first:5%
+    data_root: OpenGVLab/stage2/LLaVA-ReCap-558K/data/extracted_images/
+  - json_path: OpenGVLab/stage2/LLaVA-OneVision-Mid-Data/evol_instruct/evol_instruct_processed.json
+    sampling_strategy: first:5%
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/webvid-fuse_caption_2m.json
+  #   sampling_strategy: first:5%
+  #   data_root: https://github.com/m-bain/webvid
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegemini_webvid_core100k_clean.json
+  #   sampling_strategy: first:5%
+  #   data_root: https://github.com/m-bain/webvid
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegemini_k400_223k.json
+    sampling_strategy: first:5%
+    data_root: OpenGVLab/stage2/OpenMMLab___Kinetics-400/raw/Kinetics-400/videos_train/
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/ureader_tr_processed.json
+    data_root: OpenGVLab/stage2/LLaVA-OneVision-Mid-Data/ureader_tr/
+    sampling_strategy: first:5%
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/synthdog_zh_processed.json
+    data_root: OpenGVLab/stage2/LLaVA-OneVision-Mid-Data/synthdog_zh/synthdog-zh/images/
+    sampling_strategy: first:5%
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/image/synthdog_en_processed.json
+    data_root: OpenGVLab/stage2/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog-en/alt-images/
+    sampling_strategy: first:5%
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/smit_caption_481k.json
+    sampling_strategy: first:5%
+    data_root: OpenGVLab/smit/S-MiT/
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_sharegptvideo_300k-sharegptvideo-train_300k_302k.json
+    sampling_strategy: first:5%
+    data_root: OpenGVLab/train_video_and_instruction/train_300k/
+    video_read_type: img

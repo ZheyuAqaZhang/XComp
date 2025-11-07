@@ -1,0 +1,17 @@
+dataset_path: eval_data_jsons/Temporal_Grounding
+dataset_kwargs:
+  token: True
+  cache_dir: your_eval_data_dir/Temporal_Grounding
+  video: True
+generation_kwargs:
+  max_new_tokens: 50
+  temperature: 0
+  top_p: 1.0
+  num_beams: 1
+  do_sample: false
+
+output_type: generate_until
+doc_to_visual: !function utils.temporal_grounding_doc_to_visual
+doc_to_text: !function utils.temporal_grounding_doc_to_text
+doc_to_target: !function utils.temporal_grounding_doc_to_answer
+process_results: !function utils.temporal_grounding_process_results_generation

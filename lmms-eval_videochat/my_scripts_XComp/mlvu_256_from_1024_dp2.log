@@ -1,0 +1,928 @@
+mlvu_mc
+mlvu_mc
+[32m2025-05-13 15:52:46.285[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:46.303[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:46.335[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:46.351[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:46.351[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:46.449[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:46.471[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:46.618[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-13 15:52:48.820[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:48.820[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[32m2025-05-13 15:52:48.878[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:48.878[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[32m2025-05-13 15:52:48.945[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:48.945[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[32m2025-05-13 15:52:48.983[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:48.984[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[32m2025-05-13 15:52:48.999[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:48.999[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[32m2025-05-13 15:52:49.054[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:49.055[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[32m2025-05-13 15:52:49.086[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:49.086[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[32m2025-05-13 15:52:49.098[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-13 15:52:49.099[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['mlvu_mc'][0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7', 'max_num_frames=1024']
+[2025-05-13 15:52:50,358] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-13 15:52:50,378] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-13 15:52:50,440] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-13 15:52:50,464] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-13 15:52:50,509] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-13 15:52:50,513] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-13 15:52:50,544] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-13 15:52:50,565] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2flash_v2
+
+flash_v2flash_v2flash_v2
+
+
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2flash_v2
+
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+It is LlavaQwenForCausalLM
+1 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+4 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+inner_condense_layers: [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]
+It is LlavaQwenForCausalLM
+1 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+4 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+It is LlavaQwenForCausalLM
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+inner_condense_layers: [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+1set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+ 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]4
+ 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+inner_condense_layers: [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]
+It is LlavaQwenForCausalLM
+1 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+4 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+It is LlavaQwenForCausalLMinner_condense_layers:
+ [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]
+1 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+4 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+inner_condense_layers: [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]
+It is LlavaQwenForCausalLM
+1 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+4 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+inner_condense_layers: [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]
+It is LlavaQwenForCausalLM
+1 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+4 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+inner_condense_layers: [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]
+It is LlavaQwenForCausalLM
+1 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+2 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+3 16 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+4 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+5 15 [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+6 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+7 14 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+8 13 [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+9 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+10 12 [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+11 11 [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+12 10 [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+13 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+14 9 [2, 3, 5, 7, 9, 10, 12, 14, 16]
+15 8 [2, 5, 7, 9, 10, 12, 14, 16]
+16 7 [2, 5, 7, 9, 12, 14, 16]
+17 6 [2, 5, 9, 12, 14, 16]
+18 5 [2, 5, 9, 12, 16]
+19 5 [2, 5, 9, 12, 16]
+20 4 [5, 9, 12, 16]
+21 3 [5, 12, 16]
+22 3 [5, 12, 16]
+23 2 [5, 16]
+24 2 [5, 16]
+25 1 [16]
+26 1 [16]
+27 1 [16]
+28 1 [16]
+inner_condense_layers: [3, 5, 7, 8, 10, 11, 12, 14, 15, 16, 17, 19, 20, 22, 24]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 11, 12, 14, 15, 16]
+set always suffix: [1, 2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [2, 3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 15, 16] -> [3, 5, 7, 9, 10, 12, 14, 15, 16]
+set always suffix: [2, 3, 5, 7, 9, 10, 12, 14, 16] -> [3, 5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 10, 12, 14, 16] -> [5, 7, 9, 10, 12, 14, 16]
+set always suffix: [2, 5, 7, 9, 12, 14, 16] -> [5, 7, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 14, 16] -> [5, 9, 12, 14, 16]
+set always suffix: [2, 5, 9, 12, 16] -> [5, 9, 12, 16]
+set always suffix: [5, 9, 12, 16] -> [9, 12, 16]
+set always suffix: [5, 12, 16] -> [12, 16]
+set always suffix: [5, 16] -> [16]
+[32m2025-05-13 15:53:36.080[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 5...[0m
+[32m2025-05-13 15:53:36.950[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 2...[0m
+[32m2025-05-13 15:53:38.207[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 3...[0m
+[32m2025-05-13 15:53:38.359[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 0...[0m
+[32m2025-05-13 15:53:38.862[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 7...[0m
+[32m2025-05-13 15:53:39.034[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 1...[0m
+[32m2025-05-13 15:53:39.204[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 4...[0m
+[32m2025-05-13 15:53:39.735[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_anomaly_reco on rank 6...[0m
+[32m2025-05-13 15:53:40.161[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 6...[0m
+[32m2025-05-13 15:53:40.161[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 0...[0m
+[32m2025-05-13 15:53:40.162[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 2...[0m
+[32m2025-05-13 15:53:40.162[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 4...[0m
+[32m2025-05-13 15:53:40.162[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 7...[0m
+[32m2025-05-13 15:53:40.162[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 5...[0m
+[32m2025-05-13 15:53:40.162[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 3...[0m
+[32m2025-05-13 15:53:40.162[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_count on rank 1...[0m
+[32m2025-05-13 15:53:40.166[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 6...[0m
+[32m2025-05-13 15:53:40.166[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 0...[0m
+[32m2025-05-13 15:53:40.166[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 1...[0m
+[32m2025-05-13 15:53:40.166[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 2...[0m
+[32m2025-05-13 15:53:40.166[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 7...[0m
+[32m2025-05-13 15:53:40.166[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 4...[0m
+[32m2025-05-13 15:53:40.167[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 5...[0m
+[32m2025-05-13 15:53:40.167[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_ego on rank 3...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 6...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 0...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 1...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 2...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 7...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 4...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 3...[0m
+[32m2025-05-13 15:53:40.173[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_needle on rank 5...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 6...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 1...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 0...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 4...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 7...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 2...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 3...[0m
+[32m2025-05-13 15:53:40.179[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_order on rank 5...[0m
+[32m2025-05-13 15:53:40.463[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 2...[0m
+[32m2025-05-13 15:53:40.463[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 0...[0m
+[32m2025-05-13 15:53:40.463[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 3...[0m
+[32m2025-05-13 15:53:40.463[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 1...[0m
+[32m2025-05-13 15:53:40.463[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 4...[0m
+[32m2025-05-13 15:53:40.463[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 6...[0m
+[32m2025-05-13 15:53:40.464[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 7...[0m
+[32m2025-05-13 15:53:40.464[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_plotqa on rank 5...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 3...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 1...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 2...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 0...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 6...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 7...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 4...[0m
+[32m2025-05-13 15:53:40.470[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task mlvu_mc_topic_reasoning on rank 5...[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+[32m2025-05-13 15:53:40.473[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m292[0m - [1mRunning generate_until requests[0m
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_149.mp4
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_2.mp4
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_42.mp4
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_130.mp4
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_114.mp4
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_1.mp4
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_0.mp4
+start chatting with video: benchmark_data/MVLU/MLVU/video/5_order/order_88.mp4
+The video lasts for 677.78 seconds, and 1024 frames are uniformly sampled from it.benchmark_data/MVLU/MLVU/video/5_order/order_42.mp4
+successfully loaded video
+Applying transform <function convert_to_rgb at 0x7f787eb063a0> with 32 threads
+Applying transform <function to_numpy_array at 0x7f787eaa7b80> with 32 threads
+Applying transform functools.partial(<function resize at 0x7f787eaacb80>, size=(448, 448), resample=<Resampling.BICUBIC: 3>, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function rescale at 0x7f787eaac940>, scale=0.00392156862745098, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function normalize at 0x7f787eaacc10>, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225), data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function to_channel_dimension_format at 0x7f787eaf7670>, channel_dim=<ChannelDimension.FIRST: 'channels_first'>, input_channel_dim=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+The video lasts for 665.77 seconds, and 1024 frames are uniformly sampled from it.benchmark_data/MVLU/MLVU/video/5_order/order_0.mp4
+successfully loaded video
+Applying transform <function convert_to_rgb at 0x7fb29438a3a0> with 32 threads
+Applying transform <function to_numpy_array at 0x7fb29432bb80> with 32 threads
+Applying transform functools.partial(<function resize at 0x7fb294331b80>, size=(448, 448), resample=<Resampling.BICUBIC: 3>, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+The video lasts for 684.10 seconds, and 1024 frames are uniformly sampled from it.benchmark_data/MVLU/MLVU/video/5_order/order_130.mp4
+successfully loaded video
+Applying transform <function convert_to_rgb at 0x7fde44e883a0> with 32 threads
+Applying transform <function to_numpy_array at 0x7fde44e29b80> with 32 threads
+Applying transform functools.partial(<function resize at 0x7fde44e2fb80>, size=(448, 448), resample=<Resampling.BICUBIC: 3>, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function rescale at 0x7fb294331940>, scale=0.00392156862745098, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+The video lasts for 665.77 seconds, and 1024 frames are uniformly sampled from it.benchmark_data/MVLU/MLVU/video/5_order/order_1.mp4
+successfully loaded video
+Applying transform <function convert_to_rgb at 0x7ff3c9b8a3a0> with 32 threads
+Applying transform <function to_numpy_array at 0x7ff3c9b2bb80> with 32 threads
+Applying transform functools.partial(<function resize at 0x7ff3c9b32b80>, size=(448, 448), resample=<Resampling.BICUBIC: 3>, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function normalize at 0x7fb294331c10>, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225), data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function rescale at 0x7fde44e2f940>, scale=0.00392156862745098, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function to_channel_dimension_format at 0x7fb29437c670>, channel_dim=<ChannelDimension.FIRST: 'channels_first'>, input_channel_dim=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function normalize at 0x7fde44e2fc10>, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225), data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function rescale at 0x7ff3c9b32940>, scale=0.00392156862745098, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function to_channel_dimension_format at 0x7fde44e78670>, channel_dim=<ChannelDimension.FIRST: 'channels_first'>, input_channel_dim=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function normalize at 0x7ff3c9b32c10>, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225), data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function to_channel_dimension_format at 0x7ff3c9b7b670>, channel_dim=<ChannelDimension.FIRST: 'channels_first'>, input_channel_dim=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+The video lasts for 676.70 seconds, and 1024 frames are uniformly sampled from it.benchmark_data/MVLU/MLVU/video/5_order/order_114.mp4
+successfully loaded video
+Applying transform <function convert_to_rgb at 0x7f00bda483a0> with 32 threads
+Applying transform <function to_numpy_array at 0x7f00bd9e9b80> with 32 threads
+Applying transform functools.partial(<function resize at 0x7f00bd9efb80>, size=(448, 448), resample=<Resampling.BICUBIC: 3>, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+processed frames len: torch.Size([1024, 3, 448, 448])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+built prompt
+start generating
+Applying transform functools.partial(<function rescale at 0x7f00bd9ef940>, scale=0.00392156862745098, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function normalize at 0x7f00bd9efc10>, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225), data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function to_channel_dimension_format at 0x7f00bda3a670>, channel_dim=<ChannelDimension.FIRST: 'channels_first'>, input_channel_dim=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+The video lasts for 694.79 seconds, and 1024 frames are uniformly sampled from it.benchmark_data/MVLU/MLVU/video/5_order/order_149.mp4
+successfully loaded video
+Applying transform <function convert_to_rgb at 0x7f573b66b3a0> with 32 threads
+Applying transform <function to_numpy_array at 0x7f573b269b80> with 32 threads
+Applying transform functools.partial(<function resize at 0x7f573b26fb80>, size=(448, 448), resample=<Resampling.BICUBIC: 3>, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+processed frames len: torch.Size([1024, 3, 448, 448])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+built prompt
+start generating
+Applying transform functools.partial(<function rescale at 0x7f573b26f940>, scale=0.00392156862745098, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+processed frames len: torch.Size([1024, 3, 448, 448])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+built prompt
+start generating
+Applying transform functools.partial(<function normalize at 0x7f573b26fc10>, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225), data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+Applying transform functools.partial(<function to_channel_dimension_format at 0x7f573b65c670>, channel_dim=<ChannelDimension.FIRST: 'channels_first'>, input_channel_dim=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+processed frames len: torch.Size([1024, 3, 448, 448])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+built prompt
+start generating
+The video lasts for 695.77 seconds, and 1024 frames are uniformly sampled from it.benchmark_data/MVLU/MLVU/video/5_order/order_2.mp4
+successfully loaded video
+Applying transform <function convert_to_rgb at 0x7efe1a0883a0> with 32 threads
+Applying transform <function to_numpy_array at 0x7efe1a029b80> with 32 threads
+Applying transform functools.partial(<function resize at 0x7efe1a030b80>, size=(448, 448), resample=<Resampling.BICUBIC: 3>, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+prepared imputs embeds
+layer 0 hidden_states torch.Size([1, 9417, 1536]) first position tensor([0], device='cuda:6')
+Applying transform functools.partial(<function rescale at 0x7efe1a030940>, scale=0.00392156862745098, data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+processed frames len: torch.Size([1024, 3, 448, 448])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+built prompt
+start generating
+Applying transform functools.partial(<function normalize at 0x7efe1a030c10>, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225), data_format=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+layer 1 hidden_states torch.Size([1, 9417, 1536]) first position tensor([0], device='cuda:6')
+layer 2 hidden_states torch.Size([1, 9417, 1536]) first position tensor([0], device='cuda:6')
+Applying transform functools.partial(<function to_channel_dimension_format at 0x7efe1a07a670>, channel_dim=<ChannelDimension.FIRST: 'channels_first'>, input_channel_dim=<ChannelDimension.FIRST: 'channels_first'>) with 32 threads
+layer 3 hidden_states torch.Size([1, 8841, 1536]) first position tensor([0], device='cuda:6')
+layer 4 hidden_states torch.Size([1, 8841, 1536]) first position tensor([0], device='cuda:6')
+layer 5 hidden_states torch.Size([1, 8265, 1536]) first position tensor([0], device='cuda:6')
+layer 6 hidden_states torch.Size([1, 8265, 1536]) first position tensor([0], device='cuda:6')
+layer 7 hidden_states torch.Size([1, 7689, 1536]) first position tensor([0], device='cuda:6')
+layer 8 hidden_states torch.Size([1, 7113, 1536]) first position tensor([0], device='cuda:6')
+layer 9 hidden_states torch.Size([1, 7113, 1536]) first position tensor([0], device='cuda:6')
+layer 10 hidden_states torch.Size([1, 6537, 1536]) first position tensor([0], device='cuda:6')
+layer 11 hidden_states torch.Size([1, 5961, 1536]) first position tensor([0], device='cuda:6')
+layer 12 hidden_states torch.Size([1, 5385, 1536]) first position tensor([0], device='cuda:6')
+layer 13 hidden_states torch.Size([1, 5385, 1536]) first position tensor([0], device='cuda:6')
+layer 14 hidden_states torch.Size([1, 4809, 1536]) first position tensor([0], device='cuda:6')
+layer 15 hidden_states torch.Size([1, 4233, 1536]) first position tensor([0], device='cuda:6')
+layer 16 hidden_states torch.Size([1, 3657, 1536]) first position tensor([0], device='cuda:6')
+layer 17 hidden_states torch.Size([1, 3081, 1536]) first position tensor([0], device='cuda:6')
+layer 18 hidden_states torch.Size([1, 3081, 1536]) first position tensor([0], device='cuda:6')
+layer 19 hidden_states torch.Size([1, 2505, 1536]) first position tensor([0], device='cuda:6')
+layer 20 hidden_states torch.Size([1, 1929, 1536]) first position tensor([0], device='cuda:6')
+layer 21 hidden_states torch.Size([1, 1929, 1536]) first position tensor([0], device='cuda:6')
+layer 22 hidden_states torch.Size([1, 1353, 1536]) first position tensor([0], device='cuda:6')
+layer 23 hidden_states torch.Size([1, 1353, 1536]) first position tensor([0], device='cuda:6')
+layer 24 hidden_states torch.Size([1, 777, 1536]) first position tensor([0], device='cuda:6')
+layer 25 hidden_states torch.Size([1, 777, 1536]) first position tensor([0], device='cuda:6')
+layer 26 hidden_states torch.Size([1, 777, 1536]) first position tensor([0], device='cuda:6')
+layer 27 hidden_states torch.Size([1, 777, 1536]) first position tensor([0], device='cuda:6')
+layer 0 hidden_states torch.Size([1, 1, 1536]) first position tensor([9417], device='cuda:6')
+layer 1 hidden_states torch.Size([1, 1, 1536]) first position tensor([9417], device='cuda:6')
+layer 2 hidden_states torch.Size([1, 1, 1536]) first position tensor([9417], device='cuda:6')
+layer 3 hidden_states torch.Size([1, 1, 1536]) first position tensor([8841], device='cuda:6')
+layer 4 hidden_states torch.Size([1, 1, 1536]) first position tensor([8841], device='cuda:6')
+layer 5 hidden_states torch.Size([1, 1, 1536]) first position tensor([8265], device='cuda:6')
+layer 6 hidden_states torch.Size([1, 1, 1536]) first position tensor([8265], device='cuda:6')
+layer 7 hidden_states torch.Size([1, 1, 1536]) first position tensor([7689], device='cuda:6')
+layer 8 hidden_states torch.Size([1, 1, 1536]) first position tensor([7113], device='cuda:6')
+layer 9 hidden_states torch.Size([1, 1, 1536]) first position tensor([7113], device='cuda:6')
+layer 10 hidden_states torch.Size([1, 1, 1536]) first position tensor([6537], device='cuda:6')
+layer 11 hidden_states torch.Size([1, 1, 1536]) first position tensor([5961], device='cuda:6')
+layer 12 hidden_states torch.Size([1, 1, 1536]) first position tensor([5385], device='cuda:6')
+layer 13 hidden_states torch.Size([1, 1, 1536]) first position tensor([5385], device='cuda:6')
+layer 14 hidden_states torch.Size([1, 1, 1536]) first position tensor([4809], device='cuda:6')
+layer 15 hidden_states torch.Size([1, 1, 1536]) first position tensor([4233], device='cuda:6')
+layer 16 hidden_states torch.Size([1, 1, 1536]) first position tensor([3657], device='cuda:6')
+layer 17 hidden_states torch.Size([1, 1, 1536]) first position tensor([3081], device='cuda:6')
+layer 18 hidden_states torch.Size([1, 1, 1536]) first position tensor([3081], device='cuda:6')
+layer 19 hidden_states torch.Size([1, 1, 1536]) first position tensor([2505], device='cuda:6')
+layer 20 hidden_states torch.Size([1, 1, 1536]) first position tensor([1929], device='cuda:6')
+layer 21 hidden_states torch.Size([1, 1, 1536]) first position tensor([1929], device='cuda:6')
+layer 22 hidden_states torch.Size([1, 1, 1536]) first position tensor([1353], device='cuda:6')
+layer 23 hidden_states torch.Size([1, 1, 1536]) first position tensor([1353], device='cuda:6')
+layer 24 hidden_states torch.Size([1, 1, 1536]) first position tensor([777], device='cuda:6')
+layer 25 hidden_states torch.Size([1, 1, 1536]) first position tensor([777], device='cuda:6')
+layer 26 hidden_states torch.Size([1, 1, 1536]) first position tensor([777], device='cuda:6')
+layer 27 hidden_states torch.Size([1, 1, 1536]) first position tensor([777], device='cuda:6')
+prepared imputs embeds
+layer 0 hidden_states torch.Size([1, 9420, 1536]) first position tensor([0], device='cuda:0')
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+processed frames len: torch.Size([1024, 3, 448, 448])
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+rank 6 completed generate_until requests
+rank 6 is waiting for all ranks to finish requests
+rank 0 finished waiting for all ranks to finish requests
+rank 6 finished waiting for all ranks to finish requests
+rank 7 finished waiting for all ranks to finish requestsrank 3 finished waiting for all ranks to finish requestsrank 5 finished waiting for all ranks to finish requestsrank 2 finished waiting for all ranks to finish requests
+rank 4 finished waiting for all ranks to finish requestsrank 1 finished waiting for all ranks to finish requests
+
+
+
+
+rank 4 offloaded model to cpu
+rank 4 collected all filters
+rank 5 offloaded model to cpu
+rank 5 collected all filters
+rank 6 offloaded model to cpu
+rank 6 collected all filters
+rank 1 offloaded model to cpu
+rank 1 collected all filters
+rank 7 offloaded model to cpu
+rank 7 collected all filters
+rank 0 offloaded model to cpu
+rank 0 collected all filters
+rank 2 offloaded model to cpu
+rank 2 collected all filters
+rank 3 offloaded model to cpu
+rank 3 collected all filters
+[32m2025-05-14 03:42:13.921[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/run.sh_20250513_155240_videochat_flash_f1024/0513_2352_mlvu_mc_videochat_flash_model_args_b7e8d2/mlvu_mc_anomaly_reco.json[0m
+[32m2025-05-14 03:42:13.926[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/run.sh_20250513_155240_videochat_flash_f1024/0513_2352_mlvu_mc_videochat_flash_model_args_b7e8d2/mlvu_mc_count.json[0m
+[32m2025-05-14 03:42:13.936[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/run.sh_20250513_155240_videochat_flash_f1024/0513_2352_mlvu_mc_videochat_flash_model_args_b7e8d2/mlvu_mc_ego.json[0m
+[32m2025-05-14 03:42:13.946[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/run.sh_20250513_155240_videochat_flash_f1024/0513_2352_mlvu_mc_videochat_flash_model_args_b7e8d2/mlvu_mc_needle.json[0m
+[32m2025-05-14 03:42:13.954[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/run.sh_20250513_155240_videochat_flash_f1024/0513_2352_mlvu_mc_videochat_flash_model_args_b7e8d2/mlvu_mc_order.json[0m
+[32m2025-05-14 03:42:13.969[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/run.sh_20250513_155240_videochat_flash_f1024/0513_2352_mlvu_mc_videochat_flash_model_args_b7e8d2/mlvu_mc_plotqa.json[0m
+[32m2025-05-14 03:42:13.976[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/run.sh_20250513_155240_videochat_flash_f1024/0513_2352_mlvu_mc_videochat_flash_model_args_b7e8d2/mlvu_mc_topic_reasoning.json[0m
+videochat_flash (pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache7,max_num_frames=1024),
+gen_kwargs: (),
+limit: None,
+num_fewshot: None,
+batch_size: 1
+|          Tasks           |Version|Filter|n-shot|     Metric     | Value |   |Stderr |
+|--------------------------|-------|------|-----:|----------------|------:|---|-------|
+|mlvu_mc                   |N/A    |none  |     0|mlvu_mc_accuracy|66.6667|±  |13.4904|
+| - mlvu_mc_anomaly_reco   |Yaml   |none  |     0|mlvu_mc_accuracy|76.5000|±  |N/A    |
+| - mlvu_mc_count          |Yaml   |none  |     0|mlvu_mc_accuracy|40.7767|±  |N/A    |
+| - mlvu_mc_ego            |Yaml   |none  |     0|mlvu_mc_accuracy|62.5000|±  |N/A    |
+| - mlvu_mc_needle         |Yaml   |none  |     0|mlvu_mc_accuracy|79.7183|±  |N/A    |
+| - mlvu_mc_order          |Yaml   |none  |     0|mlvu_mc_accuracy|28.5714|±  |N/A    |
+| - mlvu_mc_plotqa         |Yaml   |none  |     0|mlvu_mc_accuracy|77.9221|±  |N/A    |
+| - mlvu_mc_topic_reasoning|Yaml   |none  |     0|mlvu_mc_accuracy|81.8182|±  |N/A    |
+
+|Groups |Version|Filter|n-shot|     Metric     | Value |   |Stderr |
+|-------|-------|------|-----:|----------------|------:|---|------:|
+|mlvu_mc|N/A    |none  |     0|mlvu_mc_accuracy|66.6667|±  |13.4904|
+
+脚本执行时间: 42579 秒

@@ -1,0 +1,8 @@
+datasets:
+  - json_path: OpenGVLab/DLC/shot2story-videos/shot2story_captions_llava.jsonl
+    sampling_strategy: all
+    data_root: OpenGVLab/DLC/shot2story-videos/release_134k_videos/
+  - json_path: OpenGVLab/DLC/TempCompass/TempCompass_cap_mc_yn_llava.jsonl
+    sampling_strategy: all
+    data_root: OpenGVLab/DLC/TempCompass/videos/
+  

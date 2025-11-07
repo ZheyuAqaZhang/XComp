@@ -1,0 +1,4 @@
+# scp -r ec2-user@35.89.55.139:/home/ec2-user/workspace/other_device/wksp/VideoChat-Flash-forked/lmms-eval_videochat/benchmark_data/model/VideoChat-Flash-Qwen2_5-2B_res448_ver6/*.py VideoChat-Flash-Qwen2_5-2B_res448_ver6/
+
+scp ec2-user@35.89.55.139:/home/ec2-user/workspace/other_device/wksp/VideoChat-Flash-forked/lmms-eval_videochat/benchmark_data/model/VideoChat-Flash-Qwen2_5-2B_res448_ver7/*.py ./VideoChat-Flash-Qwen2_5-2B_res448_ver7/
+scp ec2-user@35.89.55.139:/home/ec2-user/workspace/other_device/wksp/VideoChat-Flash-forked/lmms-eval_videochat/my_scripts/new7/run.sh /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/my_scripts/new7/

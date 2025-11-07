@@ -1,0 +1,16 @@
+include: _default_template.yaml
+task: mlvu_mc_count
+dataset_name: 4_count
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: 4_count
+    post_prompt: "Answer with the option's letter from the given choices directly."
+  videochat_next_dynamic_newprompt:
+    sub_task: 4_count
+    yinan_prompt: "()"
+    post_prompt: "\nOnly give the best option."
+  videochat_next_dynamic_pdrop_newprompt:
+    sub_task: 4_count
+    yinan_prompt: "()"
+    post_prompt: "\nOnly give the best option."

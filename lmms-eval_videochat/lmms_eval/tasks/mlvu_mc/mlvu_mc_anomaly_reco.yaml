@@ -1,0 +1,16 @@
+include: _default_template.yaml
+task: mlvu_mc_anomaly_reco
+dataset_name: 6_anomaly_reco
+test_split: train
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: 6_anomaly_reco
+    post_prompt: "Answer with the option's letter from the given choices directly."
+  videochat_next_dynamic_newprompt:
+    sub_task: 6_anomaly_reco
+    yinan_prompt: "()"
+    post_prompt: "\nOnly give the best option."
+  videochat_next_dynamic_pdrop_newprompt:
+    sub_task: 6_anomaly_reco
+    yinan_prompt: "()"
+    post_prompt: "\nOnly give the best option."

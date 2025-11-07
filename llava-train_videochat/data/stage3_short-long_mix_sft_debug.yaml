@@ -1,0 +1,33 @@
+datasets:
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/caption_vidln_kinetics-vidln-kinetics_train_28k_fixed_path.json
+  #   sampling_strategy: all
+  #   data_root: OpenGVLab/stage3/Kinetics_700/OpenMMLab___Kinetics_700/raw/Kinetics_700/merged/
+## llava video
+  - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_mc_v0_1_qa_processed_6901_with_duration.jsonl
+    sampling_strategy: "all"
+    data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_oe_qa_processed_61_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_mc_v0_1_qa_processed_39967_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_v0_1_cap_processed_3124_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_v0_1_cap_processed_24685_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_youtube_oe_v0_1_qa_processed_141495_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_activitynetqa_oe_qa_processed_7460_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_nextqa_mc_qa_processed_52_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+  # - json_path: OpenGVLab/VideoChat-Flash-Training-Data/annotations/video/llava-video_2_3_m_academic_oe_v0_1_qa_processed_18134_with_duration.jsonl
+  #   sampling_strategy: "all"
+  #   data_root: OpenGVLab/LLaVA-Video-178K/
+

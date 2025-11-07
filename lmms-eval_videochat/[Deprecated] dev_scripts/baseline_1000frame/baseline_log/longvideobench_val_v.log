@@ -1,0 +1,3085 @@
+longvideobench_val_v
+longvideobench_val_v
+[32m2025-05-20 12:10:07.911[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:07.934[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:07.946[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:07.961[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:07.966[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:07.994[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:08.100[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:08.639[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m170[0m - [1mVerbosity set to INFO[0m
+[32m2025-05-20 12:10:12.953[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:12.953[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:12.964[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+starting evaluation
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+[32m2025-05-20 12:10:12.982[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:12.983[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:12.987[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:12.987[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:12.994[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+starting evaluation
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+[32m2025-05-20 12:10:12.998[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+starting evaluation
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+[32m2025-05-20 12:10:13.005[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:13.005[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:13.016[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+starting evaluation
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+[32m2025-05-20 12:10:13.028[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:13.028[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:13.039[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+starting evaluation
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+[32m2025-05-20 12:10:13.054[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:13.054[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:13.054[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:13.054[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:13.065[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+starting evaluation
+[32m2025-05-20 12:10:13.065[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+starting evaluation
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+[32m2025-05-20 12:10:13.101[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m271[0m - [1mEvaluating on 1 tasks.[0m
+[32m2025-05-20 12:10:13.102[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m282[0m - [1mSelected Tasks: ['longvideobench_val_v'][0m
+[32m2025-05-20 12:10:13.113[0m | [33m[1mWARNING [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m288[0m - [33m[1mThe suffix for log_samples is too long. It is recommended to keep it under 15 characters.[0m
+starting evaluation
+args_string:
+pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024
+arg_list:
+['pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache', 'max_num_frames=1024']
+[2025-05-20 12:10:14,440] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-20 12:10:14,460] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-20 12:10:14,501] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-20 12:10:14,503] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-20 12:10:14,532] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-20 12:10:14,550] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-20 12:10:14,593] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-05-20 12:10:14,596] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.1
+[93m [WARNING] [0m using untested triton version (2.1.0), only 1.0.0 is known to be compatible
+Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.
+Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.
+
+
+
+Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.
+
+Qwen2DecoderLayer is using sdpa attention, but compression is only supported with flash_attention_2. Forcing flash_attention_2.
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+Loading vision tower: umt-hd-large
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2flash_v2
+
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+It is LlavaQwenForCausalLM
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+flash_v2
+It is LlavaQwenForCausalLM
+It is LlavaQwenForCausalLM
+It is LlavaQwenForCausalLM
+It is LlavaQwenForCausalLM
+It is LlavaQwenForCausalLM
+It is LlavaQwenForCausalLM
+It is LlavaQwenForCausalLM
+[32m2025-05-20 12:10:49.727[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 6...[0m
+[32m2025-05-20 12:10:49.945[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 4...[0m
+[32m2025-05-20 12:10:50.148[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 7...[0m
+[32m2025-05-20 12:10:50.320[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 2...[0m
+[32m2025-05-20 12:10:50.494[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 3...[0m
+[32m2025-05-20 12:10:50.665[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 1...[0m
+[32m2025-05-20 12:10:50.868[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 0...[0m
+[32m2025-05-20 12:10:51.077[0m | [1mINFO    [0m | [36mlmms_eval.api.task[0m:[36mbuild_all_requests[0m:[36m370[0m - [1mBuilding contexts for task longvideobench_val_v on rank 5...[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+[32m2025-05-20 12:10:53.148[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36mevaluate[0m:[36m295[0m - [1mRunning generate_until requests[0m
+
+The video lasts for 1835.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1835.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2560.72 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2560.72 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2560.72 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2781.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2617.55 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2781.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1745.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1193.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1358.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1358.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1358.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1206.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1193.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1835.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1745.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1217.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1810.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1327.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1810.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2617.55 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1193.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2781.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1843.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1206.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1206.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2617.55 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1217.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1255.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1217.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1995.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1189.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1059.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1843.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1745.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1517.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1517.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1150.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1810.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1130.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 959.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1843.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1059.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1995.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1327.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1327.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1008.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1517.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1151.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1995.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1189.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2066.50 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1115.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1008.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1255.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1255.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 959.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1150.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 913.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1189.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 918.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1130.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 918.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1059.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 965.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2066.50 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2066.50 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1150.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1039.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1207.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1238.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1010.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1151.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1115.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1151.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1207.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1115.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1074.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1149.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 959.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1207.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1008.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 963.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1039.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 600.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1233.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 918.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1233.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1130.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 534.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1039.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1100.18 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1074.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1149.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1269.02 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1238.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 592.29 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 965.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1238.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1074.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 974.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 484.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 974.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 913.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1233.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 913.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3573.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 974.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1149.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 931.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1059.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1010.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 939.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 931.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 931.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 559.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3573.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1158.76 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1269.02 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 600.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 588.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 963.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 600.07 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 963.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 534.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 937.85 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1269.02 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3573.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1100.18 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1100.18 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1196.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1010.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1196.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2844.84 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 939.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 965.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 588.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 564.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 914.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 592.29 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 512.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1158.76 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1028.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1526.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 539.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 484.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1158.76 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1196.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 937.85 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 990.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1156.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1156.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1059.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 990.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 564.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 937.85 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 939.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 542.71 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 512.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1181.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 563.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 600.07 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1059.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 914.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1086.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 542.71 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1097.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 553.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1156.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 914.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 477.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 524.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 917.71 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1028.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2844.84 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 559.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 553.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1028.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 917.71 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 563.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1097.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1184.77 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1540.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 539.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 477.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 589.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1086.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1333.77 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 589.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 990.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 590.06 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2844.84 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3485.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 903.14 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1540.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 590.06 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1526.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1667.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1540.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 427.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 523.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 524.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1181.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1184.77 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1181.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 495.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 917.71 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1071.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1526.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3485.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1667.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1333.77 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 523.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1132.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1177.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1667.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 903.14 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 427.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1097.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1177.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3485.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 903.14 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1401.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1132.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 984.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 984.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1333.77 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1071.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1071.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1204.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 984.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 511.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1002.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1598.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1184.77 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1385.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 468.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1086.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1002.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 495.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 468.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 504.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 401.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1123.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1417.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1177.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1132.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1598.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 507.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1385.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1034.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1623.21 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1401.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 590.51 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1385.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1034.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 538.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1598.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1034.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 593.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1401.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 511.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 507.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1123.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1204.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 486.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1417.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1214.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1357.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 575.32 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1214.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 988.65 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1357.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 504.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2774.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1652.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1987.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1204.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1214.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1123.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1058.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1987.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1652.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 468.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 575.32 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 538.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 515.18 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 952.22 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1417.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 515.18 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1357.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1987.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 952.22 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 593.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1002.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3128.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1463.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 443.81 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1652.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 589.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3024.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 520.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 468.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2774.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 590.51 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 988.65 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1347.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3024.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 981.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 443.81 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 589.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 584.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1168.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 952.22 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 981.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 486.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2774.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1623.21 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 520.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1463.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1018.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 401.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1261.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 988.65 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 582.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 585.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1035.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 521.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 941.94 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3468.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 981.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 513.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3024.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 481.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1168.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1018.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1347.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1623.21 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2186.42 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 508.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1463.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2573.74 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1008.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2995.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2995.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3128.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1037.41 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2311.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 543.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1035.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3468.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 980.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1035.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 513.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1037.41 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1299.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1347.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3204.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2995.79 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3128.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1489.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2311.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1309.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 941.94 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2311.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 585.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1489.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1168.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 584.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 521.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 941.94 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 494.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 543.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1037.41 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2573.74 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1018.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3468.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 582.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1261.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 961.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1499.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 479.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3204.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 481.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2573.74 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 508.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1489.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 398.13 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 460.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1004.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 904.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 980.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1058.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1489.35 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1013.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 904.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1309.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 490.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3204.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1240.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 490.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 961.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1261.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 460.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2454.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2454.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 980.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1499.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1058.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 904.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 598.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1008.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2853.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 398.13 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 961.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1309.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 494.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1376.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1050.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 917.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2186.42 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1013.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 557.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 451.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1523.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1013.89 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2454.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1460.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 479.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1489.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 927.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 557.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1489.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 922.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 922.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1299.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1299.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 927.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2093.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1008.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1376.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 951.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2186.42 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1376.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1460.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1004.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 902.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1050.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 422.66 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 922.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1732.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2853.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 598.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1195.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 470.10 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1523.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 917.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1257.69 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1117.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1208.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 967.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1499.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 407.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2853.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 967.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1523.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1088.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 489.42 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1004.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 422.66 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1050.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 451.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2354.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 967.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 516.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 504.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1673.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 439.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1460.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 504.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1240.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1240.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 470.10 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 579.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 494.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1197.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2093.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 511.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 927.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 461.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1257.69 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3135.50 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1257.69 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 476.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 494.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 591.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 516.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 447.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2376.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 951.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1732.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2745.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 511.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1208.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 917.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1390.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 349.62 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2093.19 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2041.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 447.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 476.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 408.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 951.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 349.62 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3135.50 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 461.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 591.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2439.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1117.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 468.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2354.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2161.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 497.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3135.50 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1732.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2041.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2041.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1117.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2745.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1334.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1000.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1208.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 468.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 503.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 579.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1195.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2354.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 489.42 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 503.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1355.29 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1673.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1334.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 439.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 389.02 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1088.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 551.84 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1013.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1197.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3128.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1508.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 902.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3128.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1334.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2376.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2745.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2376.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1724.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1088.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 497.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.01 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2161.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1673.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1139.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 564.32 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 551.84 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1195.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1390.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 292.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 389.02 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1061.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1197.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 996.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1013.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2161.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 564.32 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1000.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1114.05 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 394.85 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 488.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1355.29 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 949.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 454.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1334.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1061.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2439.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 404.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 453.42 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1000.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 550.62 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 949.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1334.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2439.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1777.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1013.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 402.86 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1114.05 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1114.05 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 408.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 290.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 922.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 405.84 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 453.42 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1355.29 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 996.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 221.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 902.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 928.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 402.86 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 411.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1215.41 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 416.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1724.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1390.46 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1139.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 983.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 428.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 550.62 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 292.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1061.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 457.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1159.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 355.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1777.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 922.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 375.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 300.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 3128.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1508.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 411.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 290.36 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 297.10 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 928.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 394.85 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 592.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 275.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 488.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 394.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 275.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 379.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1724.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 484.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 428.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 484.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 313.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1777.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 221.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 464.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 291.21 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1139.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 313.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 983.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 381.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 349.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1512.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 464.93 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 949.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 270.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 996.53 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1215.41 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 313.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 967.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 341.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 294.17 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1215.41 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 922.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 349.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 291.21 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1508.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 916.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 454.75 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 457.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 983.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 592.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 308.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 404.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 518.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1512.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2475.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 554.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 569.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1317.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 967.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 504.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 389.22 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 341.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 322.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1512.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 317.90 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 314.81 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 300.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 405.84 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 928.56 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 504.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 494.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 293.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 916.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 379.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1746.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 341.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1159.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 916.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 518.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 314.81 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 388.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 258.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 297.10 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 569.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 355.27 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 416.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 394.52 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 307.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 375.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2009.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 270.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 381.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 208.07 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1236.32 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 313.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 315.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2475.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 294.17 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 910.64 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 377.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 295.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 340.94 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.49 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 270.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 967.48 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 244.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 494.26 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 198.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1735.43 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 317.90 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 331.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1317.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 295.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2475.31 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2009.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 264.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 302.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 463.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 308.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 293.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1078.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 277.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 264.76 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 905.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1159.37 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1236.32 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 340.94 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 199.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 208.07 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 260.13 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 322.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 341.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 412.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 541.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 254.38 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 307.44 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1746.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 554.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1317.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 367.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 268.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 231.86 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 388.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 254.38 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 268.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 458.39 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1735.43 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2009.63 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 232.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1083.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1746.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 532.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 258.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 239.61 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 223.43 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 263.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 315.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1236.32 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 264.76 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 377.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 199.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 249.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 285.95 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 302.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 526.49 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 954.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 270.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 466.34 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 186.81 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 263.96 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 231.86 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 331.87 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 264.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 208.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 295.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 404.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 277.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 295.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1735.43 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 244.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 260.13 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 209.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 212.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 466.34 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 905.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 389.22 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 367.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1200.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 905.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 522.90 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 482.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 458.39 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 285.95 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 232.98 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 181.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 212.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 224.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 268.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 412.54 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 463.03 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1083.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 200.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 249.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 250.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1201.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 239.61 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 204.74 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 223.43 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 277.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 541.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 261.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 237.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 277.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 212.68 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 248.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 191.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 228.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 532.99 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 954.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 467.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 2805.10 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 467.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 905.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1083.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 250.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 224.92 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 240.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1023.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 246.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 268.08 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 261.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 482.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 954.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 212.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 522.90 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 191.88 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 272.13 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 209.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 202.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 212.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 57.05 seconds, and 456 frames are uniformly sampled from it. 
+
+The video lasts for 181.40 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 404.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 51.36 seconds, and 408 frames are uniformly sampled from it. 
+
+The video lasts for 954.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 42.00 seconds, and 336 frames are uniformly sampled from it. 
+
+The video lasts for 240.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 320.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 59.00 seconds, and 472 frames are uniformly sampled from it. 
+
+The video lasts for 193.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1950.72 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1163.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 51.02 seconds, and 408 frames are uniformly sampled from it. 
+
+The video lasts for 56.02 seconds, and 448 frames are uniformly sampled from it. 
+
+The video lasts for 186.81 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 54.02 seconds, and 432 frames are uniformly sampled from it. 
+
+The video lasts for 193.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 245.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 60.13 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 954.45 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 30.73 seconds, and 240 frames are uniformly sampled from it. 
+
+The video lasts for 254.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 204.74 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 57.47 seconds, and 456 frames are uniformly sampled from it. 
+
+The video lasts for 238.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1950.72 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 202.24 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 225.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1201.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 191.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 198.70 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1950.72 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 59.67 seconds, and 472 frames are uniformly sampled from it. 
+
+The video lasts for 336.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 254.25 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 248.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 23.90 seconds, and 184 frames are uniformly sampled from it. 
+
+The video lasts for 23.02 seconds, and 184 frames are uniformly sampled from it. 
+
+The video lasts for 15.80 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 35.83 seconds, and 280 frames are uniformly sampled from it. 
+
+The video lasts for 33.99 seconds, and 264 frames are uniformly sampled from it. 
+
+The video lasts for 320.60 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1275.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 19.06 seconds, and 152 frames are uniformly sampled from it. 
+
+The video lasts for 1201.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1200.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 60.90 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 905.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 2805.10 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 15.08 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 208.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 190.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 228.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 19.27 seconds, and 152 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 2805.10 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 60.03 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 219.51 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 200.80 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 212.58 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 1200.12 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 193.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 455.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 481.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 58.70 seconds, and 464 frames are uniformly sampled from it. 
+
+The video lasts for 191.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 272.13 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 10.87 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 60.00 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 14.95 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 237.82 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 193.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 58.19 seconds, and 464 frames are uniformly sampled from it. 
+
+The video lasts for 13.98 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.07 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.47 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 52.00 seconds, and 416 frames are uniformly sampled from it. 
+
+The video lasts for 8.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 246.73 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 191.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 36.00 seconds, and 288 frames are uniformly sampled from it. 
+
+The video lasts for 1023.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 47.33 seconds, and 376 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 455.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 18.06 seconds, and 144 frames are uniformly sampled from it. 
+
+The video lasts for 905.00 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 54.02 seconds, and 432 frames are uniformly sampled from it. 
+
+The video lasts for 14.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 1023.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 9.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 222.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+rank 5 completed generate_until requests
+rank 5 is waiting for all ranks to finish requests
+
+The video lasts for 54.96 seconds, and 432 frames are uniformly sampled from it. 
+
+The video lasts for 192.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 191.57 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 38.03 seconds, and 304 frames are uniformly sampled from it. 
+
+The video lasts for 192.09 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 51.00 seconds, and 408 frames are uniformly sampled from it. 
+
+The video lasts for 481.30 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 228.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 60.37 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 54.19 seconds, and 432 frames are uniformly sampled from it. 
+
+The video lasts for 56.47 seconds, and 448 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 49.40 seconds, and 392 frames are uniformly sampled from it. 
+
+The video lasts for 33.99 seconds, and 264 frames are uniformly sampled from it. 
+
+The video lasts for 228.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 41.13 seconds, and 328 frames are uniformly sampled from it. 
+
+The video lasts for 60.03 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 45.00 seconds, and 352 frames are uniformly sampled from it. 
+
+The video lasts for 51.00 seconds, and 408 frames are uniformly sampled from it. 
+
+The video lasts for 56.80 seconds, and 448 frames are uniformly sampled from it. 
+
+The video lasts for 59.01 seconds, and 472 frames are uniformly sampled from it. 
+
+The video lasts for 26.00 seconds, and 208 frames are uniformly sampled from it. 
+
+The video lasts for 58.00 seconds, and 464 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 23.98 seconds, and 184 frames are uniformly sampled from it. 
+
+The video lasts for 28.53 seconds, and 224 frames are uniformly sampled from it. 
+
+The video lasts for 37.27 seconds, and 296 frames are uniformly sampled from it. 
+
+The video lasts for 219.51 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 47.00 seconds, and 376 frames are uniformly sampled from it. 
+
+The video lasts for 20.17 seconds, and 160 frames are uniformly sampled from it. 
+
+The video lasts for 54.00 seconds, and 432 frames are uniformly sampled from it. 
+
+The video lasts for 24.37 seconds, and 192 frames are uniformly sampled from it. 
+
+The video lasts for 236.17 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 45.00 seconds, and 352 frames are uniformly sampled from it. 
+
+The video lasts for 56.13 seconds, and 448 frames are uniformly sampled from it. 
+
+The video lasts for 238.91 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 49.05 seconds, and 392 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 1163.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 15.07 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 245.47 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 22.83 seconds, and 176 frames are uniformly sampled from it. 
+
+The video lasts for 48.63 seconds, and 384 frames are uniformly sampled from it. 
+
+The video lasts for 31.03 seconds, and 248 frames are uniformly sampled from it. 
+
+The video lasts for 1163.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 38.67 seconds, and 304 frames are uniformly sampled from it. 
+
+The video lasts for 236.17 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 25.00 seconds, and 200 frames are uniformly sampled from it. 
+
+The video lasts for 38.00 seconds, and 304 frames are uniformly sampled from it. 
+
+The video lasts for 39.00 seconds, and 312 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 57.97 seconds, and 456 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 17.01 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 60.03 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 32.00 seconds, and 256 frames are uniformly sampled from it. 
+
+The video lasts for 13.97 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 222.67 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.98 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 18.05 seconds, and 144 frames are uniformly sampled from it. 
+
+The video lasts for 27.83 seconds, and 216 frames are uniformly sampled from it. 
+
+The video lasts for 60.03 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 36.90 seconds, and 288 frames are uniformly sampled from it. 
+
+The video lasts for 225.97 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 336.04 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 41.99 seconds, and 328 frames are uniformly sampled from it. 
+
+The video lasts for 29.87 seconds, and 232 frames are uniformly sampled from it. 
+
+The video lasts for 60.00 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 41.03 seconds, and 328 frames are uniformly sampled from it. 
+
+The video lasts for 58.05 seconds, and 464 frames are uniformly sampled from it. 
+
+The video lasts for 307.43 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 307.43 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 46.98 seconds, and 368 frames are uniformly sampled from it. 
+
+The video lasts for 24.13 seconds, and 192 frames are uniformly sampled from it. 
+
+The video lasts for 48.05 seconds, and 384 frames are uniformly sampled from it. 
+
+The video lasts for 60.00 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 19.33 seconds, and 152 frames are uniformly sampled from it. 
+
+The video lasts for 60.02 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 190.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 35.00 seconds, and 280 frames are uniformly sampled from it. 
+
+The video lasts for 14.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 15.17 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 32.03 seconds, and 256 frames are uniformly sampled from it. 
+
+The video lasts for 21.98 seconds, and 168 frames are uniformly sampled from it. 
+
+The video lasts for 27.63 seconds, and 216 frames are uniformly sampled from it. 
+
+The video lasts for 14.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 43.99 seconds, and 344 frames are uniformly sampled from it. 
+
+The video lasts for 47.40 seconds, and 376 frames are uniformly sampled from it. 
+
+The video lasts for 10.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.97 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 48.04 seconds, and 384 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 34.00 seconds, and 272 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 60.17 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 48.05 seconds, and 384 frames are uniformly sampled from it. 
+
+The video lasts for 9.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.97 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 17.03 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 17.00 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 34.20 seconds, and 272 frames are uniformly sampled from it. 
+
+The video lasts for 9.17 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 20.07 seconds, and 160 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 17.05 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 28.00 seconds, and 224 frames are uniformly sampled from it. 
+
+The video lasts for 13.73 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 59.63 seconds, and 472 frames are uniformly sampled from it. 
+
+The video lasts for 47.00 seconds, and 376 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 339.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 23.99 seconds, and 184 frames are uniformly sampled from it. 
+
+The video lasts for 9.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 51.50 seconds, and 408 frames are uniformly sampled from it. 
+
+The video lasts for 48.53 seconds, and 384 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.47 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 47.98 seconds, and 376 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 52.00 seconds, and 416 frames are uniformly sampled from it. 
+
+The video lasts for 60.37 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 909.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 11.59 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 16.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 40.60 seconds, and 320 frames are uniformly sampled from it. 
+
+The video lasts for 15.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.57 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.13 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.12 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 54.96 seconds, and 432 frames are uniformly sampled from it. 
+
+The video lasts for 10.17 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 15.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 216.02 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 11.53 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 17.05 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 27.06 seconds, and 216 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 39.00 seconds, and 312 frames are uniformly sampled from it. 
+
+The video lasts for 991.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 339.23 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.69 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 23.82 seconds, and 184 frames are uniformly sampled from it. 
+
+The video lasts for 16.03 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 991.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 46.00 seconds, and 368 frames are uniformly sampled from it. 
+
+The video lasts for 60.24 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 12.97 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.07 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 190.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 12.33 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 17.40 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 32.00 seconds, and 256 frames are uniformly sampled from it. 
+rank 4 completed generate_until requests
+rank 4 is waiting for all ranks to finish requests
+
+The video lasts for 14.07 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 216.02 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1275.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 20.37 seconds, and 160 frames are uniformly sampled from it. 
+
+The video lasts for 11.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 26.99 seconds, and 208 frames are uniformly sampled from it. 
+
+The video lasts for 14.47 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 17.05 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 49.04 seconds, and 392 frames are uniformly sampled from it. 
+
+The video lasts for 9.10 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 31.03 seconds, and 248 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 190.16 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 33.00 seconds, and 264 frames are uniformly sampled from it. 
+
+The video lasts for 12.60 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.80 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 22.00 seconds, and 176 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 991.83 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.77 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 53.47 seconds, and 424 frames are uniformly sampled from it. 
+
+The video lasts for 384.59 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 8.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 1275.11 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 24.00 seconds, and 192 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 181.28 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.79 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.03 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 18.17 seconds, and 144 frames are uniformly sampled from it. 
+
+The video lasts for 36.00 seconds, and 288 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 27.28 seconds, and 216 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.27 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 200.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 11.50 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 20.00 seconds, and 160 frames are uniformly sampled from it. 
+rank 6 completed generate_until requests
+rank 6 is waiting for all ranks to finish requests
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 909.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 11.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.98 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.98 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 33.03 seconds, and 264 frames are uniformly sampled from it. 
+
+The video lasts for 23.97 seconds, and 184 frames are uniformly sampled from it. 
+
+The video lasts for 36.00 seconds, and 288 frames are uniformly sampled from it. 
+
+The video lasts for 22.02 seconds, and 176 frames are uniformly sampled from it. 
+
+The video lasts for 35.00 seconds, and 280 frames are uniformly sampled from it. 
+
+The video lasts for 10.21 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 37.97 seconds, and 296 frames are uniformly sampled from it. 
+
+The video lasts for 9.77 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 60.13 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 23.00 seconds, and 184 frames are uniformly sampled from it. 
+
+The video lasts for 9.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 37.00 seconds, and 296 frames are uniformly sampled from it. 
+
+The video lasts for 16.90 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 15.03 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 16.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.52 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 47.04 seconds, and 376 frames are uniformly sampled from it. 
+
+The video lasts for 22.50 seconds, and 176 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+rank 7 completed generate_until requests
+rank 7 is waiting for all ranks to finish requests
+
+The video lasts for 24.99 seconds, and 192 frames are uniformly sampled from it. 
+
+The video lasts for 384.59 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 909.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+rank 0 completed generate_until requests
+rank 0 is waiting for all ranks to finish requests
+
+The video lasts for 1232.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 1232.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 60.67 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 13.53 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 27.03 seconds, and 216 frames are uniformly sampled from it. 
+
+The video lasts for 20.02 seconds, and 160 frames are uniformly sampled from it. 
+
+The video lasts for 11.33 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 24.06 seconds, and 192 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 1232.20 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 17.13 seconds, and 136 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 25.00 seconds, and 200 frames are uniformly sampled from it. 
+
+The video lasts for 10.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 15.12 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 19.05 seconds, and 152 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.97 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 45.00 seconds, and 352 frames are uniformly sampled from it. 
+
+The video lasts for 10.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.37 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 22.00 seconds, and 176 frames are uniformly sampled from it. 
+
+The video lasts for 11.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 24.00 seconds, and 192 frames are uniformly sampled from it. 
+
+The video lasts for 16.72 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.87 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.13 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 16.27 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 16.28 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.87 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 15.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 60.93 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 200.33 seconds, and 1024 frames are uniformly sampled from it. 
+
+The video lasts for 14.98 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.70 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.50 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 34.73 seconds, and 272 frames are uniformly sampled from it. 
+
+The video lasts for 11.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.98 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 60.00 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 8.05 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 10.50 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 12.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 13.98 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 15.22 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 11.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.31 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.01 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 14.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.83 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.00 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 9.63 seconds, and 128 frames are uniformly sampled from it. 
+rank 3 completed generate_until requests
+rank 3 is waiting for all ranks to finish requests
+
+The video lasts for 44.00 seconds, and 352 frames are uniformly sampled from it. 
+
+The video lasts for 60.00 seconds, and 480 frames are uniformly sampled from it. 
+
+The video lasts for 9.04 seconds, and 128 frames are uniformly sampled from it. 
+
+The video lasts for 8.04 seconds, and 128 frames are uniformly sampled from it. 
+rank 2 completed generate_until requests
+rank 2 is waiting for all ranks to finish requests
+
+The video lasts for 60.63 seconds, and 480 frames are uniformly sampled from it. 
+rank 1 completed generate_until requests
+rank 1 is waiting for all ranks to finish requests
+rank 1 finished waiting for all ranks to finish requests
+rank 2 finished waiting for all ranks to finish requestsrank 4 finished waiting for all ranks to finish requestsrank 3 finished waiting for all ranks to finish requestsrank 6 finished waiting for all ranks to finish requests
+rank 7 finished waiting for all ranks to finish requestsrank 5 finished waiting for all ranks to finish requestsrank 0 finished waiting for all ranks to finish requests
+
+
+
+
+
+rank 4 offloaded model to cpu
+rank 4 collected all filters
+rank 6 offloaded model to cpu
+rank 6 collected all filters
+rank 0 offloaded model to cpu
+rank 0 collected all filters
+rank 7 offloaded model to cpu
+rank 7 collected all filters
+rank 2 offloaded model to cpu
+rank 2 collected all filters
+rank 3 offloaded model to cpu
+rank 3 collected all filters
+rank 5 offloaded model to cpu
+rank 5 collected all filters
+rank 1 offloaded model to cpu
+rank 1 collected all filters
+[32m2025-05-20 14:13:33.289[0m | [1mINFO    [0m | [36mutils[0m:[36mlongvideobench_aggregate_results[0m:[36m372[0m - [1m{600: {'num': 412, 'acc': 0.56796}, 'TOS': {'num': 73, 'acc': 0.47945}, 'S2E': {'num': 93, 'acc': 0.72043}, 'E3E': {'num': 94, 'acc': 0.70213}, 'S2A': {'num': 88, 'acc': 0.69318}, 'SAA': {'num': 72, 'acc': 0.48611}, 'O3O': {'num': 66, 'acc': 0.56061}, 'T3O': {'num': 74, 'acc': 0.58108}, 'T3E': {'num': 73, 'acc': 0.49315}, 'O2E': {'num': 87, 'acc': 0.63218}, 'T2O': {'num': 76, 'acc': 0.53947}, 'S2O': {'num': 72, 'acc': 0.56944}, 'TAA': {'num': 82, 'acc': 0.46341}, 'T2E': {'num': 65, 'acc': 0.63077}, 'E2O': {'num': 65, 'acc': 0.64615}, 'SSS': {'num': 97, 'acc': 0.26804}, 'T2A': {'num': 79, 'acc': 0.55696}, 60: {'num': 172, 'acc': 0.73837}, 'SOS': {'num': 81, 'acc': 0.7284}, 15: {'num': 189, 'acc': 0.68254}, 3600: {'num': 564, 'acc': 0.49113}, 'Overall': {'num': 2674, 'acc': 0.57367}}[0m
+[32m2025-05-20 14:13:33.812[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m339[0m - [1mSaved samples to /home/ec2-user/workspace/VideoChat-Flash-forked/lmms-eval_videochat/logs/eval_baseline.sh_20250520_121002_videochat_flash_f1024/0520_2010_longv...val_v_videochat_flash_model_args_df69fb/longvideobench_val_v.json[0m
+videochat_flash (pretrained=../llava-train_videochat/checkpoints/baseline_1000frame_cos_ablt/stageab-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/cache,max_num_frames=1024),
+gen_kwargs: (),
+limit: None,
+num_fewshot: None,
+batch_size: 1
+|       Tasks        |Version|Filter|n-shot|Metric |Value |   |Stderr|
+|--------------------|-------|------|-----:|-------|-----:|---|------|
+|longvideobench_val_v|Yaml   |none  |     0|lvb_acc|0.5737|±  |N/A   |
+

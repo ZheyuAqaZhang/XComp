@@ -1,0 +1,13 @@
+include: _default_template.yaml
+task: temporal_grounding_charades
+dataset_name: charades
+test_split: train
+metric_list:
+  - metric: submission
+    aggregation: !function utils.temporal_grounding_aggregate_charades
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    sub_task: charades
+    pre_prompt: "Please find the visual event described by a sentence in the video, determining its starting and ending times. The format should be: 'The event happens in the start time - end time'. For example, The event 'person turn a light on' happens in the 24.3 - 30.4 seonds. Now I will give you the textual sentence: "
+    post_prompt: "Please return its start time and end time."

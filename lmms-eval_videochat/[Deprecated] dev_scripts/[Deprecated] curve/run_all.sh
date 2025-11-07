@@ -1,0 +1,3 @@
+bash my_scripts/curve/train_free_lvbench_1x640.sh
+bash my_scripts/curve/train_free_lvbench_1x128.sh
+bash my_scripts/curve/train_free_lvbench_1x64.sh
