@@ -22,6 +22,8 @@ XComp is a fine-tuned model from VideoChat-Flash-2B. The environment and the dat
 - Training `./llava-train_videochat`
 - Evaluate `./lmms-eval_videochat`
 
+Download model parameters: [Google Drive](https://drive.google.com/file/d/1fubZjI640E2JZKWooX0xC2CsV8aCQyRh/view?usp=sharing), save to `XComp/llava-train_videochat/checkpoints/baseline_1000frame_cos/stagesuf-umt-hd-large-tome16_mlp_hd64_Qwen2_5_1_5B_stage3_short-long_mix_sft_mid2.yaml/`
+
 ## Citation
 
 ```
